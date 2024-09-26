@@ -1,0 +1,27 @@
+.productHighlightText {
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2px 4px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+.productHighlightText--collections {
+  background: #474747;
+}
+.productHighlightText--summary {
+  padding: 1px 4px;
+}
+.productHighlightText--free-shipping {
+  background: #a71b28;
+}
+
+@media (max-width: 991px) {
+  .productHighlightText--pdp {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}

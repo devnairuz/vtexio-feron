@@ -1,0 +1,33 @@
+{
+  "disclosure-layout#eigth-faq": {
+    "props": {
+      "blockClass": ["faq"]
+    },
+    "children": ["disclosure-trigger#eigth", "disclosure-content#eigth"]
+  },
+  "disclosure-trigger#eigth": {
+    "props": {
+      "animated": true,
+      "blockClass": ["faq"]
+    },
+    "children": ["rich-text#question8"]
+  },
+  "disclosure-content#eigth": {
+    "props": {
+      "blockClass": ["faq"]
+    },
+    "children": ["rich-text#answer8"]
+  },
+  "rich-text#question8": {
+    "props": {
+      "text": "## 8. Como faço para solicitar a Assistência Técnica Remota?",
+      "blockClass": ["faq"]
+    }
+  },
+  "rich-text#answer8": {
+    "props": {
+      "text": "Para solicitar o atendimento remoto de um de nossos técnicos, entre em contato com nosso canal de atendimento pelo telefone **(14)3161-5000** ou por Whatsapp **(14) 98146-8232**. Solicite o agendamento para uma chamada por vídeo com um de nossos técnicos especializados. No horário agendado, o técnico estará disponível para ligar ou fazer a chamada por vídeo, ajudando a resolver seu problema de forma eficiente.",
+      "blockClass": ["faq-content"]
+    }
+  }
+}

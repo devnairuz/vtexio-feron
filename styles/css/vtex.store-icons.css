@@ -1,3 +1,12 @@
 .cartIcon--minicart-empty-state {
   color: #202020;
 }
+
+.socialIcon {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.modalIconSearch {
+  color: #a8a8a8;
+}

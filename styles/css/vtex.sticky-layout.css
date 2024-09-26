@@ -1,3 +1,6 @@
-.container {
-  background: #fff;
+.container--sticky-header {
+  transition: all 0.3s ease-in-out;
+}
+.wrapper--sticky-header--stuck .container--sticky-header {
+  background: #212121;
 }

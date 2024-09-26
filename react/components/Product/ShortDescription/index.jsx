@@ -1,21 +1,20 @@
-import { useProduct } from "vtex.product-context"
+import { useProduct } from 'vtex.product-context'
 
-import styles from "./ShortDescription.css"
+import styles from './ShortDescription.css'
 
 const ShortDescription = () => {
   const { product } = useProduct()
+  const productDescription = product?.description
+
+  if (!productDescription) return null
 
   return (
-    <>
-      {product?.description && (
-        <div className={styles.shortDescription}>
-          <div
-            className={styles.shortDescriptionContent}
-            dangerouslySetInnerHTML={{__html: product.description}}
-          />
-        </div>
-      )}
-    </>
+    <div className={styles.shortDescription}>
+      <div
+        className={styles.shortDescriptionContent}
+        dangerouslySetInnerHTML={{ __html: productDescription }}
+      />
+    </div>
   )
 }
 

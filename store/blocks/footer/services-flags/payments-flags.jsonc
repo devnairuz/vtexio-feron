@@ -1,34 +1,11 @@
 {
   "flex-layout.col#payments-flags": {
+    "title": "Logos",
     "props": {
       "blockClass": "payments-flags-content",
       "preventVerticalStretch": true
     },
-    "children": [
-      "flex-layout.row#payments-title",
-      "flex-layout.row#payments-content"
-    ]
-  },
-
-  "flex-layout.row#payments-title": {
-    "props": {
-      "blockClass": "payments-title-container",
-      "colSizing": "auto"
-    },
-    "children": ["flex-layout.col#payments-title"]
-  },
-  "flex-layout.col#payments-title": {
-    "props": {
-      "blockClass": "payments-title-content",
-      "preventVerticalStretch": true
-    },
-    "children": ["rich-text#payments-title"]
-  },
-  "rich-text#payments-title": {
-    "props": {
-      "blockClass": "footer-title",
-      "text": "#### Formas de pagamento"
-    }
+    "children": ["flex-layout.row#payments-content"]
   },
 
   "flex-layout.row#payments-content": {
@@ -43,12 +20,55 @@
       "blockClass": "payments-content",
       "preventVerticalStretch": true
     },
-    "children": ["image#payment-flags"]
+    "children": [
+      "image#nairuz",
+      "image#vtex",
+      "image#lets-encrypt",
+      "image#google-sf"
+    ]
   },
-  "image#payment-flags": {
+
+  "image#nairuz": {
     "props": {
-      "src": "assets/flags/payment/bandeiras-cartoes.webp",
-      "alt": "Formas de pagamento: Visa, Master, Amex, Dinners, Boleto, Depósito"
+      "src": "assets/logos/nairuz.svg",
+      "alt": "Nairuz",
+      "title": "Nairuz",
+      "link": {
+        "newTab": "true",
+        "url": "https://nairuz.com.br"
+      }
+    }
+  },
+
+  "image#vtex": {
+    "props": {
+      "src": "assets/logos/vtex.svg",
+      "alt": "Vtex",
+      "title": "Vtex",
+      "link": {
+        "newTab": "true",
+        "url": "https://vtex.com/pt-br/"
+      }
+    }
+  },
+
+  "image#lets-encrypt": {
+    "props": {
+      "src": "assets/logos/lets-encrypt.svg",
+      "alt": "Let's Encrypt",
+      "title": "Let's Encrypt"
+    }
+  },
+
+  "image#google-sf": {
+    "props": {
+      "src": "assets/logos/google-sf.svg",
+      "alt": "Google Safe Browsing",
+      "title": "Google Safe Browsing",
+      "link": {
+        "newTab": "true",
+        "url": "https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Ftecfag.com.br%2F"
+      }
     }
   }
 }

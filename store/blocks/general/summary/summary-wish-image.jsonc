@@ -10,14 +10,21 @@
     "props": {
       "blockClass": ["wish-image-content"]
     },
-    "children": ["add-to-list-btn", "product-summary-image"]
+    "children": [
+      //"add-to-list-btn",
+      "product-summary-image"
+    ]
   },
 
   "product-summary-image": {
     "props": {
-      "showBadge": true,
+      "showBadge": false,
       "aspectRatio": "1:1",
-      "maxHeight": 240
+      "maxHeight": 212,
+      "hoverImage": {
+        "criteria": "index",
+        "index": 1
+      }
     }
   }
 }

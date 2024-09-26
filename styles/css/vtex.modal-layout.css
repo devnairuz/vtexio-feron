@@ -1,0 +1,34 @@
+.backdrop {
+  background: #212121;
+}
+.triggerContainer--helper {
+  position: fixed;
+  right: 35px;
+  z-index: 100;
+  bottom: 100px;
+  cursor: pointer;
+}
+.modal--helper {
+  position: fixed !important;
+  inset: initial !important;
+  bottom: 140px !important;
+  right: 90px !important;
+}
+.paper--helper {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.paper--search {
+  background-color: transparent;
+}
+.container--search {
+  height: initial;
+}
+.closeButton--search {
+  color: #fff;
+}

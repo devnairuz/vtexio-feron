@@ -1,7 +1,12 @@
 {
   "flex-layout.row#shelf-promotions": {
+    "title": "Vitrine Seladoras",
     "props": {
-      "blockClass": ["shelf-container", "shelf-promotions-container", "custom-container"]
+      "blockClass": [
+        "shelf-container",
+        "shelf-promotions-container",
+        "custom-container"
+      ]
     },
     "children": ["flex-layout.col#shelf-promotions"]
   },
@@ -13,6 +18,7 @@
   },
 
   "flex-layout.row#promotions-title-container": {
+    "title": "Título da Vitrine",
     "props": {
       "blockClass": ["promotions-title-container"]
     },
@@ -26,29 +32,67 @@
   },
   "rich-text#promotions-title": {
     "props": {
-      "text": "#### Promoções **Corre, *que é por tempo limitado!***",
-      "blockClass": ["promotions-title", "shelf-title"]
+      "text": "#### Máquinas para selar",
+      "blockClass": ["promotions-title", "shelf-title", "banner-shelf"]
     }
   },
 
   "flex-layout.row#promotions-products-container": {
     "props": {
-      "blockClass": ["promotions-products-container"]
+      "blockClass": ["promotions-products-container", "banner-shelf"],
+      "colSizing": "auto"
     },
-    "children": ["flex-layout.col#promotions-products-container"]
+    "children": [
+      "flex-layout.col#seladoras-banner-shelf",
+      "flex-layout.col#promotions-products-container"
+    ]
+  },
+  "flex-layout.col#seladoras-banner-shelf": {
+    "props": {
+      "width": "26%",
+      "blockClass": ["banner-shelf"]
+    },
+    "children": ["image#shelf-seladoras", "image#shelf-seladoras-mobile"]
+  },
+  "image#shelf-seladoras": {
+    "props": {
+      "src": "assets/shelf/banner-seladoras.webp",
+      "alt": "Seladoras. Clique para ver tudo!",
+      "title": "Seladoras",
+      "link": {
+        "url": "/seladoras"
+      }
+    }
+  },
+  "image#shelf-seladoras-mobile": {
+    "props": {
+      "src": "assets/shelf/banner-seladoras-mobile.webp",
+      "alt": "Seladoras. Clique para ver tudo!",
+      "title": "Seladoras",
+      "link": {
+        "url": "/seladoras"
+      },
+      "blockClass": ["shelf-img-mobile"]
+    }
   },
   "flex-layout.col#promotions-products-container": {
     "props": {
-      "blockClass": ["promotions-products-content"]
+      "width": "74%",
+      "blockClass": [
+        "promotions-products-content",
+        "shelf-carousel",
+        "shelf-triple"
+      ]
     },
     "children": ["list-context.product-list#shelf-promotions"]
   },
   "list-context.product-list#shelf-promotions": {
     "props": {
       "listName": "Promoções",
-      "installmentCriteria": "MAX_WITH_INTEREST"
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "category": "77"
     },
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#products"]
+    "children": ["slider-layout#products-triple"]
   }
 }

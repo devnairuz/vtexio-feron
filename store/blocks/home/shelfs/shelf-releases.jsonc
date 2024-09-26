@@ -1,7 +1,12 @@
 {
   "flex-layout.row#shelf-releases": {
+    "title": "Vitrine Envasadoras",
     "props": {
-      "blockClass": ["shelf-container", "shelf-releases-container", "custom-container"]
+      "blockClass": [
+        "shelf-container",
+        "shelf-releases-container",
+        "custom-container"
+      ]
     },
     "children": ["flex-layout.col#shelf-releases"]
   },
@@ -13,6 +18,7 @@
   },
 
   "flex-layout.row#releases-title-container": {
+    "title": "Título da Vitrine",
     "props": {
       "blockClass": ["releases-title-container"]
     },
@@ -26,29 +32,67 @@
   },
   "rich-text#releases-title": {
     "props": {
-      "text": "#### Lançamentos **Confira nossas novidades!**",
-      "blockClass": ["releases-title", "shelf-title"]
+      "text": "#### Máquinas para envasar",
+      "blockClass": ["releases-title", "shelf-title", "banner-shelf"]
     }
   },
 
   "flex-layout.row#releases-products-container": {
     "props": {
-      "blockClass": ["releases-products-container"]
+      "blockClass": ["releases-products-container", "banner-shelf"],
+      "colSizing": "auto"
     },
-    "children": ["flex-layout.col#releases-products-container"]
+    "children": [
+      "flex-layout.col#envasadoras-banner-shelf",
+      "flex-layout.col#releases-products-container"
+    ]
+  },
+  "flex-layout.col#envasadoras-banner-shelf": {
+    "props": {
+      "width": "26%",
+      "blockClass": ["banner-shelf"]
+    },
+    "children": ["image#shelf-envasadoras", "image#shelf-envasadoras-mobile"]
+  },
+  "image#shelf-envasadoras": {
+    "props": {
+      "src": "assets/shelf/banner-envasadoras.webp",
+      "alt": "Envasadoras. Clique para ver tudo!",
+      "title": "Envasadoras",
+      "link": {
+        "url": "/envasadoras"
+      }
+    }
+  },
+  "image#shelf-envasadoras-mobile": {
+    "props": {
+      "src": "assets/shelf/banner-envasadoras-mobile.webp",
+      "alt": "Envasadoras. Clique para ver tudo!",
+      "title": "Envasadoras",
+      "link": {
+        "url": "/envasadoras"
+      },
+      "blockClass": ["shelf-img-mobile"]
+    }
   },
   "flex-layout.col#releases-products-container": {
     "props": {
-      "blockClass": ["releases-products-content"]
+      "width": "74%",
+      "blockClass": [
+        "releases-products-content",
+        "shelf-carousel",
+        "shelf-triple"
+      ]
     },
     "children": ["list-context.product-list#shelf-releases"]
   },
   "list-context.product-list#shelf-releases": {
     "props": {
       "listName": "Lançamentos",
-      "installmentCriteria": "MAX_WITH_INTEREST"
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "category": "95"
     },
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#products"]
+    "children": ["slider-layout#products-triple"]
   }
 }

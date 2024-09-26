@@ -1,5 +1,6 @@
 {
   "flex-layout.row#upper-mosaic": {
+    "title": "Banner Superior",
     "props": {
       "blockClass": ["upper-mosaic-container", "custom-container"]
     },
@@ -10,37 +11,23 @@
     "props": {
       "blockClass": "upper-mosaic-content"
     },
-    "children": ["image#upper-mosaic-first", "image#upper-mosaic-second", "image#upper-mosaic-third"]
+    "children": ["image#upper-mosaic-first", "image#upper-mosaic-first-mobile"]
   },
 
   "image#upper-mosaic-first": {
+    "title": "Imagem Desktop",
     "props": {
-      "blockClass":"image__upper-mosaic",
-      "src": "assets/upper-mosaic/promocoes.png",
-      "alt": "Promoções, conferir!",
-      "link": {
-        "url": "/promocoes"
-      }
+      "blockClass": "image__upper-mosaic",
+      "src": "assets/upper-mosaic/banner-tecfast.webp",
+      "alt": "Tecfast. Entrega em até 48h para sul, sudeste e centro-oeste."
     }
   },
-  "image#upper-mosaic-second": {
+  "image#upper-mosaic-first-mobile": {
+    "title": "Imagem Mobile",
     "props": {
-      "blockClass":"image__upper-mosaic",
-      "src": "assets/upper-mosaic/novidades.png",
-      "alt": "Novidades, conferir!",
-      "link": {
-        "url": "/novidades"
-      }
-    }
-  },
-  "image#upper-mosaic-third": {
-    "props": {
-      "blockClass":"image__upper-mosaic",
-      "src": "assets/upper-mosaic/outfits.png",
-      "alt": "Outfits, conferir!",
-      "link": {
-        "url": "/outfits"
-      }
+      "blockClass": ["image__upper-mosaic", "image__upper-mosaic-mobile"],
+      "src": "assets/upper-mosaic/banner-tecfast-mobile.webp",
+      "alt": "Tecfast. Entrega em até 48h para sul, sudeste e centro-oeste."
     }
   }
 }

@@ -1,0 +1,36 @@
+{
+  "flex-layout.col#side-cms-menu": {
+    "props": {
+      "blockClass": "side-cms-menu",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["disclosure-layout#cms-menu"]
+  },
+  "disclosure-layout#cms-menu": {
+    "props": {
+      "blockClass": ["cms-menu"]
+    },
+    "children": ["disclosure-trigger#cms-menu", "disclosure-content#cms-menu"]
+  },
+  "disclosure-trigger#cms-menu": {
+    "props": {
+      "blockClass": ["cms-menu"]
+    },
+    "children": ["rich-text#side-cms-menu-title"]
+  },
+  "disclosure-content#cms-menu": {
+    "props": {
+      "blockClass": ["cms-menu"]
+    },
+    "children": [
+      "vtex.menu@2.x:menu#cms" // herdado bloco dentro da pasta general/cms-menu.jsonc
+    ]
+  },
+  "rich-text#side-cms-menu-title": {
+    "props": {
+      "text": "### Institucional",
+      "blockClass": ["side-cms-menu-title"]
+    }
+  }
+}

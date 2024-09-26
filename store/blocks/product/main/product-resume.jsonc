@@ -5,14 +5,16 @@
       "preventVerticalStretch": true
     },
     "children": [
+      "flex-layout.row#pdp-tags",
       "flex-layout.row#name-wish",
       "flex-layout.row#sku",
-      "flex-layout.row#short-description",
+      //"flex-layout.row#short-description",
       "flex-layout.row#prices-pdp",
       "flex-layout.row#sku-selector",
       "flex-layout.row#actions-pdp",
-      "flex-layout.row#shipping",
-      "flex-layout.row#share"
+      "availability-notify",
+      "flex-layout.row#shipping"
+      //"flex-layout.row#share"
     ]
   }
 }

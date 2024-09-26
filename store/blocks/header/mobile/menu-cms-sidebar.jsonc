@@ -1,0 +1,9 @@
+{
+  "vtex.menu@2.x:menu#cms-sidebar": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "cms-sidebar"
+    },
+    "children": ["menu-item#faq", "menu-item#trocas", "menu-item#assistencia"]
+  }
+}

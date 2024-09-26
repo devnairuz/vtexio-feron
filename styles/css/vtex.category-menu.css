@@ -9,11 +9,10 @@
   height: initial;
 }
 .departmentLink {
-  padding: 12.5px 45px;
-  color: #202020;
+  padding: 8.5px 0;
+  color: #fff;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
+  line-height: 19px;
   margin: 0;
 }
 .departmentLink,
@@ -51,41 +50,32 @@
 
 /* ITEM TODAS CATEGORIAS */
 .itemContainer--department:first-child {
-  padding: 12.5px 18px;
+  padding: 8.5px 10px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: #FFFFFF;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 1px;
+  gap: 10px;
 }
 .itemContainer--department:first-child::before {
   content: url(assets/icons/menu.svg);
+  line-height: 0;
 }
-.itemContainer--department:first-child::after {
-  content: url(assets/icons/chevron-down.svg);
+.itemContainer--department:not(:first-child) {
+  margin-left: 10px;
 }
+
 .itemContainer--department:first-child .departmentLink {
   padding: 0;
   font-size: 0;
   line-height: 0;
 }
 .itemContainer--department:first-child .departmentLink::before {
-  content: 'Categorias';
+  content: 'Equipamentos';
   font-size: 14px;
-  font-weight: 500;
-  color: #202020;
-  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 19px;
 }
 
-@media (max-width: 1199px) {
-  .departmentLink {
-    padding: 12.5px 40px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .menuIcon--mobile-menu-container {
-    margin: -12px;
-  }
+.sidebarScrim {
+  background: #212121;
 }

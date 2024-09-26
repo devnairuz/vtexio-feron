@@ -1,3 +1,10 @@
+.overlay--visible {
+  background-color: #212121;
+}
+.closeIconButton {
+  padding: 0;
+  margin: 41px 0 0 32px;
+}
 .openIconContainer,
 .openIconContainer :global(.vtex-button__label) {
   padding: 0;
@@ -7,22 +14,37 @@
 }
 .openIconContainer :global(.vtex-button) {
   border: 0;
-  min-width: 100px;
   min-height: initial;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7.5px 10px;
 }
-.openIconContainer :global(.vtex-button):hover {
+.openIconContainer :global(.vtex-button)::after {
+  content: 'Carrinho';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+}
+.openIconContainer :global(.vtex-button):hover,
+.openIconContainer :global(.vtex-button):focus {
   background: transparent;
 }
 
 .minicartIconContainer {
   color: #202020;
 }
+.closeIcon {
+  color: #212121;
+}
 
 .minicartQuantityBadge {
-  background: #979797;
+  background: transparent;
   font-weight: 700;
-  top: -8px;
-  right: -10px;
+  top: -10px;
+  right: -2px;
+  color: #fff;
 }
 
 .drawerContent {
@@ -32,22 +54,97 @@
 .closeIconContainer {
   position: absolute;
 }
+.minicartSideBarContentWrapper {
+  height: 100% !important;
+}
 .minicartTitle {
-  text-align: center;
-  margin: 0;
-  padding: 12px 15px;
-  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  padding: 41px 0 22px;
+  margin: 0 32px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.minicartTitle::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill='none'%3E%3Cmask id='mask0_155_2732' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='25' height='25'%3E%3Crect x='0.5' y='0.5' width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_155_2732)'%3E%3Cpath d='M8.5 22.5C7.95 22.5 7.47917 22.3042 7.0875 21.9125C6.69583 21.5208 6.5 21.05 6.5 20.5C6.5 19.95 6.69583 19.4792 7.0875 19.0875C7.47917 18.6958 7.95 18.5 8.5 18.5C9.05 18.5 9.52083 18.6958 9.9125 19.0875C10.3042 19.4792 10.5 19.95 10.5 20.5C10.5 21.05 10.3042 21.5208 9.9125 21.9125C9.52083 22.3042 9.05 22.5 8.5 22.5ZM18.5 22.5C17.95 22.5 17.4792 22.3042 17.0875 21.9125C16.6958 21.5208 16.5 21.05 16.5 20.5C16.5 19.95 16.6958 19.4792 17.0875 19.0875C17.4792 18.6958 17.95 18.5 18.5 18.5C19.05 18.5 19.5208 18.6958 19.9125 19.0875C20.3042 19.4792 20.5 19.95 20.5 20.5C20.5 21.05 20.3042 21.5208 19.9125 21.9125C19.5208 22.3042 19.05 22.5 18.5 22.5ZM7.65 6.5L10.05 11.5H17.05L19.8 6.5H7.65ZM6.7 4.5H21.45C21.8333 4.5 22.125 4.67083 22.325 5.0125C22.525 5.35417 22.5333 5.7 22.35 6.05L18.8 12.45C18.6167 12.7833 18.3708 13.0417 18.0625 13.225C17.7542 13.4083 17.4167 13.5 17.05 13.5H9.6L8.5 15.5H20.5V17.5H8.5C7.75 17.5 7.18333 17.1708 6.8 16.5125C6.41667 15.8542 6.4 15.2 6.75 14.55L8.1 12.1L4.5 4.5H2.5V2.5H5.75L6.7 4.5Z' fill='%23ED1A3B'/%3E%3C/g%3E%3C/svg%3E");
+  line-height: 0;
+}
+.minicartProductListContainer {
+  padding: 32px 32px 24px;
+  height: calc(100vh - 91px - 251px);
+  height: calc(100dvh - 91px - 251px);
 }
 
+.minicartEmptyStateContainer {
+  margin-top: 32px;
+}
+
+.minicartSummary {
+  padding: 0;
+}
+
+.minicartCheckoutButton {
+  margin: 0;
+  padding: 0;
+}
 .minicartCheckoutButton :global(.vtex-button) {
-  border-radius: 0;
+  background: #ed1a3b;
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 7px;
+  min-height: initial;
+  transition: all 0.3s ease-in-out;
 }
 .minicartCheckoutButton :global(.vtex-button):hover {
-  background: #000;
+  background: #de0d2e;
+}
+.minicartCheckoutButton :global(.vtex-button__label) {
+  font-size: 0;
+  padding: 0;
+}
+.minicartCheckoutButton :global(.vtex-button__label)::before {
+  content: 'Finalizar Compra';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: initial;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .openIconContainer :global(.vtex-button) {
-    min-width: initial;
+    padding: 0;
+  }
+  .openIconContainer :global(.vtex-button)::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .closeIconButton {
+    margin: 24px 0 0 15px;
+  }
+  .minicartTitle {
+    padding: 24px 0;
+    margin: 0 15px;
+  }
+  .minicartProductListContainer {
+    padding: 24px 15px;
+    height: calc(100vh - 76px - 203px);
+    height: calc(100dvh - 76px - 203px);
+  }
+
+  .minicartCheckoutButton :global(.vtex-button) {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .minicartProductListContainer {
+    height: calc(100vh - 76px - 222px);
+    height: calc(100dvh - 76px - 222px);
   }
 }

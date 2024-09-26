@@ -1,15 +1,17 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "flex-layout.row#main-slider",
-      "flex-layout.row#conditions",
-      "flex-layout.row#upper-mosaic",
+      "list-context.media-list#main-slider",
+      "flex-layout.row#slider-categories",
+      "flex-layout.row#shelf-highlights",
       //"__fold__",
+      "flex-layout.row#upper-mosaic",
       "flex-layout.row#shelf-promotions",
       "flex-layout.row#shelf-releases",
       "flex-layout.row#shelf-best-sellers",
-      "flex-layout.row#shelf-highlights",
-      "flex-layout.row#bottom-mosaic"
+      "flex-layout.row#partners",
+      "flex-layout.row#bottom-mosaic",
+      "flex-layout.row#newsletter"
     ]
   }
 }

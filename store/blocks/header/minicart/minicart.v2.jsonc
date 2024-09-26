@@ -11,8 +11,8 @@
 
   "icon-cart#minicart-icon": {
     "props": {
-      "size": 28,
-      "viewBox": "0 0 29 28"
+      "size": 20,
+      "viewBox": "0 0 19 20"
     }
   },
 
@@ -44,13 +44,15 @@
   "checkout-summary.compact#minicart": {
     "children": ["summary-totalizers#minicart"],
     "props": {
-      "totalizersToShow": ["Items", "Discounts"]
+      "totalizersToShow": ["Items"],
+      "blockClass": ["minicart"]
     }
   },
   "summary-totalizers#minicart": {
     "props": {
-      "showTotal": true,
-      "showDeliveryTotal": false
+      "showTotal": false,
+      "showDeliveryTotal": false,
+      "blockClass": ["minicart"]
     }
   },
   "minicart-empty-state": {
@@ -66,13 +68,12 @@
     ],
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "rowGap": 5
+      "verticalAlign": "middle"
     }
   },
   "icon-cart#minicart-empty-state": {
     "props": {
-      "size": 64,
+      "size": 48,
       "viewBox": "0 0 29 28",
       "blockClass": "minicart-empty-state"
     }

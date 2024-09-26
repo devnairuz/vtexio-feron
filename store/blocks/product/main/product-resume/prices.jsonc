@@ -1,7 +1,8 @@
 {
   "flex-layout.row#prices-pdp": {
     "props": {
-      "blockClass": "prices-pdp-container"
+      "blockClass": "prices-pdp-container",
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.col#prices-pdp",
@@ -14,20 +15,14 @@
       "blockClass": "prices-pdp-content"
     },
     "children": [
-      "product-list-price#pdp",
-      "product-selling-price#pdp"
+      "product-spot-price#pdp",
+      "pix-label" // componente na pasta react/components/Product/PixLabel
     ]
   },
-
-  "product-list-price#pdp": {
+  "product-spot-price#pdp": {
     "props": {
-      "blockClass": "list-price-pdp"
-    }
-  },
-
-  "product-selling-price#pdp": {
-    "props": {
-      "blockClass": "selling-price-pdp"
+      "blockClass": ["pdp"],
+      "message": "{spotPriceValue} no pix"
     }
   },
 
@@ -35,11 +30,12 @@
     "props": {
       "blockClass": "installments-pdp-content"
     },
-    "children": ["product-installments"]
+    "children": ["product-installments#pdp"]
   },
-  "product-installments": {
+  "product-installments#pdp": {
     "props": {
-      "blockClass": "installments-pdp"
+      "blockClass": "installments-pdp",
+      "message": "ou {installmentsTotalValue} em até {installmentsNumber}x de {hasInterest, select, true {{installmentValue} com juros} false {{installmentValue} sem juros}}"
     }
   }
 }

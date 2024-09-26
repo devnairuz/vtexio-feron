@@ -1,0 +1,6 @@
+@media screen and (max-width: 991px) {
+  .orderBody {
+    display: flex;
+    flex-direction: column;
+  }
+}

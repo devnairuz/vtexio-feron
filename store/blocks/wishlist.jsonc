@@ -1,0 +1,94 @@
+{
+  "store.wishlist": {
+    "blocks": ["flex-layout.row#wishlist-container"]
+  },
+  "flex-layout.row#wishlist-container": {
+    "props": {
+      "blockClass": ["custom-container", "page-wishlist"]
+    },
+    "children": ["flex-layout.col#wishlist-page-content"]
+  },
+  "flex-layout.col#wishlist-page-content": {
+    "children": [
+      "flex-layout.row#wishlistpage-header",
+      "flex-layout.row#wishlist-content"
+    ]
+  },
+  "flex-layout.row#wishlistpage-header": {
+    "props": {
+      "blockClass": ["wishlistpage-header"]
+    },
+    "children": ["flex-layout.col#wishlistpage-title"]
+  },
+  "flex-layout.col#wishlistpage-title": {
+    "children": ["rich-text#wishlistpage-title"],
+    "props": {
+      "blockClass": "titleWishlist",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#wishlistpage-title": {
+    "props": {
+      "text": "# Meus Favoritos",
+      "blockClass": ["shelf-title"]
+    }
+  },
+  "flex-layout.row#wishlist-content": {
+    "props": {
+      "blockClass": ["page-wishlist-content"]
+    },
+    "children": ["flex-layout.col#wishlist-page-products-container"]
+  },
+  "flex-layout.col#wishlist-page-products-container": {
+    "props": {
+      "blockClass": ["wishlist-page-products-content", "shelf-carousel"]
+    },
+    "children": ["list-context.wishlist#page"]
+  },
+  "list-context.wishlist#page": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#wishlist-page"]
+  },
+  "slider-layout#wishlist-page": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "desktopOnly",
+      "blockClass": ["shelf-carousel", "wish-slider"]
+    }
+  },
+
+  /* COMPORTAMENTO DENTRO DE MINHA CONTA */
+  "my-account-link.wishlist-link": {
+    "props": {
+      "label": "Favoritos"
+    }
+  },
+  "my-account-page.wishlist-page": {
+    "props": {
+      "title": "Favoritos",
+      "blockClass": ["shelf-carousel"]
+    },
+    "children": ["list-context.wishlist"]
+  },
+  "list-context.wishlist": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#wishlist"]
+  },
+  "slider-layout#wishlist": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "blockClass": ["shelf-carousel", "wishlist", "wish-slider"]
+    }
+  }
+}

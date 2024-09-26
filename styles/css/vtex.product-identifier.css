@@ -1,5 +1,8 @@
 .product-identifier--productReference {
-  color: #5d5d5d;
+  color: #a8a8a8;
   font-size: 12px;
   text-transform: uppercase;
+}
+.product-identifier__label {
+  text-transform: initial;
 }

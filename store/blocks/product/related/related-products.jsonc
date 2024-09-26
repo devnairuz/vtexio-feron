@@ -1,5 +1,6 @@
 {
   "flex-layout.row#related-products": {
+    "title": "Produtos relacionados",
     "props": {
       "blockClass": ["related-products-container", "custom-container"]
     },
@@ -10,18 +11,42 @@
       "blockClass": "related-products-content"
     },
     "children": [
-      "rich-text#related-products-title",
-      "list-context.product-list#list-pdp-related"
+      "flex-layout.row#related-title",
+      "flex-layout.row#related-content"
     ]
   },
 
+  "flex-layout.row#related-title": {
+    "props": {
+      "blockClass": ["related-title"]
+    },
+    "children": ["flex-layout.col#related-title"]
+  },
+  "flex-layout.col#related-title": {
+    "props": {
+      "blockClass": ["related-title"]
+    },
+    "children": ["rich-text#related-products-title"]
+  },
   "rich-text#related-products-title": {
     "props": {
       "blockClass": ["related-title", "shelf-title"],
-      "text": "#### Quem viu esse, viu também **Produtos relacionados**"
+      "text": "#### Leve também"
     }
   },
 
+  "flex-layout.row#related-content": {
+    "props": {
+      "blockClass": ["related-content"]
+    },
+    "children": ["flex-layout.col#related-content"]
+  },
+  "flex-layout.col#related-content": {
+    "props": {
+      "blockClass": ["related-content"]
+    },
+    "children": ["list-context.product-list#list-pdp-related"]
+  },
   "list-context.product-list#list-pdp-related": {
     "props": {
       "blockClass": "related-products"

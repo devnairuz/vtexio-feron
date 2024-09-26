@@ -5,8 +5,8 @@
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.col#qty-pdp",
-      "flex-layout.col#buy-pdp"
+      //"flex-layout.col#qty-pdp",
+      "add-to-cart-button#buy-button-pdp"
     ]
   },
 
@@ -32,7 +32,7 @@
   "add-to-cart-button#buy-button-pdp": {
     "props": {
       "blockClass": "buy-button-pdp",
-      "text": "Comprar"
+      "text": "Adicionar ao carrinho"
     }
   }
 }

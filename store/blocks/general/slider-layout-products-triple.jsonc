@@ -1,0 +1,15 @@
+{
+  "slider-layout#products-triple": {
+    "props": {
+      "blockClass": ["shelf-carousel", "shelf-banner"],
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "desktopOnly"
+    }
+  }
+}

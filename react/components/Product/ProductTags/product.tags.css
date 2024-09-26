@@ -1,0 +1,19 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--product-tags-pdp) .tagsContainer {
+  margin-bottom: 8px;
+}
+.tagsContainer {
+  display: block;
+}
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+.tag.release {
+  background: #474747;
+}

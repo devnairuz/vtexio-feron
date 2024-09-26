@@ -1,0 +1,31 @@
+{
+  "flex-layout.row#slider-categories": {
+    "title": "Carrossel de Categorias",
+    "props": {
+      "blockClass": ["categories-slider-container", "custom-container"],
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#slider-categories-title",
+      "flex-layout.col#slider-categories"
+    ]
+  },
+  "flex-layout.col#slider-categories-title": {
+    "children": ["rich-text#slider-categories"]
+  },
+  "rich-text#slider-categories": {
+    "title": "Título",
+    "props": {
+      "text": "#### Busque por categoria",
+      "blockClass": ["categories-slider-title", "shelf-title"]
+    }
+  },
+  "flex-layout.col#slider-categories": {
+    "props": {
+      "blockClass": ["categories"],
+      "width": "100%"
+    },
+    "children": ["slider-layout#categories"]
+  }
+}

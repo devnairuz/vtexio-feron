@@ -17,7 +17,8 @@
   "breadcrumb.search": {
     "props": {
       "blockClass": "breadcrumb-search",
-      "showOnMobile": true
+      "showOnMobile": true,
+      "homeIconSize": 18
     }
   }
 }

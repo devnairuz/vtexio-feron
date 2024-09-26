@@ -1,0 +1,241 @@
+.itemContainer {
+}
+.itemContainer--department {
+}
+.itemContainer--category {
+  left: 15px;
+  max-width: 1110px;
+  width: fit-content;
+  padding-top: 12px;
+}
+
+.animation {
+  left: 0;
+}
+
+@media only screen and (max-width: 40rem) {
+  body.sidebarOpen {
+    overflow-y: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.section--department {
+  padding: 0;
+}
+.section--category {
+  background: #fff;
+  padding: 24px 32px !important;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 0px #00000026;
+}
+
+.departmentList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.departmentLink {
+  margin: 0;
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  transition: all 0.3s ease-in-out !important;
+  outline: none !important;
+  border: 0 !important;
+}
+.itemContainer:not(.allCategories) .departmentLink {
+  position: relative;
+  z-index: 0;
+}
+.itemContainer:not(.allCategories) .departmentLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: transparent;
+  transition: all 0.3s ease-in-out !important;
+}
+.itemContainer:not(.allCategories):hover .departmentLink::after {
+  background: #fff;
+}
+
+.firstLevelList {
+  display: inline-block;
+  padding: 0;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.firstLevelLink {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 0;
+}
+.firstLevelLink:hover {
+  text-decoration: none;
+}
+.toggleSubMenu {
+  border: 0;
+  padding: 0;
+  background: 0;
+  line-height: 0;
+  cursor: pointer;
+  min-width: 17px;
+}
+.firstLevelLinkContainer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.toggleFake {
+  min-width: 17px;
+  height: 16px;
+  display: inline-block;
+}
+
+.secondLevelList {
+}
+.secondLevelListContainer {
+  padding: 0;
+}
+.secondLevelLinkContainer {
+  margin-top: 2px;
+}
+.secondLevelLinkContainer:first-of-type {
+  margin-top: 8px;
+}
+.secondLevelLink {
+  padding: 0;
+  color: #474747;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.secondLevelLink:hover {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.submenuList {
+  display: flex;
+  justify-content: initial;
+  column-gap: 42px;
+  row-gap: 24px;
+  flex-wrap: wrap;
+}
+.submenuItem {
+  display: block;
+  flex: 0 0 20%;
+  overflow: hidden;
+}
+
+.allCategories strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  padding: 6px 10px;
+  background: transparent;
+  border-radius: 4px;
+}
+.allCategories:hover strong {
+  background: #f4f4f426;
+}
+
+.sidebarContentWrapper {
+  height: calc(100%);
+}
+.sidebarOpen {
+}
+
+.sidebarScrim,
+.sidebar {
+  background: #212121;
+}
+.sidebar {
+  overflow: hidden;
+}
+.sidebar :global(.vtex-menu-2-x-menuContainerNav--cms-sidebar) {
+  padding: 30px 21px;
+  border-top: 1px solid #d4d4d4;
+}
+.sidebar :global(.vtex-menu-2-x-styledLinkContent) {
+  border: 0;
+  padding: 0;
+}
+.sidebar :global(.vtex-menu-2-x-menuItem):not(:first-child) {
+  margin-top: 12px;
+}
+
+.sidebarHeader {
+}
+
+.sidebarContent {
+  margin: 24px 0 24px 21px;
+  padding: 0;
+  height: calc(100vh - 48px - 66px - 146px);
+  height: calc(
+    100dvh - 48px - 66px - 146px
+  ); /* 100% - margens - headermobile - cms-menu */
+  overflow: auto;
+}
+.pointerNavigate,
+.sideBarItemTitleClasses {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+.pointerNavigate,
+.subCategoryContainer .sideBarItemTitleClasses {
+  font-weight: 400;
+}
+
+.sidebarItem {
+}
+
+.sidebarContainer {
+}
+
+.menuContainer {
+}
+
+.sidebarDepartment:not(:first-child) {
+  border-top: 0.7px solid #efefef;
+}
+.sidebarItemContainer {
+  padding: 8px 20px 8px 0;
+}
+.pointerNavigate {
+  padding: 8px 12px;
+}
+
+.sideBarSpanClasses {
+  line-height: 0;
+  color: #fff;
+}
+
+.menuIcon {
+  color: #ed1a3b;
+}
+
+.sidebarHeader {
+  padding: 15px 20px;
+  background: #a71b28;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.iconContainer {
+  line-height: 0;
+}

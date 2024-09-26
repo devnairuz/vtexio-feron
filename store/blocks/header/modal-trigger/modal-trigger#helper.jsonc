@@ -1,0 +1,46 @@
+{
+  "modal-trigger#helper": {
+    "props": {
+      "blockClass": ["helper"]
+    },
+    "children": ["icon#tecfag-helper", "modal-layout#helper"]
+  },
+  "icon#tecfag-helper": {
+    "props": {
+      "id": "hpa-tecfag-chat",
+      "size": 50,
+      "viewBox": "0 0 51 48",
+      "activeClassName": "vtex-store-icons-0-x-helperIcon"
+    }
+  },
+  "modal-layout#helper": {
+    "props": {
+      "blockClass": ["helper"],
+      "scroll": "body",
+      "fullScreen": false
+    },
+    "children": ["link#modal-faq", "link#modal-assist", "link#modal-wpp"]
+  },
+  "link#modal-faq": {
+    "props": {
+      "href": "/faq",
+      "label": "FAQ",
+      "blockClass": ["modal-link", "faq"]
+    }
+  },
+  "link#modal-assist": {
+    "props": {
+      "href": "/assistencia-tecnica",
+      "label": "Assistência técnica",
+      "blockClass": ["modal-link", "assist"]
+    }
+  },
+  "link#modal-wpp": {
+    "props": {
+      "label": "Fale conosco",
+      "href": "https://wa.me/5514991054116",
+      "target": "_blank",
+      "blockClass": ["modal-link", "wpp"]
+    }
+  }
+}

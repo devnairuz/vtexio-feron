@@ -1,17 +1,25 @@
 {
-  "store.custom#fale-conosco": {
-    "path": "/fale-conosco"
+  "store.custom#sobre-nos": {
+    "path": "/sobre-nos"
   },
 
-  "store.custom#quem-somos": {
-    "path": "/quem-somos"
+  "store.custom#faq": {
+    "path": "/faq"
   },
 
-  "store.custom#frete-gratis": {
-    "path": "/frete-gratis"
+  "store.custom#trocas-e-devolucoes": {
+    "path": "/trocas-e-devolucoes"
+  },
+
+  "store.custom#assistencia-tecnica": {
+    "path": "/assistencia-tecnica"
   },
 
   "store.custom#politica-privacidade": {
-    "path": "/politicas-de-privacidade"
+    "path": "/politica-de-privacidade"
+  },
+
+  "store.custom#termos-de-uso": {
+    "path": "/termos-de-uso"
   }
 }

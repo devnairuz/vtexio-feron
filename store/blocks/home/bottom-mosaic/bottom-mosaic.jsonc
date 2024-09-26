@@ -1,13 +1,19 @@
 {
   "flex-layout.row#bottom-mosaic": {
+    "title": "Sobre a Tecfag",
     "props": {
-      "blockClass": ["bottom-mosaic-container", "custom-container"],
+      "blockClass": [
+        "bottom-mosaic-container",
+        "custom-container",
+        "flex-column"
+      ],
       "fullWidth": true,
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "horizontalAlign": "center"
     },
     "children": [
       "flex-layout.col#bottom-mosaic-left",
-      "flex-layout.col#bottom-mosaic-right"
+      "flex-layout.col#bottom-mosaic-text"
     ]
   },
 
@@ -19,39 +25,31 @@
   },
   "image#bottom-mosaic-first": {
     "props": {
-      "blockClass":"image__bottom-mosaic",
-      "src": "assets/bottom-mosaic/outfits.png",
-      "alt": "Outfits Diamond, confira!",
-      "link": {
-        "url": "/outfits"
-      }
+      "blockClass": "image__bottom-mosaic",
+      "src": "assets/bottom-mosaic/banner-sobre-tecfag.webp",
+      "alt": "Tecfag",
+      "title": "Tecfag"
     }
   },
 
-  "flex-layout.col#bottom-mosaic-right": {
-    "props": {
-      "blockClass": ["bottom-mosaic-right-content"]
-    },
-    "children": ["image#bottom-mosaic-second", "image#bottom-mosaic-third"]
+  "flex-layout.col#bottom-mosaic-text": {
+    "children": [
+      "rich-text#bottom-mosaic-title",
+      "rich-text#bottom-mosaic-description"
+    ]
   },
-  "image#bottom-mosaic-second": {
+  "rich-text#bottom-mosaic-title": {
+    "title": "Título",
     "props": {
-      "blockClass":"image__bottom-mosaic",
-      "src": "assets/bottom-mosaic/saias.png",
-      "alt": "Saias Skirts, confira!",
-      "link": {
-        "url": "/saias"
-      }
+      "text": "# Automatize os processos de sua empresa de **forma facilitada!**",
+      "blockClass": ["home-about-title"]
     }
   },
-  "image#bottom-mosaic-third": {
+  "rich-text#bottom-mosaic-description": {
+    "title": "Descrição",
     "props": {
-      "blockClass":"image__bottom-mosaic",
-      "src": "assets/bottom-mosaic/jeans.png",
-      "alt": "Jeans, confira!",
-      "link": {
-        "url": "/blusas"
-      }
+      "text": "Somos a Tecfag! Nascemos com o objetivo de levar automação no processo final de qualquer tipo de produção, e conseguimos com maestria. Conforme fomos crescendo e nos especializando, fomos descobrindo e estudando outras formas de avançar em nossa missão – automatizar as indústrias do Brasil.",
+      "blockClass": ["home-about-description"]
     }
   }
 }

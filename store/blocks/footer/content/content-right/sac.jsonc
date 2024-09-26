@@ -1,0 +1,84 @@
+{
+  "flex-layout.col#sac": {
+    "title": "Contato",
+    "props": {
+      "blockClass": "sac-content",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#sac-title",
+      "flex-layout.row#sac-email",
+      "flex-layout.row#sac-wpp",
+      "flex-layout.row#social-networks"
+    ]
+  },
+
+  "flex-layout.row#sac-title": {
+    "props": {
+      "blockClass": "sac-title-container"
+    },
+    "children": ["flex-layout.col#sac-title-content"]
+  },
+  "flex-layout.col#sac-title-content": {
+    "props": {
+      "blockClass": "sac-title-content"
+    },
+    "children": ["rich-text#sac-title"]
+  },
+  "rich-text#sac-title": {
+    "props": {
+      "blockClass": "footer-title",
+      "text": "#### Contato"
+    }
+  },
+
+  "flex-layout.row#sac-email": {
+    "props": {
+      "blockClass": "sac-group-container"
+    },
+    "children": ["flex-layout.col#sac-email"]
+  },
+  "flex-layout.col#sac-email": {
+    "props": {
+      "blockClass": "sac-group-content"
+    },
+    "children": ["rich-text#sac-email-title", "rich-text#sac-email"]
+  },
+  "rich-text#sac-email-title": {
+    "props": {
+      "blockClass": ["sac-group-title", "sac-email"],
+      "text": "E-mail"
+    }
+  },
+  "rich-text#sac-email": {
+    "props": {
+      "blockClass": ["sac-group-link"],
+      "text": "<a href='mailto:contato@tecfag.com.br' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link'>contato@tecfag.com.br</a>"
+    }
+  },
+
+  "flex-layout.row#sac-wpp": {
+    "props": {
+      "blockClass": "sac-group-container"
+    },
+    "children": ["flex-layout.col#sac-wpp"]
+  },
+  "flex-layout.col#sac-wpp": {
+    "props": {
+      "blockClass": "sac-group-content"
+    },
+    "children": ["rich-text#sac-wpp-title", "rich-text#sac-wpp-first"]
+  },
+  "rich-text#sac-wpp-title": {
+    "props": {
+      "blockClass": ["sac-group-title", "sac-wpp"],
+      "text": "Precisa de ajuda?"
+    }
+  },
+  "rich-text#sac-wpp-first": {
+    "props": {
+      "blockClass": ["sac-group-link"],
+      "text": "<a href='https://wa.me/5514991054116' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link'>Entrar em contato</a>"
+    }
+  }
+}

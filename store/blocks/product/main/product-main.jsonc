@@ -1,7 +1,8 @@
 {
   "flex-layout.row#product-main": {
     "props": {
-      "blockClass": ["product-main-container", "custom-container"]
+      "blockClass": ["product-main-container", "custom-container"],
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.col#product-image",

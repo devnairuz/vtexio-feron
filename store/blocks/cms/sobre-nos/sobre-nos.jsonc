@@ -1,0 +1,68 @@
+{
+  "store.custom#sobre-nos": {
+    "children": ["flex-layout.row#sobre-nos"]
+  },
+  "flex-layout.row#sobre-nos": {
+    "props": {
+      "blockClass": ["custom-container", "cms-page-container", "cms-about"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#side-cms-menu",
+      "flex-layout.col#conteudo-sobre"
+    ]
+  },
+
+  "flex-layout.col#conteudo-sobre": {
+    "props": {
+      "blockClass": ["container", "content-cms"],
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#sobre-title", "flex-layout.row#sobre-content"]
+  },
+  "rich-text#sobre-title": {
+    "props": {
+      "text": "# Sobre nós",
+      "blockClass": ["cms", "title"]
+    }
+  },
+  "flex-layout.row#sobre-content": {
+    "props": {
+      "blockClass": ["flex-column"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#sobrequemsomos",
+      "video#video-sobre",
+      "rich-text#after-video"
+    ]
+  },
+  "rich-text#sobrequemsomos": {
+    "props": {
+      "text": "Há 14 anos, a Tecfag tem uma história marcada por inovação e compromisso. Com milhares de clientes satisfeitos, nosso propósito é claro: transformar a produtividade de empresas de todos os portes, gerando economia, qualidade e precisão em cada operação.\n\n## Excelência em Máquinas Industriais\n\nCom paixão e dedicação, oferecemos máquinas exclusivas e contamos com profissionais altamente capacitados que atendem pequenas, médias e grandes indústrias em todo o Brasil. Nossa atuação é guiada pelo desejo de superar expectativas, implementando e adaptando máquinas de envase, selagem, dosagem, fechadora de caixas e muitos outros equipamentos essenciais para otimização da produção. Tudo isso com um suporte técnico excepcional, garantindo que nossos clientes nunca estejam sozinhos.\n\n2023 marcou um capítulo especial na nossa trajetória: inauguramos nossa segunda sede no Distrito Industrial III, na cidade de Bauru, coração do estado de São Paulo. Em um espaço de 3.000 m², projetado com cuidado e visão, criamos um ambiente onde a inovação prospera. Nosso novo lar inclui um showroom tecnológico, áreas dedicadas a testes de produtos, uma doca moderna, um estoque planejado e amplo, com equipamentos a pronta entrega, oficinas e áreas técnicas, além de salas de reunião inspiradoras e espaços de convivência acolhedores para nossos colaboradores.\n\nCom um estoque robusto de mais de 14 mil peças para manutenção e reposição, nosso crescimento é impulsionado pelo desejo constante de oferecer mais. O showroom é um reflexo do nosso compromisso com a inovação, apresentando lançamentos que encantam e inspiram nossos clientes.\n\nNa Tecfag, cada passo é dado com o coração, buscando sempre proporcionar a melhor experiência para nossos clientes.\n\nJunte-se a nós e faça parte dessa trajetória de excelência e inovação!",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cms"]
+    }
+  },
+  "video#video-sobre": {
+    "props": {
+      "width": "100%",
+      "height": "235px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/embed/Zt6pDdFgvcA",
+      "blockClass": "about-video"
+    }
+  },
+
+  "rich-text#after-video": {
+    "props": {
+      "text": "## Inauguração da Nova Sede \n\n2023 marcou um capítulo especial na nossa trajetória: inauguramos nossa segunda sede no Distrito Industrial III, na cidade de Bauru, coração do estado de São Paulo. Em um espaço de 3.000 m², projetado com cuidado e visão, criamos um ambiente onde a inovação prospera. Nosso novo lar inclui um showroom tecnológico, áreas dedicadas a testes de produtos, uma doca moderna, um estoque planejado e amplo, com equipamentos a pronta entrega, oficinas e áreas técnicas, além de salas de reunião inspiradoras e espaços de convivência acolhedores para nossos colaboradores.\n\n## Inovação e Crescimento \n\nCom um estoque robusto de mais de 14 mil peças para manutenção e reposição, nosso crescimento é impulsionado pelo desejo constante de oferecer mais. O showroom é um reflexo do nosso compromisso com a inovação, apresentando lançamentos que encantam e inspiram nossos clientes.\n\n *Compromisso* *Inovação* *Qualidade* *Atendimento* *Experiência* \n\nNa Tecfag, cada passo é dado com o coração, buscando sempre proporcionar a melhor experiência para nossos clientes. Junte-se a nós e faça parte dessa trajetória de excelência e inovação!",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cms"]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "store.custom#assistencia-tecnica": {
+    "children": ["flex-layout.row#assistencia-tecnica"]
+  },
+  "flex-layout.row#assistencia-tecnica": {
+    "props": {
+      "blockClass": ["custom-container", "cms-page-container", "cms-assist"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#side-cms-menu",
+      "flex-layout.col#assistencia-conteudo"
+    ]
+  },
+
+  "flex-layout.col#assistencia-conteudo": {
+    "props": {
+      "blockClass": ["container", "content-cms"],
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#assist-title",
+      "flex-layout.row#assist-content",
+      "flex-layout.row#assist-contato"
+    ]
+  },
+
+  "rich-text#assist-title": {
+    "props": {
+      "text": "# Assistência Técnica Especializada",
+      "blockClass": ["cms", "title"]
+    }
+  },
+
+  "flex-layout.row#assist-content": {
+    "props": {
+      "blockClass": ["flex-column"],
+      "colSizing": "auto"
+    },
+    "children": ["rich-text#assistencia-tecnica"]
+  },
+  "rich-text#assistencia-tecnica": {
+    "props": {
+      "text": "Uma das maiores vantagens de adquirir equipamentos Tecfag é ter à disposição uma assistência técnica especializada e serviços de manutenção e revisão de máquinas que garantem a máxima eficiência da sua linha de produção.\n\n ## Nossa Equipe Técnica\n\n Nossa equipe de assistência técnica é altamente capacitada e especializada em automação industrial. Com vasta experiência em diversos ramos da automação e passando por treinamentos constantes, tanto internamente quanto externamente, incluindo capacitações diretamente na nossa matriz. Esse compromisso com o desenvolvimento contínuo garante que nossa equipe esteja sempre atualizada com as últimas tecnologias e práticas do mercado, sendo capaz de resolver problemas e desenvolver projetos nas áreas de:\n\n *Pneumática* *Eletrônica* *Hidráulica* *Controladores Lógicos Programáveis (CLP)*\n\n ## Assistência Técnica Remota:\n\n Entendemos a importância de um suporte rápido e eficiente. Por isso, oferecemos assistência técnica online para atender de forma ágil e prática. Para isso temos parte da nossa equipe técnica especializada à disposição para ajudar. Podemos agendar uma chamada por vídeo para tirar todas as suas dúvidas e ajudar a resolver qualquer problema que possa ser solucionado remotamente.",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cms"]
+    }
+  },
+
+  "flex-layout.row#assist-contato": {
+    "props": {
+      "blockClass": ["flex-column"],
+      "colSizing": "auto"
+    },
+    "children": ["rich-text#assist-contato", "flex-layout.col#assist-contato"]
+  },
+  "rich-text#assist-contato": {
+    "props": {
+      "text": "## Contato \n\nNossa assistência técnica está disponível para atender suas necessidades de segunda à sexta-feira, das 08h às 18h.",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cms", "contact"]
+    }
+  },
+  "flex-layout.col#assist-contato": {
+    "props": {
+      "width": "100%",
+      "blockClass": ["assist-contatos"]
+    },
+    "children": [
+      "rich-text#assist-contato-email",
+      "rich-text#assist-contato-tel"
+    ]
+  },
+  "rich-text#assist-contato-email": {
+    "props": {
+      "text": "**E-mail**assistenciatecnica@tecfag.com.br",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cms", "contact-option", "mail"]
+    }
+  },
+  "rich-text#assist-contato-tel": {
+    "props": {
+      "text": "**Telefones** 0800 947-5000 | (14) 3161-5000",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cms", "contact-option", "tel"]
+    }
+  }
+}

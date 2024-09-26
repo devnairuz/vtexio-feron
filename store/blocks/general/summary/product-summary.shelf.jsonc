@@ -1,10 +1,27 @@
 {
   "product-summary.shelf": {
     "children": [
+      "flex-layout.row#summary-tags",
       "flex-layout.row#summary-wish-image",
       "flex-layout.row#summary-name",
       "flex-layout.row#summary-price",
-      "flex-layout.row#summary-action"
+      "condition-layout.product#summary"
     ]
+  },
+  "condition-layout.product#summary": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Else": "rich-text#summary-unavailable"
+    }
+  },
+  "rich-text#summary-unavailable": {
+    "props": {
+      "text": "Indisponível",
+      "blockClass": ["unavailable"]
+    }
   }
 }

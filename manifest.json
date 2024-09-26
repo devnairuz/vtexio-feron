@@ -1,6 +1,6 @@
 {
-  "vendor": "agencianairuzpartnerbr",
-  "name": "diamond",
+  "vendor": "tecfag",
+  "name": "store-theme",
   "version": "1.0.0",
   "builders": {
     "styles": "2.x",
@@ -35,8 +35,11 @@
     "vtex.login": "2.x",
     "vtex.my-account": "1.x",
     "vtex.flex-layout": "0.x",
+    "vtex.store-graphql": "2.x",
     "vtex.rich-text": "0.x",
+    "vtex.condition-layout": "2.x",
     "vtex.store-drawer": "0.x",
+    "vtex.store-media": "0.x",
     "vtex.locale-switcher": "0.x",
     "vtex.overlay-layout": "0.x",
     "vtex.product-list": "0.x",
@@ -45,6 +48,8 @@
     "vtex.product-identifier": "0.x",
     "vtex.product-specification-badges": "0.x",
     "vtex.product-review-interfaces": "1.x",
+    "vtex.product-availability": "0.x",
+    "vtex.product-highlights": "2.x",
     "vtex.telemarketing": "2.x",
     "vtex.order-placed": "2.x",
     "vtex.stack-layout": "0.x",
@@ -52,11 +57,14 @@
     "vtex.responsive-layout": "0.x",
     "vtex.slider-layout": "0.x",
     "vtex.iframe": "0.x",
+    "vtex.store-video": "1.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.checkout-summary": "0.x",
     "vtex.store-newsletter": "1.x",
+    "vtex.store-link": "0.x",
+    "vtex.modal-layout": "0.x",
     "vtex.css-handles": "1.x",
     "vtex.product-context": "0.x",
     "vtex.session-client": "1.x",
@@ -65,7 +73,8 @@
     "vtex.order-manager": "0.x"
   },
   "peerDependencies": {
-    "vtex.wish-list": "1.x"
+    "vtex.wish-list": "1.x",
+    "vtex.availability-notify": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

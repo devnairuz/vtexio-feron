@@ -1,0 +1,47 @@
+.styledLinkContainer {
+  margin: 0;
+  padding: 0;
+}
+.menuItem:not(:first-child) {
+  margin-top: 8px;
+}
+.styledLink {
+  display: inline-block;
+}
+.styledLinkContent {
+  padding: 0 0 2px;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  line-height: 20px;
+  border-bottom: 1px solid transparent;
+}
+.styledLinkContent:hover {
+  border-color: #fff;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-about)
+  .styledLinkContent--menu-item-sobre,
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-faq)
+  .styledLinkContent--menu-item-faq,
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-trocas-e-devolucoes)
+  .styledLinkContent--menu-item-trocas,
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-shipping)
+  .styledLinkContent--menu-item-frete,
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-assist)
+  .styledLinkContent--menu-item-assistencia,
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-privacidade)
+  .styledLinkContent--menu-item-privacidade,
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-termos)
+  .styledLinkContent--menu-item-termos {
+  font-weight: 700;
+  border-color: #212121;
+}
+
+@media screen and (max-width: 575px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--first-line-container)
+    .menuContainer {
+    text-align: center;
+  }
+}

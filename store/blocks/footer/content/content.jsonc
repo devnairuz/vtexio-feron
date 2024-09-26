@@ -1,5 +1,6 @@
 {
   "flex-layout.row#content": {
+    "title": "Sitemap",
     "props": {
       "blockClass": ["footer-container", "custom-container"],
       "colSizing": "auto"
@@ -18,7 +19,7 @@
     "children": [
       "image#footer-logo",
       "rich-text#brand-resume",
-      "flex-layout.row#social-networks"
+      "flex-layout.row#tecfast-footer"
     ]
   },
 
@@ -28,8 +29,6 @@
       "preventVerticalStretch": true,
       "width": "grow"
     },
-    "children": [
-      "flex-layout.row#content-right-first-line"
-    ]
+    "children": ["flex-layout.row#content-right-first-line"]
   }
 }

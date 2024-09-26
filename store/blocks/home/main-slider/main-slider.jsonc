@@ -1,31 +1,32 @@
 {
-  "flex-layout.row#main-slider": {
-    "props": {
-      "blockClass": ["main-slider-container"]
-    },
-    "children": ["flex-layout.col#main-slider"]
-  },
-  "flex-layout.col#main-slider": {
-    "children": ["list-context.image-list#main-slider"]
-  },
-  "list-context.image-list#main-slider": {
+  "list-context.media-list#main-slider": {
+    "title": "Carrosel principal Desktop",
     "children": ["slider-layout#main-slider"],
     "props": {
-      "images": [
+      "mediaList": [
         {
-          "image": "assets/slider-principal/desk/basic-looks.png",
-          "mobileImage": "assets/slider-principal/desk/basic-looks.png",
-          "description": "Basic Looks, confira!"
+          "image": "https://i.imgur.com/yd01u7x.gif",
+          "mobileImage": "https://i.imgur.com/jfQAw9k.gif",
+          "description": "Conheça as nossas envasadoras.",
+          "link": {
+            "url": "/envasadoras"
+          }
         },
         {
-          "image": "assets/slider-principal/desk/basic-looks.png",
-          "mobileImage": "assets/slider-principal/desk/basic-looks.png",
-          "description": "Basic Looks, confira!"
+          "image": "assets/slider-principal/desk/banner-envasadoras-desk.webp",
+          "mobileImage": "assets/slider-principal/mobi/banner-envasadoras-mobi.webp",
+          "description": "Conheça as nossas envasadoras.",
+          "link": {
+            "url": "/envasadoras"
+          }
         },
         {
-          "image": "assets/slider-principal/desk/basic-looks.png",
-          "mobileImage": "assets/slider-principal/desk/basic-looks.png",
-          "description": "Basic Looks, confira!"
+          "image": "assets/slider-principal/desk/banner-envasadoras-desk.webp",
+          "mobileImage": "assets/slider-principal/mobi/banner-envasadoras-mobi.webp",
+          "description": "Conheça as nossas envasadoras.",
+          "link": {
+            "url": "/envasadoras"
+          }
         }
       ]
     }
@@ -42,6 +43,7 @@
         "timeout": "3000",
         "stopOnHover": true
       },
+      "showNavigationArrows": "never",
       "infinite": true,
       "blockClass": ["main-slider"]
     }

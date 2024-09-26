@@ -1,0 +1,15 @@
+{
+  "flex-layout.row#sku-specifications": {
+    "title": "Produtos relacionados",
+    "props": {
+      "blockClass": ["sku-specifications-container", "custom-container"]
+    },
+    "children": ["flex-layout.col#sku-specifications"]
+  },
+  "flex-layout.col#sku-specifications": {
+    "props": {
+      "blockClass": "sku-specifications-content"
+    },
+    "children": ["sku-specifications"] // Componente na pasta react/components/Product/SkuSpecifications
+  }
+}

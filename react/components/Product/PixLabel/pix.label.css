@@ -1,0 +1,13 @@
+.pixLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #696969;
+  background: #f6f6f6;
+  padding: 4px 6px;
+  border-radius: 4px;
+}

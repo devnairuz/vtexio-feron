@@ -1,5 +1,14 @@
 {
   "header-layout.mobile": {
+    "title": "Cabeçalho Mobile",
+    "children": [
+      "aux-floating-container#mobi",
+      "modal-trigger#helper",
+      "back-to-top-button"
+    ]
+  },
+
+  "aux-floating-container#mobi": {
     "children": ["sticky-layout#mobile"]
   },
 
@@ -7,6 +16,6 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#header-mobile", "flex-layout.row#search-mobile"]
+    "children": ["flex-layout.row#header-mobile"]
   }
 }

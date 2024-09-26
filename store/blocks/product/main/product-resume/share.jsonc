@@ -16,7 +16,13 @@
   "share": {
     "props": {
       "options": {
-        "size": 16
+        "size": 17
+      },
+      "social": {
+        "WhatsApp": true,
+        "Facebook": false,
+        "Twitter": false,
+        "Pinterest": false
       }
     }
   }

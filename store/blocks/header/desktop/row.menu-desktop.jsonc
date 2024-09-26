@@ -1,19 +1,21 @@
 {
   "flex-layout.row#menu-desktop": {
+    "title": "Menu Cabeçalho Desktop",
     "children": ["flex-layout.col#menu-desktop"],
     "props": {
       "blockClass": ["menu-container", "custom-container"]
     }
   },
   "flex-layout.col#menu-desktop": {
-    "children": ["category-menu#header-category-menu"]
+    "children": ["mega-menu#header-category-menu"]
   },
 
-  "category-menu#header-category-menu": {
+  "mega-menu#header-category-menu": {
     "props": {
       "showAllDepartments": true,
       "showSubcategories": true,
-      "menuDisposition": "center"
+      "menuDisposition": "left",
+      "departments": [{ "id": 95 }, { "id": 77 }, { "id": 115 }]
     }
   }
 }

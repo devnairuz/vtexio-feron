@@ -1,0 +1,6 @@
+.homeRoute {
+}
+
+.notHomeRoute :global(.vtex-sticky-layout-0-x-container--sticky-header) {
+  background: #212121;
+}

@@ -1,68 +1,81 @@
-import { useState, useEffect } from 'react';
-import { useProduct } from 'vtex.product-context';
+import { useState, useEffect } from 'react'
+import { useProduct } from 'vtex.product-context'
 
 import styles from './infoTabs.css'
 
 const InfoTabs = () => {
-  const productContext = useProduct();
-  const product = productContext?.product
+  const productContext = useProduct()
   const productId = productContext?.product?.cacheId
+  const productSpecificationGroups =
+    productContext?.product?.specificationGroups
+
+  if (!productSpecificationGroups?.length) return null
 
   const [productSpecifications, setProductSpecifications] = useState({
     activeSpecification: null,
     specificationsTabs: null,
-    specificationContent: null
+    specificationContent: null,
   })
 
   const [openTabHeader, setOpenTabHeader] = useState(false)
 
   useEffect(() => {
-    const specifications = product?.properties
+    const specifications = productSpecificationGroups.findIndex(
+      ({ name }) => name === 'allSpecifications'
+    )
+
+    const specificationsGroup =
+      productSpecificationGroups[specifications].specifications
 
     setProductSpecifications({
       activeSpecification: 0,
-      specificationsTabs: specifications,
-      specificationContent: specifications[0]?.values[0]
+      specificationsTabs: specificationsGroup,
+      specificationContent: specificationsGroup[0].values[0],
     })
-    setOpenTabHeader(false);
+    setOpenTabHeader(false)
   }, [productId])
 
-  const handleBtnControl = ( tabIndex ) => {
+  const handleBtnControl = tabIndex => {
     setProductSpecifications(prevState => {
       return {
         ...prevState,
         activeSpecification: tabIndex,
-        specificationContent: prevState.specificationsTabs[tabIndex]?.values[0]
+        specificationContent: prevState.specificationsTabs[tabIndex]?.values[0],
       }
     })
     setOpenTabHeader(!openTabHeader)
   }
 
-  if (!product?.properties?.length) return null
-
   return (
     <>
       {productSpecifications.specificationsTabs?.length > 0 && (
-      <div className={styles.productInfoTabs}>
-        <div className={openTabHeader ? styles.tabHeaderOpen : styles.tabHeader}>
-          {productSpecifications.specificationsTabs?.map((info, index) => (
-            <button
-              type="button"
-              onClick={() => handleBtnControl(index)}
-              key={info.name}
-              data-control-for={info.name}
-              className={`${styles.infoControl}${productSpecifications.activeSpecification === index ? ` ${styles.active}`:''}`}>
+        <div className={styles.productInfoTabs}>
+          <div className={styles.tabHeader}>
+            {productSpecifications.specificationsTabs?.map((info, index) => (
+              <button
+                type="button"
+                onClick={() => handleBtnControl(index)}
+                key={info.name}
+                data-control-for={info.name}
+                className={`${styles.infoControl}${
+                  productSpecifications.activeSpecification === index
+                    ? ` ${styles.active}`
+                    : ''
+                }`}
+              >
                 {info.name}
               </button>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <div
-          className={styles.tabContent}
-          dangerouslySetInnerHTML={{__html: productSpecifications.specificationContent}}
-        />
-      </div>
-    )}
+          <div
+            className={styles.tabContent}
+            dangerouslySetInnerHTML={{
+              __html: productSpecifications.specificationContent,
+            }}
+          />
+        </div>
+      )}
     </>
   )
 }

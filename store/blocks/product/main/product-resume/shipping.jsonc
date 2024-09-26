@@ -10,16 +10,19 @@
     "props": {
       "blockClass": "shipping-content-pdp"
     },
-    "children": [
-      "rich-text#shipping-simulator-text",
-      "shipping-simulator"
-    ]
+    "children": ["rich-text#shipping-simulator-text", "shipping-simulator"]
   },
 
   "rich-text#shipping-simulator-text": {
     "props": {
       "blockClass": "shipping-simulator-text",
-      "text": "Frete e Prazo de Entrega:"
+      "text": "Calcule o Frete"
+    }
+  },
+
+  "shipping-simulator": {
+    "props": {
+      "pricingMode": "grouped"
     }
   }
 }

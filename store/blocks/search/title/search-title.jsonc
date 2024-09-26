@@ -1,7 +1,7 @@
 {
   "flex-layout.row#search-title": {
     "props": {
-      "blockClass": ["search-title-container", "custom-container"],
+      "blockClass": ["search-title-container"],
       "colSizing": "auto"
     },
     "children": ["flex-layout.col#search-title"]
@@ -10,6 +10,6 @@
     "props": {
       "blockClass": "search-title-content"
     },
-    "children": ["search-title.v2"]
+    "children": ["search-title.v2", "total-products.v2"]
   }
 }

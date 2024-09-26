@@ -1,0 +1,33 @@
+{
+  "disclosure-layout#third-faq": {
+    "props": {
+      "blockClass": ["faq"]
+    },
+    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+  },
+  "disclosure-trigger#third": {
+    "props": {
+      "animated": true,
+      "blockClass": ["faq"]
+    },
+    "children": ["rich-text#question3"]
+  },
+  "disclosure-content#third": {
+    "props": {
+      "blockClass": ["faq"]
+    },
+    "children": ["rich-text#answer3"]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "## 3. Paguei via Cartão de Crédito e meu pedido foi cancelado, como proceder?",
+      "blockClass": ["faq"]
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "Se o seu pedido feito via Cartão de Crédito foi cancelado, significa que ele foi reprovado.\n\nRecomendamos que verifique os seguintes dados no momento da compra antes de refazer o pedido:\n\n \n* Certifique-se do valor do produto e que tenha um limite disponível no seu cartão. \n* Digite o código de segurança exatamente como está no seu cartão. \n* Informe o nome do titular do cartão no campo correspondente, exatamente como está escrito no cartão (Ex: José da Silva).\n\nA reprovação pode ter ocorrido devido a alguma dessas divergências, mas outras questões também podem estar envolvidas. Sugerimos que refaça o pedido ou entre em contato com o atendimento para negociar outra forma de pagamento.",
+      "blockClass": ["faq-content"]
+    }
+  }
+}

@@ -17,21 +17,56 @@
     "props": {
       "blockClass": ["drawer-mobile-content"]
     },
-    "children": ["category-menu#mobile"]
+    "children": ["menu#drawer", "modal-trigger#search-mobile"]
   },
-  "category-menu#mobile": {
-    "props":{
-      "showAllDepartments": false,
-      "showSubcategories": true,
-      "menuDisposition": "center",
-      "sortSubcategories": "name",
+  "modal-trigger#search-mobile": {
+    "props": {
+      "blockClass": "search"
+    },
+    "children": ["icon#search-mobile", "modal-layout#search-mobile"]
+  },
+  "icon#search-mobile": {
+    "props": {
+      "id": "hpa-search",
+      "size": 18,
+      "activeClassName": "vtex-store-icons-0-x-modalIconSearch"
+    }
+  },
+  "modal-layout#search-mobile": {
+    "props": {
+      "blockClass": "search"
+    },
+    "children": ["modal-header#search-mobile", "search-bar"]
+  },
+  "modal-header#search-mobile": {
+    "props": {
+      "blockClass": ["search"]
+    }
+  },
+
+  "menu#drawer": {
+    "children": ["mega-menu#mobile"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "mega-menu#mobile": {
+    "props": {
       "mobileMode": true,
-      "blockClass": "mobile-menu-container"
+      "CustomComponent": "login#mobile",
+      "CmsMenu": "vtex.menu@2.x:menu#cms-sidebar"
+    }
+  },
+  "login#mobile": {
+    "props": {
+      "logInButtonBehavior": "link",
+      "accountOptionsButtonBehavior": "link"
     }
   },
 
   "flex-layout.col#logo-mobile": {
     "props": {
+      "preventVerticalStretch": true,
       "blockClass": ["logo-mobile-content"]
     },
     "children": ["logo"]
@@ -41,6 +76,6 @@
     "props": {
       "blockClass": ["minicart-mobile-content"]
     },
-    "children": ["flex-layout.row#login-desktop", "minicart.v2"]
+    "children": ["minicart.v2"]
   }
 }

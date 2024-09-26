@@ -1,14 +1,21 @@
 {
   "header-layout.desktop": {
+    "title": "Cabeçalho Desktop",
     "children": [
-      "sticky-layout#desktop"
+      "aux-floating-container#desktop",
+      "modal-trigger#helper",
+      "back-to-top-button"
     ]
+  },
+
+  "aux-floating-container#desktop": {
+    "children": ["sticky-layout#desktop"]
   },
 
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#header-desktop", "flex-layout.row#menu-desktop"]
+    "children": ["flex-layout.row#header-desktop"]
   }
 }

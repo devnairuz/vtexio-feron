@@ -1,0 +1,24 @@
+.lowStockHighlight {
+  display: none;
+}
+.container {
+  padding: 0;
+}
+.lowStockText {
+  padding: 2px 4px;
+  border-radius: 2px;
+  background: #a71b28;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 991px) {
+  .lowStockText--pdp {
+    margin-bottom: 16px;
+  }
+}

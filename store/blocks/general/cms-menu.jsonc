@@ -1,0 +1,128 @@
+{
+  "flex-layout.col#cms-menu": {
+    "children": ["rich-text#cms-menu-title", "vtex.menu@2.x:menu#cms"]
+  },
+
+  "rich-text#cms-menu-title": {
+    "props": {
+      "text": "#### Institucional",
+      "blockClass": "footer-title"
+    }
+  },
+
+  "vtex.menu@2.x:menu#cms": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#sobre",
+      "menu-item#faq",
+      "menu-item#trocas",
+      "menu-item#assistencia",
+      "menu-item#privacidade",
+      "menu-item#termos"
+    ]
+  },
+
+  "menu-item#sobre": {
+    "props": {
+      "id": "menu-item-sobre",
+      "blockClass": "menu-item-sobre",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre-nos",
+        "noFollow": false,
+        "tagTitle": "Sobre nós",
+        "text": "Sobre nós"
+      }
+    }
+  },
+
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "blockClass": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": false,
+        "tagTitle": "FAQ - Perguntas Frequentes",
+        "text": "FAQ - Perguntas Frequentes"
+      }
+    }
+  },
+
+  "menu-item#trocas": {
+    "props": {
+      "id": "menu-item-trocas",
+      "blockClass": "menu-item-trocas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/trocas-e-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Trocas e Devoluções",
+        "text": "Trocas e Devoluções"
+      }
+    }
+  },
+
+  "menu-item#assistencia": {
+    "props": {
+      "id": "menu-item-assistencia",
+      "blockClass": "menu-item-assistencia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/assistencia-tecnica",
+        "noFollow": false,
+        "tagTitle": "Assistência Técnica",
+        "text": "Assistência Técnica"
+      }
+    }
+  },
+
+  "menu-item#privacidade": {
+    "props": {
+      "id": "menu-item-privacidade",
+      "blockClass": "menu-item-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  },
+
+  "menu-item#termos": {
+    "props": {
+      "id": "menu-item-termos",
+      "blockClass": "menu-item-termos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/termos-de-uso",
+        "noFollow": false,
+        "tagTitle": "Termos de Uso",
+        "text": "Termos de Uso"
+      }
+    }
+  }
+}

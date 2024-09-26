@@ -1,5 +1,5 @@
 {
-  "login#mobile": {
+  "login#mobile01": {
     "props": {
       "emailAndPasswordTitle": "Login",
       "accessCodeTitle": "Código de login",
@@ -8,5 +8,5 @@
       "showPasswordVerificationIntoTooltip": false,
       "showIconProfile": true
     }
-  }  
+  }
 }

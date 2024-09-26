@@ -1,23 +1,28 @@
 {
-  "header-login": {
-    "component": "HeaderLogin",
+  "aux-floating-container": {
+    "component": "AuxFloatingContainer",
     "composition": "children"
   },
 
+  "mega-menu": {
+    "component": "MegaMenu",
+    "composition": "children"
+  },
+
+  "product-model": {
+    "component": "ProductModel"
+  },
   "short-description": {
     "component": "ShortDescription"
   },
-
+  "sku-specifications": {
+    "component": "SkuSpecifications"
+  },
   "info-tabs": {
     "component": "InfoTabs",
     "composition": "children"
   },
-
-  "cash-price": {
-    "component": "CashPrice"
-  },
-
-  "social-medias": {
-    "component": "SocialMedias"
+  "pix-label": {
+    "component": "PixLabel"
   }
 }

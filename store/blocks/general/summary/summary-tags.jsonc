@@ -1,0 +1,58 @@
+{
+  "flex-layout.row#summary-tags": {
+    "title": "Tags do produto",
+    "props": {
+      "blockClass": ["summary-tags"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "product-availability#message-summary",
+      "vtex.product-highlights@2.x:product-highlights#free-shipping-summary", // testar
+      "vtex.product-highlights@2.x:product-highlights#collections-summary"
+    ]
+  },
+
+  "product-availability#message-summary": {
+    "props": {
+      "blockClass": ["summary"],
+      "threshold": "100",
+      "lowStockMessage": "ÚLTIMAS UNIDADES"
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#free-shipping-summary": {
+    "props": {
+      "blockClass": ["summary"],
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Frete Grátis"]
+      }
+    },
+    "children": ["product-highlight-text#free-shipping-summary"]
+  },
+  "product-highlight-text#free-shipping-summary": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["summary", "free-shipping"]
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collections-summary": {
+    "props": {
+      "blockClass": ["summary"],
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Mais Vendidos", "Lançamentos"]
+      }
+    },
+    "children": ["product-highlight-text#collections-summary"]
+  },
+  "product-highlight-text#collections-summary": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["summary", "collections"]
+    }
+  }
+}

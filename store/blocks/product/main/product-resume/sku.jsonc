@@ -10,7 +10,10 @@
     "props": {
       "blockClass": "sku-content"
     },
-    "children": ["product-identifier.product"]
+    "children": [
+      "product-identifier.product",
+      "product-model" // componente na pasta react/components/Product/ProductModel
+    ]
   },
 
   "product-identifier.product": {

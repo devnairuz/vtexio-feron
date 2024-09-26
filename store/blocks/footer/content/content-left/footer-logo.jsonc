@@ -1,9 +1,10 @@
 {
   "image#footer-logo": {
+    "title": "Logo",
     "props": {
       "blockClass": "footer-logo",
-      "src": "assets/logos/logo-diamond.svg",
-      "alt": "Diamond",
+      "src": "assets/logos/logo-tecfag.svg",
+      "alt": "Tecfag",
       "link": {
         "url": "/"
       }

@@ -4,16 +4,12 @@
       "blockClass": "name-wish-container",
       "colSizing": "auto"
     },
-    "children": [
-      "flex-layout.col#name-pdp",
-      "flex-layout.col#wish-pdp"
-    ]
+    "children": ["flex-layout.col#name-pdp", "flex-layout.col#wish-pdp"]
   },
 
   "flex-layout.col#name-pdp": {
     "props": {
-      "blockClass": "name-pdp-content",
-      "width": "grow"
+      "blockClass": "name-pdp-content"
     },
     "children": ["vtex.store-components:product-name"]
   },
@@ -22,7 +18,7 @@
     "props": {
       "blockClass": "wish-pdp-content"
     },
-    "children": ["add-to-list-btn#pdp"]
+    "children": ["add-to-list-btn#pdp", "share"]
   },
   "add-to-list-btn#pdp": {
     "props": {
