@@ -435,6 +435,7 @@
 }
 .flexRowContent--search-toolbar-container {
   justify-content: space-between;
+  z-index: 1;
 }
 
 .flexRow--search-products-container {
