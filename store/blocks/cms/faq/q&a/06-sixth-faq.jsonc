@@ -1,5 +1,6 @@
 {
   "disclosure-layout#sixth-faq": {
+    "title": "FAQ 6",
     "props": {
       "blockClass": ["faq"]
     },
@@ -19,12 +20,14 @@
     "children": ["rich-text#answer6"]
   },
   "rich-text#question6": {
+    "title": "Pergunta",
     "props": {
       "text": "## 6. Qual é o prazo de entrega para o meu endereço?",
       "blockClass": ["faq"]
     }
   },
   "rich-text#answer6": {
+    "title": "Resposta",
     "props": {
       "text": "Você pode consultar prazos de entrega simulando uma compra com seu CEP no site. Ele varia de acordo com a cidade, o Estado e o tipo de frete escolhido na hora da compra (por Correios ou transportadora).\n\nSe você já concluiu uma compra, o prazo de entrega do seu pacote fica disponível para consultas em sua conta no site. O prazo só começa a contar após a postagem do pacote na transportadora de envio.",
       "blockClass": ["faq-content"]

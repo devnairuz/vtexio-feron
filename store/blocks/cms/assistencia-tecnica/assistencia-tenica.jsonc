@@ -75,7 +75,7 @@
   },
   "rich-text#assist-contato-email": {
     "props": {
-      "text": "**E-mail**assistenciatecnica@tecfag.com.br",
+      "text": "**E-mail**assistencia@tecfag.com.br",
       "textAlignment": "initial",
       "textPosition": "initial",
       "blockClass": ["cms", "contact-option", "mail"]

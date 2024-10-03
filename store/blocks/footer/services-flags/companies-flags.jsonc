@@ -1,0 +1,52 @@
+{
+  "flex-layout.col#companies-flags": {
+    "title": "Companhias",
+    "children": ["flex-layout.row#companies-content"]
+  },
+  "flex-layout.row#companies-content": {
+    "props": {
+      "blockClass": "companies-content-container",
+      "colSizing": "auto"
+    },
+    "children": ["flex-layout.col#companies-content"]
+  },
+  "flex-layout.col#companies-content": {
+    "props": {
+      "blockClass": "companies-content",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#nairuz", "image#vtex", "image#lets-encrypt"]
+  },
+
+  "image#nairuz": {
+    "props": {
+      "src": "assets/logos/nairuz.svg",
+      "alt": "Nairuz",
+      "title": "Nairuz",
+      "link": {
+        "newTab": "true",
+        "url": "https://nairuz.com.br"
+      }
+    }
+  },
+
+  "image#vtex": {
+    "props": {
+      "src": "assets/logos/vtex.svg",
+      "alt": "Vtex",
+      "title": "Vtex",
+      "link": {
+        "newTab": "true",
+        "url": "https://vtex.com/pt-br/"
+      }
+    }
+  },
+
+  "image#lets-encrypt": {
+    "props": {
+      "src": "assets/logos/lets-encrypt.svg",
+      "alt": "Let's Encrypt",
+      "title": "Let's Encrypt"
+    }
+  }
+}

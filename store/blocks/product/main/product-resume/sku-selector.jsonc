@@ -15,7 +15,8 @@
   "sku-selector": {
     "props": {
       "blockClass": ["pdp"],
-      "visibility": "more-than-one"
+      "visibility": "more-than-one",
+      "visibleVariations": ["Alimentação"]
     }
   }
 }

@@ -5,70 +5,30 @@
       "blockClass": "security-flags-content",
       "preventVerticalStretch": true
     },
-    "children": [
-      "image#visa",
-      "image#master",
-      "image#hipercard",
-      "image#diners",
-      "image#elo",
-      "image#pix",
-      "image#boleto"
-    ]
+    "children": ["image#google-sf", "image#selo-ra"]
   },
 
-  "image#visa": {
+  "image#google-sf": {
     "props": {
-      "src": "assets/flags/payment/visa.svg",
-      "alt": "Visa",
-      "title": "Visa"
+      "src": "assets/logos/google-sf.svg",
+      "alt": "Google Safe Browsing",
+      "title": "Google Safe Browsing",
+      "link": {
+        "newTab": "true",
+        "url": "https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Ftecfag.com.br%2F"
+      }
     }
   },
 
-  "image#master": {
+  "image#selo-ra": {
     "props": {
-      "src": "assets/flags/payment/master.svg",
-      "alt": "MasterCard",
-      "title": "MasterCard"
-    }
-  },
-
-  "image#hipercard": {
-    "props": {
-      "src": "assets/flags/payment/hipercard.svg",
-      "alt": "Hipercard",
-      "title": "Hipercard"
-    }
-  },
-
-  "image#diners": {
-    "props": {
-      "src": "assets/flags/payment/diners.svg",
-      "alt": "Diners",
-      "title": "Diners"
-    }
-  },
-
-  "image#elo": {
-    "props": {
-      "src": "assets/flags/payment/elo.svg",
-      "alt": "Elo",
-      "title": "Elo"
-    }
-  },
-
-  "image#pix": {
-    "props": {
-      "src": "assets/flags/payment/pix.svg",
-      "alt": "Pix",
-      "title": "Pix"
-    }
-  },
-
-  "image#boleto": {
-    "props": {
-      "src": "assets/flags/payment/boleto.svg",
-      "alt": "Boleto",
-      "title": "Boleto"
+      "src": "assets/logos/selo-ra.webp",
+      "alt": "Empresa Verificada Reclame Aqui",
+      "title": "Empresa Verificada Reclame Aqui",
+      "link": {
+        "newTab": "true",
+        "url": "https://www.reclameaqui.com.br/empresa/tecfag/"
+      }
     }
   }
 }

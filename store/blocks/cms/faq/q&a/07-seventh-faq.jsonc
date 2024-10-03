@@ -1,5 +1,6 @@
 {
   "disclosure-layout#seventh-faq": {
+    "title": "FAQ 7",
     "props": {
       "blockClass": ["faq"]
     },
@@ -19,12 +20,14 @@
     "children": ["rich-text#answer7"]
   },
   "rich-text#question7": {
+    "title": "Pergunta",
     "props": {
       "text": "## 7. O que é Tecfast?",
       "blockClass": ["faq"]
     }
   },
   "rich-text#answer7": {
+    "title": "Resposta",
     "props": {
       "text": "A Tecfast é um serviço que oferecemos de entrega de equipamentos em até 48 horas para compras realizadas até às 11h, considerando dias úteis. \n\nEsta facilidade está disponível para envios aos Estados de São Paulo, Rio de Janeiro, Espírito Santo, Minas Gerais, Paraná, Mato Grosso do Sul, Rio Grande do Sul e Santa Catarina.",
       "blockClass": ["faq-content"]

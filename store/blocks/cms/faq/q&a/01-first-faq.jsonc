@@ -1,5 +1,6 @@
 {
   "disclosure-layout#first-faq": {
+    "title": "FAQ 1",
     "props": {
       "blockClass": ["faq"]
     },
@@ -19,12 +20,14 @@
     "children": ["rich-text#answer1"]
   },
   "rich-text#question1": {
+    "title": "Pergunta",
     "props": {
       "text": "## 1. Como faço uma solicitação de troca ou devolução?",
       "blockClass": ["faq"]
     }
   },
   "rich-text#answer1": {
+    "title": "Resposta",
     "props": {
       "text": "### ARREPENDIMENTO DA COMPRA\n\nVocê pode solicitar a devolução do produto até 7 dias corridos após o recebimento. Para isso, envie um e-mail para devolucao@tecfag.com.br ou uma mensagem para o WhatsApp: (14) 99105-4116 com as seguintes informações:\n\n \n* Foto da Nota Fiscal \n* Foto do produto na embalagem original \n* Foto do produto na embalagem original\n\nEm até 48 horas, nossa equipe enviará um Código de Autorização de Postagem com as instruções para devolução.\n\nCondições para devolução:\n\n \n* Embalagem original e intacta \n* Sem indícios de uso \n* Acompanhado da Nota Fiscal\n\nSe a devolução não atender às condições acima, o produto será devolvido ao cliente sem aviso prévio.\n\n### PRODUTO COM DEFEITO\n\nPara produtos com defeito dentro do período de garantia de 90 dias, envie um e-mail para devolucao@tecfag.com.br ou uma mensagem para o WhatsApp: (14) 99105-4116 com as seguintes informações:\n\n \n* Foto da Nota Fiscal \n* Foto do produto na embalagem original \n* Foto ou vídeo do defeito \n* Descrição do defeito\n\nNossa equipe técnica responderá em até 3 dias úteis, podendo solicitar mais informações. Após a análise, responderemos em até 48 horas com as instruções para solução do problema.\n\nCondições para devolução ou troca de produtos com defeito:\n\n \n* Embalagem original e intacta \n* Sem indícios de mal uso \n* Acompanhado da Nota Fiscal\n\n### PRODUTO COM AVARIA DURANTE O TRANSPORTE\n\nNão receba produtos com embalagem violada, amassada ou rasgada. Recuse o recebimento para garantir um novo envio. A responsabilidade do produto chegar intacto é da transportadora. Se aceitar a encomenda avariada, a responsabilidade será do cliente.",
       "blockClass": ["faq-content"]

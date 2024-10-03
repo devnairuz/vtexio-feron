@@ -21,54 +21,78 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#nairuz",
-      "image#vtex",
-      "image#lets-encrypt",
-      "image#google-sf"
+      "image#visa",
+      "image#master",
+      "image#hipercard",
+      "image#diners",
+      "image#elo",
+      "image#pix",
+      "image#boleto",
+      "image#pagaleve"
     ]
   },
 
-  "image#nairuz": {
+  "image#visa": {
     "props": {
-      "src": "assets/logos/nairuz.svg",
-      "alt": "Nairuz",
-      "title": "Nairuz",
-      "link": {
-        "newTab": "true",
-        "url": "https://nairuz.com.br"
-      }
+      "src": "assets/flags/payment/visa.svg",
+      "alt": "Visa",
+      "title": "Visa"
     }
   },
 
-  "image#vtex": {
+  "image#master": {
     "props": {
-      "src": "assets/logos/vtex.svg",
-      "alt": "Vtex",
-      "title": "Vtex",
-      "link": {
-        "newTab": "true",
-        "url": "https://vtex.com/pt-br/"
-      }
+      "src": "assets/flags/payment/master.svg",
+      "alt": "MasterCard",
+      "title": "MasterCard"
     }
   },
 
-  "image#lets-encrypt": {
+  "image#hipercard": {
     "props": {
-      "src": "assets/logos/lets-encrypt.svg",
-      "alt": "Let's Encrypt",
-      "title": "Let's Encrypt"
+      "src": "assets/flags/payment/hipercard.svg",
+      "alt": "Hipercard",
+      "title": "Hipercard"
     }
   },
 
-  "image#google-sf": {
+  "image#diners": {
     "props": {
-      "src": "assets/logos/google-sf.svg",
-      "alt": "Google Safe Browsing",
-      "title": "Google Safe Browsing",
-      "link": {
-        "newTab": "true",
-        "url": "https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Ftecfag.com.br%2F"
-      }
+      "src": "assets/flags/payment/diners.svg",
+      "alt": "Diners",
+      "title": "Diners"
+    }
+  },
+
+  "image#elo": {
+    "props": {
+      "src": "assets/flags/payment/elo.svg",
+      "alt": "Elo",
+      "title": "Elo"
+    }
+  },
+
+  "image#pix": {
+    "props": {
+      "src": "assets/flags/payment/pix.svg",
+      "alt": "Pix",
+      "title": "Pix"
+    }
+  },
+
+  "image#boleto": {
+    "props": {
+      "src": "assets/flags/payment/boleto.svg",
+      "alt": "Boleto",
+      "title": "Boleto"
+    }
+  },
+
+  "image#pagaleve": {
+    "props": {
+      "src": "assets/flags/payment/pagaleve.webp",
+      "alt": "Pagaleve",
+      "title": "Pagaleve"
     }
   }
 }

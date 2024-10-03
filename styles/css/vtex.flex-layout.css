@@ -381,9 +381,11 @@
   gap: 16px;
   line-height: 0;
 }
+.flexCol--companies-content,
 .flexCol--security-flags-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 12px;
   line-height: 0;
 }

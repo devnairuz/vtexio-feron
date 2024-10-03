@@ -1,5 +1,6 @@
 {
   "disclosure-layout#second-faq": {
+    "title": "FAQ 2",
     "props": {
       "blockClass": ["faq"]
     },
@@ -19,12 +20,14 @@
     "children": ["rich-text#answer2"]
   },
   "rich-text#question2": {
+    "title": "Pergunta",
     "props": {
       "text": "## 2. Qual é o prazo para aprovação do meu pagamento?",
       "blockClass": ["faq"]
     }
   },
   "rich-text#answer2": {
+    "title": "Resposta",
     "props": {
       "text": "Cartão de Crédito: Normalmente, a aprovação é imediata, mas pode levar até 72 horas em alguns casos, dependendo da operadora do cartão.\n\nBoleto Bancário: A confirmação do pagamento pode levar até 5 dias úteis após o pagamento ser efetuado, pois depende da compensação bancária.",
       "blockClass": ["faq-content"]
