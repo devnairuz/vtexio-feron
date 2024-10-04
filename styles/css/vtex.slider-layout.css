@@ -90,6 +90,21 @@
   :global(.vtex-store-components-3-x-imageElementLink)::before {
   box-shadow: inset 0 0 0 2px #a71b28;
 }
+.slideChildrenContainer--categories {
+  background: linear-gradient(
+    180deg,
+    rgba(244, 244, 244, 0.5) 11%,
+    rgba(168, 168, 168, 0.5) 424.75%
+  );
+}
+.slide--categories :global(.vtex-store-components-3-x-imageElement) {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
 
 /* SLIDER PRODUTOS */
 .sliderTrackContainer--shelf-carousel {
