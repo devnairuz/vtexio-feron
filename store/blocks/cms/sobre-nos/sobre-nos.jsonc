@@ -32,8 +32,8 @@
       "colSizing": "auto"
     },
     "children": [
-      "rich-text#sobrequemsomos",
-      "video#video-sobre"
+      "rich-text#sobrequemsomos"
+      //"video#video-sobre"
       //"rich-text#after-video"
     ]
   },

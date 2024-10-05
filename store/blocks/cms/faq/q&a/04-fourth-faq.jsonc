@@ -29,7 +29,7 @@
   "rich-text#answer4": {
     "title": "Resposta",
     "props": {
-      "text": "Após finalizar sua compra, não é possível efetuar trocas, inclusão ou exclusão de itens, nem alteração de dados.\n\n-&nbsp;**Compras por Boleto Bancário:**\nSe ainda não realizou o pagamento, basta refazer o pedido com os itens ou dados corretos.\n\n-&nbsp;**Compras por Cartão de Crédito:**\nSe o pagamento já foi aprovado, mas o pedido ainda não foi faturado, entre em contato conosco para solicitar o cancelamento (a restituição do valor será feita no seu cartão) e realize o pedido novamente.",
+      "text": "Após finalizar sua compra, não é possível efetuar trocas, inclusão ou exclusão de itens, nem alteração de dados.\n\n**COMPRAS POR BOLETO BANCÁRIO:**\nSe ainda não realizou o pagamento, basta refazer o pedido com os itens ou dados corretos.\n\n**COMPRAS POR CARTÃO DE CRÉDITO:**\nSe o pagamento já foi aprovado, mas o pedido ainda não foi faturado, entre em contato conosco para solicitar o cancelamento (a restituição do valor será feita no seu cartão) e realize o pedido novamente.",
       "blockClass": ["faq-content"]
     }
   }
