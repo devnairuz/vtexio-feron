@@ -126,6 +126,9 @@
   max-width: 421px;
   margin-left: auto;
 }
+.caretIcon--pdp {
+  color: #000;
+}
 
 .shareLabel,
 .shareSocialIcon--whatsapp {

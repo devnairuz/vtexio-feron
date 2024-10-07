@@ -18,6 +18,7 @@
       "thumbnailAspectRatio": "1:1",
       "showNavigationArrows": false,
       "showPaginationDots": false,
+      "displayThumbnailsArrows": true,
       "maxHeight": 421,
       "thumbnailMaxHeight": 72,
       "zoomMode": "in-place-hover",
