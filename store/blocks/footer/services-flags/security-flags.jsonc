@@ -22,7 +22,7 @@
 
   "image#selo-ra": {
     "props": {
-      "src": "assets/logos/selo-ra.webp",
+      "src": "assets/logos/selo-ra.svg",
       "alt": "Empresa Verificada Reclame Aqui",
       "title": "Empresa Verificada Reclame Aqui",
       "link": {

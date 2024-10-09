@@ -90,9 +90,10 @@
 
   "image#pagaleve": {
     "props": {
-      "src": "assets/flags/payment/pagaleve.webp",
+      "src": "assets/flags/payment/pagaleve.svg",
       "alt": "Pagaleve",
-      "title": "Pagaleve"
+      "title": "Pagaleve",
+      "maxHeight": 17
     }
   }
 }

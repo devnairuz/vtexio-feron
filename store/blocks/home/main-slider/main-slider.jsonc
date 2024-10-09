@@ -5,27 +5,43 @@
     "props": {
       "mediaList": [
         {
-          "image": "https://i.imgur.com/yd01u7x.gif",
-          "mobileImage": "https://i.imgur.com/jfQAw9k.gif",
-          "description": "Conheça as nossas envasadoras.",
+          "image": "https://i.imgur.com/48RzjV0.gif",
+          "mobileImage": "https://i.imgur.com/fj7FypU.gif",
+          "description": "Seladoras com frete grátis, compre agora.",
           "link": {
-            "url": "/envasadoras"
+            "url": "/seladoras"
           }
         },
         {
-          "image": "assets/slider-principal/desk/banner-envasadoras-desk.webp",
-          "mobileImage": "assets/slider-principal/mobi/banner-envasadoras-mobi.webp",
-          "description": "Conheça as nossas envasadoras.",
+          "image": "assets/slider-principal/desk/Desk_1.webp",
+          "mobileImage": "assets/slider-principal/mobi/Mob_1.webp",
+          "description": "Seladoras com frete grátis, compre agora.",
           "link": {
-            "url": "/envasadoras"
+            "url": "/seladoras"
           }
         },
         {
-          "image": "assets/slider-principal/desk/banner-envasadoras-desk.webp",
-          "mobileImage": "assets/slider-principal/mobi/banner-envasadoras-mobi.webp",
-          "description": "Conheça as nossas envasadoras.",
+          "image": "assets/slider-principal/desk/Desk_2.webp",
+          "mobileImage": "assets/slider-principal/mobi/Mob_2.webp",
+          "description": "Dispensador, confira.",
           "link": {
-            "url": "/envasadoras"
+            "url": "/dispensador-automatico-de-fita-gomada---fx800p/p"
+          }
+        },
+        {
+          "image": "assets/slider-principal/desk/Desk_3.webp",
+          "mobileImage": "assets/slider-principal/mobi/Mob_3.webp",
+          "description": "Seladoras a vácuo de bandeja",
+          "link": {
+            "url": "/seladoras/seladoras-a-vacuo"
+          }
+        },
+        {
+          "image": "assets/slider-principal/desk/Desk_4.webp",
+          "mobileImage": "assets/slider-principal/mobi/Mob_4.webp",
+          "description": "Envasadora de pós.",
+          "link": {
+            "url": "/envasadoras/para-pos"
           }
         }
       ]
@@ -40,7 +56,7 @@
         "phone": 1
       },
       "autoplay": {
-        "timeout": "3000",
+        "timeout": "10000",
         "stopOnHover": true
       },
       "showNavigationArrows": "never",
