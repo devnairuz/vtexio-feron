@@ -1,0 +1,30 @@
+.controlesconde {
+  display: grid;
+  gap: 10px;
+}
+.controlesconde span {
+  text-align: center;
+  font-weight: 700;
+}
+.btnorcamento {
+  background: #ed1a3b;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-decoration: inherit;
+  width: 72%;
+  margin: auto;
+  border-radius: 8px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: initial;
+  transition: all 0.3s ease-in-out;;
+}
+.btnorcamento:hover {
+  background: #de0d2e;
+  color: #fff;
+}
