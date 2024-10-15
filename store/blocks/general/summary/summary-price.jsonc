@@ -1,4 +1,12 @@
 {
+  "aux-price-container#summary": {
+    "props": {
+      "blockClass": "container-preco"
+    },
+    "children": [
+      "flex-layout.row#summary-price"
+    ]
+  },
   "flex-layout.row#summary-price": {
     "props": {
       "blockClass": ["summary-price-container"]
