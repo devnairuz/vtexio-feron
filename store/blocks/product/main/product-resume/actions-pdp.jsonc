@@ -31,8 +31,7 @@
 
   "add-to-cart-button#buy-button-pdp": {
     "props": {
-      "blockClass": "buy-button-pdp",
-      "shouldOpenMinicart": true
+      "blockClass": "buy-button-pdp"
     }
   }
 }

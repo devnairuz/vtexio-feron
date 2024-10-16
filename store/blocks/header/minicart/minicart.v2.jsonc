@@ -4,7 +4,8 @@
       "quantityDisplay": "always",
       "itemCountMode": "total",
       "MinicartIcon": "icon-cart#minicart-icon",
-      "maxDrawerWidth": "476px"
+      "maxDrawerWidth": "476px",
+      "customPixelEventName": "addToCart"
     },
     "children": ["minicart-base-content"]
   },
