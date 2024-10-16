@@ -20,7 +20,7 @@ const AuxPriceContainer = ({children}) => {
     <div className={classes.controlesconde}>
       {priceHiddenProperty !==undefined? (
         <>
-          <span> Fale com um dos nossos consultores </span>
+          <span className={classes.textoconsultor}> Fale com um dos nossos consultores </span>
           <a
             href="https://api.whatsapp.com/send?phone=5514991054116"
             target="_blank"

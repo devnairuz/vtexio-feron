@@ -2,7 +2,7 @@
   display: grid;
   gap: 10px;
 }
-.controlesconde span {
+.controlesconde .textoconsultor {
   text-align: center;
   font-weight: 700;
 }
