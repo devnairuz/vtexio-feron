@@ -32,7 +32,7 @@
   "add-to-cart-button#buy-button-pdp": {
     "props": {
       "blockClass": "buy-button-pdp",
-      "text": "Adicionar ao carrinho"
+      "shouldOpenMinicart": true
     }
   }
 }

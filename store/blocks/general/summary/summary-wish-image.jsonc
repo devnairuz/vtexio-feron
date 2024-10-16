@@ -24,7 +24,8 @@
       "hoverImage": {
         "criteria": "index",
         "index": 1
-      }
+      },
+      "hoverImageLabel": "Segunda"
     }
   }
 }
