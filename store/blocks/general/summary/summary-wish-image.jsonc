@@ -22,10 +22,10 @@
       "aspectRatio": "1:1",
       "maxHeight": 212,
       "hoverImage": {
-        "criteria": "index",
-        "index": 1
-      },
-      "hoverImageLabel": "Segunda"
+        "criteria": "label",
+        "index": 1,
+        "label": "Segunda"
+      }
     }
   }
 }
