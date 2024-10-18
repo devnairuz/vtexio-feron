@@ -17,6 +17,7 @@
   font-weight: 400;
   line-height: 16.39px;
   color: #a8a8a8;
+  text-decoration: line-through;
 }
 .savings {
   font-size: 12px;
@@ -63,6 +64,17 @@
 .installments--installments-pdp {
   font-size: 14px;
   color: #696969;
+}
+.sellingPriceValue--selling-price-pdp {
+  display: none;
+}
+.listPrice--list-price-pdp, .sellingPriceValue--selling-price-pdp {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.39px;
+  color: #a8a8a8;
+  text-decoration: line-through;
 }
 
 @media screen and (max-width: 575px) {

@@ -5,6 +5,7 @@
       "colSizing": "auto"
     },
     "children": [
+      "flex-layout.col#descontos-pdp",
       "flex-layout.col#prices-pdp",
       "flex-layout.col#installments-pdp"
     ]
@@ -18,6 +19,32 @@
       "product-spot-price#pdp",
       "pix-label" // componente na pasta react/components/Product/PixLabel
     ]
+  },
+  "flex-layout.col#descontos-pdp": {
+    "props": {
+      "blockClass": "pdp-descontos"
+    },
+    "children": [
+      "product-list-price#pdp",
+      "product-selling-price#pdp",
+      "product-price-savings#pdp"
+    ]
+  },
+  "product-list-price#pdp": {
+    "props": {
+      "blockClass": "list-price-pdp"
+    }
+  },
+
+  "product-selling-price#pdp": {
+    "props": {
+      "blockClass": "selling-price-pdp"
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "message": "{savingsPercentage} OFF"
+    }
   },
   "product-spot-price#pdp": {
     "props": {

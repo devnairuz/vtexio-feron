@@ -175,6 +175,9 @@
 .flexColChild--summary-action-content :global(.vtex-button__label) {
   padding: 7px 32px !important;
 }
+.flexCol--pdp-descontos {
+  flex-direction: row;
+}
 
 /* SEÇÃO PARCEIROS */
 .flexRow--partners-slider-container {
