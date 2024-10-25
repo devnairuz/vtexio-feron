@@ -1,12 +1,10 @@
 import React from 'react';
-import { useState, useEffect } from 'react'
-import classes from './custom.price.css'
-import { useProduct } from 'vtex.product-context'
+import { useProduct } from 'vtex.product-context';
+import classes from './custom.price.css';
 import { FormSolicitacao } from '../FormSolicitacao';
 
-const AuxPriceContainer = ({children}) => {
+const AuxPriceContainer = ({ children }) => {
   const { product } = useProduct();
-  console.log(product);
   const properties = product?.properties;
 
   // Verifica se há propriedades
@@ -17,12 +15,15 @@ const AuxPriceContainer = ({children}) => {
     ({ name }) => name.toLowerCase() === 'produto sem preço'
   );
 
+  // Obtém o path do link do produto e remove a barra inicial, se existir
+  const productLink = product?.link?.replace(/https?:\/\/[^/]+/, '').replace(/^\/+/, ''); // Remove o domínio e a barra inicial
+
   // Renderiza o componente com base no valor da propriedade
   return (
     <div className={classes.controlesconde}>
-      {priceHiddenProperty !==undefined? (
+      {priceHiddenProperty !== undefined ? (
         <>
-          <span className={classes.textoconsultor}> Fale com um dos nossos consultores </span>
+          <span className={classes.textoconsultor}>Fale com um dos nossos consultores</span>
           <a
             href="https://api.whatsapp.com/send?phone=5514991054116"
             target="_blank"
@@ -31,11 +32,15 @@ const AuxPriceContainer = ({children}) => {
           >
             Solicitar Orçamento
           </a>
-          <FormSolicitacao nome={product?.productName} link={product?.link}/> 
+          <FormSolicitacao 
+            nome={product?.productName} 
+            link={productLink} // Passa apenas o path do produto
+            domain="www.tecfag.com.br" 
+          />
         </>
       ) : (
         <>
-        {children}
+          {children}
         </>
       )}
     </div>
