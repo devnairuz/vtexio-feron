@@ -1,0 +1,43 @@
+:global(.vtex-product-summary-2-x-container) .formularioprod, .formularioprod .formularioesconde,
+.formularioprod .formulariolabel{
+    display: none;
+}
+
+.formularioprod input {
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    height: 35px;
+    padding: 5px 15px;
+    outline: 0;
+    width: 72%;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    color: #696969;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.formularioprod input::placeholder {
+    color: #696969;
+    font-weight: 400;
+}
+
+.formularioenviar button {
+    border-radius: 8px;
+    background: #ed1a3b;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: initial;
+    min-height: initial;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    width: 72%;
+    height: 35px;
+    cursor: pointer;
+}
+.formularioenviar button:hover {
+    background: #de0d2e;
+    color: #fff;
+}
