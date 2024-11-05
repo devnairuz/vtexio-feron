@@ -114,6 +114,12 @@
   text-transform: initial;
 }
 
+@media (min-width: 1100px) {
+  .openIconContainer :global(.vtex-button):hover {
+    background: #f4f4f426;
+  }
+}
+
 @media (max-width: 1025px) {
   .openIconContainer :global(.vtex-button) {
     padding: 0;
