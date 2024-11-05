@@ -181,7 +181,7 @@
 .skuSelectorOptionsList {
   gap: 8px;
 }
-.skuSelectorTextContainer {
+.skuSelectorTextContainer, .skuSelectorSubcontainer:not(:first-child) {
   display: none;
 }
 .frameAround--pdp {
