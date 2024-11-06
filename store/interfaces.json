@@ -28,5 +28,8 @@
   "aux-price-container": {
     "component": "AuxPriceContainer",
     "composition": "children"
+  },
+  "banner-slider": {
+    "component": "BannerSlider"
   }
 }
