@@ -1,6 +1,38 @@
 {
   "store.custom#politica-privacidade": {
-    "children": ["flex-layout.row#politicas-de-privacidade"]
+    "children": ["flex-layout.row#linha-bread","flex-layout.row#politicas-de-privacidade"]
+  },
+  "flex-layout.row#linha-bread": {
+    "props": {
+      "blockClass": ["custom-container", "linha-breadcms"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#linha-crumb",
+      "flex-layout.col#linha-crumb2"
+    ]
+  },
+  "flex-layout.col#linha-crumb": {
+    "children": ["rich-text#bread"]
+  },
+  "rich-text#bread": {
+    "props": {
+      "text": "[Home](https://tecfag.com.br/)",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": "cmstopo"
+    }
+  },
+  "flex-layout.col#linha-crumb2": {
+    "children": ["rich-text#bread2"]
+  },
+  "rich-text#bread2": {
+    "props": {
+      "text": "Política de Privacidade",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cmsbread2"]
+    }
   },
   "flex-layout.row#politicas-de-privacidade": {
     "props": {

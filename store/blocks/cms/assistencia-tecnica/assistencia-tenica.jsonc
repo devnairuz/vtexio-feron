@@ -1,6 +1,38 @@
 {
   "store.custom#assistencia-tecnica": {
-    "children": ["flex-layout.row#assistencia-tecnica"]
+    "children": ["flex-layout.row#linha-bread","flex-layout.row#assistencia-tecnica"]
+  },
+  "flex-layout.row#linha-bread": {
+    "props": {
+      "blockClass": ["custom-container", "linha-breadcms"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#linha-crumb",
+      "flex-layout.col#linha-crumb1"
+    ]
+  },
+  "flex-layout.col#linha-crumb": {
+    "children": ["rich-text#bread"]
+  },
+  "rich-text#bread": {
+    "props": {
+      "text": "[Home](https://tecfag.com.br/)",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": "cmstopo"
+    }
+  },
+  "flex-layout.col#linha-crumb1": {
+    "children": ["rich-text#bread1"]
+  },
+  "rich-text#bread1": {
+    "props": {
+      "text": "Assistência Técnica Especializada",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["cmsbread2"]
+    }
   },
   "flex-layout.row#assistencia-tecnica": {
     "props": {
