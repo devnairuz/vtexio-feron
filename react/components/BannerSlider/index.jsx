@@ -3,17 +3,30 @@ import React, { useEffect, useRef, useState, useCallback } from 'react'
 function ImageComponent({ imageItems }) {
   const swiperContainerRef = useRef(null)
   const [swiperInstance, setSwiperInstance] = useState(null)
+  const [imagesLoaded, setImagesLoaded] = useState(false) // Estado para controlar o carregamento das imagens
+  const [isSwiperInitialized, setIsSwiperInitialized] = useState(false) // Verifica se o Swiper foi inicializado
+  const [loading, setLoading] = useState(true) // Estado para controlar o carregamento do swiper
+
+  // Função para verificar se todas as imagens foram carregadas
+  const handleImageLoad = () => {
+    const images = document.querySelectorAll('.swiper-slide img')
+    const loadedImages = Array.from(images).filter(img => img.complete)
+
+    // Verifica se todas as imagens foram carregadas
+    if (loadedImages.length === images.length) {
+      setImagesLoaded(true) // Todas as imagens foram carregadas
+    }
+  }
 
   // Memoriza a função `initializeSwiper` para evitar sua recriação a cada renderização
   const initializeSwiper = useCallback(() => {
-    // Só inicializa o Swiper se ele ainda não foi inicializado
     if (swiperContainerRef.current && !swiperInstance) {
       const swiper = new window.Swiper(swiperContainerRef.current, {
         spaceBetween: 0,
         slidesPerView: 1,
         loop: true,
         autoplay: {
-          delay: 3000, // Tempo em ms entre as transições (3 segundos)
+          delay: 5000, // Tempo em ms entre as transições (5 segundos)
           disableOnInteraction: false, // Permite que o autoplay continue após interação do usuário
           pauseOnMouseEnter: true, // Pausa o autoplay ao passar o mouse sobre o carrossel
         },
@@ -32,12 +45,14 @@ function ImageComponent({ imageItems }) {
       })
 
       setSwiperInstance(swiper) // Armazena a instância do Swiper
+      setIsSwiperInitialized(true) // Marca o Swiper como inicializado
+      setLoading(false) // Finaliza o carregamento
     }
-  }, [swiperContainerRef, swiperInstance]) // Adiciona as dependências corretas
+  }, [swiperContainerRef, swiperInstance])
 
   useEffect(() => {
     // Verifica se estamos no ambiente do navegador antes de usar `window` e `document`
-    if (typeof window === 'undefined') return // Early return se não estiver no ambiente de navegador
+    if (typeof window === 'undefined') return
 
     if (!window.Swiper) {
       const script = document.createElement('script')
@@ -50,7 +65,6 @@ function ImageComponent({ imageItems }) {
 
       document.body.appendChild(script)
     } else {
-      // Se o Swiper já estiver carregado, inicializa
       initializeSwiper()
     }
 
@@ -74,29 +88,14 @@ function ImageComponent({ imageItems }) {
 
       scripts.forEach(script => script.remove())
     }
-  }, [initializeSwiper]) // Agora `initializeSwiper` está dentro do useCallback e é seguro como dependência
+  }, [initializeSwiper])
 
-  // Observa mudanças de navegação e reinicializa o swiper se necessário
+  // Inicializa o Swiper somente após as imagens terem sido carregadas
   useEffect(() => {
-    const handlePageVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        if (swiperInstance) {
-          swiperInstance.update() // Atualiza o swiper ao voltar à página
-        }
-      }
+    if (imagesLoaded) {
+      initializeSwiper() // Inicializa o Swiper quando todas as imagens estiverem carregadas
     }
-
-    // Adiciona ouvinte para detectar quando a aba da página volta a ser visível
-    document.addEventListener('visibilitychange', handlePageVisibilityChange)
-
-    // Cleanup: remove o ouvinte quando o componente for desmontado
-    return () => {
-      document.removeEventListener(
-        'visibilitychange',
-        handlePageVisibilityChange
-      )
-    }
-  }, [swiperInstance])
+  }, [imagesLoaded, initializeSwiper])
 
   return (
     <div>
@@ -120,7 +119,7 @@ function ImageComponent({ imageItems }) {
           background: #d9d9d9;
           width: 32px !important;
           height: 5px !important;
-          margin: 0 8px;
+          margin: 0 8px !important;
           border-radius: 5px;
           padding: 0;
           opacity: 1;
@@ -139,18 +138,42 @@ function ImageComponent({ imageItems }) {
           width: 100%;
           height: auto;
           overflow: hidden;
+          display: ${isSwiperInitialized ? 'block' : 'none'};
+          transition: opacity 0.5s ease-in-out;
+          opacity: ${loading ? '0' : '1'}; /* Transição suave de opacidade */
+          margin-top: -90px; /* Manter a margem negativa para o posicionamento absoluto */
+        }
+
+        .single-banner {
+          text-align: center;
+          display: ${isSwiperInitialized ? 'none' : 'block'};
           margin-top: -90px;
         }
 
-        @media (max-width: 1025px) {
-          .swiper-container {
-            margin-top: -68px;
-          }
+        .swiper-container.loading {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 300px;
         }
 
-        @media (max-width: 991px) {
-          .swiper-container .swiper-pagination {
-            display: none;
+        .loading-spinner {
+          border: 4px solid #f3f3f3;
+          border-top: 4px solid #3498db;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 1025px) {
+          .swiper-container, .single-banner {
+            margin-top: -68px; /* Ajusta a margem negativa para dispositivos menores */
           }
         }
 
@@ -165,8 +188,31 @@ function ImageComponent({ imageItems }) {
             display: none;
           }
         }
+
+        .single-banner img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
       `}</style>
 
+      {/* Exibe a primeira imagem antes do carrossel */}
+      {!isSwiperInitialized && imageItems && imageItems.length > 0 && (
+        <div className="single-banner">
+          <a
+            href={imageItems[0].linkDesktop || imageItems[0].linkMobile}
+            rel="noopener noreferrer"
+          >
+            <img
+              src={imageItems[0].imageDesktop || imageItems[0].imageMobile}
+              alt={`Banner ${0}`}
+              loading="lazy"
+            />
+          </a>
+        </div>
+      )}
+
+      {/* Swiper Container */}
       <div ref={swiperContainerRef} className="swiper-container">
         <div className="swiper-wrapper">
           {imageItems &&
@@ -179,6 +225,8 @@ function ImageComponent({ imageItems }) {
                       <img
                         src={item.imageDesktop}
                         alt={`Desktop Banner ${index}`}
+                        loading="lazy"
+                        onLoad={handleImageLoad} // Escuta o evento de carregamento
                       />
                     </a>
                   </div>
@@ -190,6 +238,8 @@ function ImageComponent({ imageItems }) {
                       <img
                         src={item.imageMobile}
                         alt={`Mobile Banner ${index}`}
+                        loading="lazy"
+                        onLoad={handleImageLoad} // Escuta o evento de carregamento
                       />
                     </a>
                   </div>
@@ -198,56 +248,11 @@ function ImageComponent({ imageItems }) {
             ))}
         </div>
 
-        <div className="swiper-button-next" />
-        <div className="swiper-button-prev" />
+        {/* Paginação, Navegação */}
         <div className="swiper-pagination" />
       </div>
     </div>
   )
-}
-
-ImageComponent.schema = {
-  title: 'Banner Carrossel Tecfag',
-  type: 'object',
-  properties: {
-    imageItems: {
-      type: 'array',
-      title: 'Image Items',
-      description: 'Adicionar imagens no carrossel',
-      items: {
-        type: 'object',
-        properties: {
-          imageDesktop: {
-            type: 'string',
-            format: 'uri',
-            title: 'Desktop Imagem URL',
-            widget: {
-              'ui:widget': 'image-uploader',
-            },
-          },
-          linkDesktop: {
-            type: 'string',
-            format: 'uri',
-            title: 'Desktop Imagem Link',
-          },
-          imageMobile: {
-            type: 'string',
-            format: 'uri',
-            title: 'Mobile Imagem URL',
-            widget: {
-              'ui:widget': 'image-uploader',
-            },
-          },
-          linkMobile: {
-            type: 'string',
-            format: 'uri',
-            title: 'Mobile Imagem Link',
-          },
-        },
-        required: ['imageDesktop'],
-      },
-    },
-  },
 }
 
 export default ImageComponent
