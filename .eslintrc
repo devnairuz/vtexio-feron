@@ -2,6 +2,17 @@
   "extends": "vtex",
   "root": true,
   "env": {
-    "node": true
+    "node": true,
+    "browser": true,
+    "es2020": true
+  },
+  "globals": {
+    "window": "readonly",
+    "document": "readonly"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

@@ -1,0 +1,79 @@
+/* bannerslider.module.css */
+
+/* Container do Swiper */
+.swiperContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;  /* Necessário para garantir a navegação */
+  }
+  
+  /* Wrapper dos slides */
+  .swiperWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  /* Cada slide */
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;  /* Impede que os slides encolham */
+  }
+  
+  /* Estilo das imagens */
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;  /* Garante que a imagem cubra a área sem distorcer */
+  }
+  
+  /* Botões de navegação */
+  .swiperButtonNext,
+  .swiperButtonPrev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .swiperButtonNext {
+    right: 10px;
+  }
+  
+  .swiperButtonPrev {
+    left: 10px;
+  }
+  
+  /* Paginação */
+  .swiperPagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiperPagination .swiper-pagination-bullet {
+    background-color: #000;
+    opacity: 0.6;
+  }
+  
+  .swiperPagination .swiper-pagination-bullet-active {
+    background-color: #ff6347;
+    opacity: 1;
+  }
+  
+  .swiperPagination .swiper-pagination-bullet:hover {
+    background-color: #555;
+  }
