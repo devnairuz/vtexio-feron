@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.media-list#main-slider",
+      "list-context.media-list#main-slidernew",
       "flex-layout.row#slider-categories",
       "flex-layout.row#shelf-highlights",
       //"__fold__",

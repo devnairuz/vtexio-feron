@@ -141,13 +141,11 @@ function ImageComponent({ imageItems }) {
           display: ${isSwiperInitialized ? 'block' : 'none'};
           transition: opacity 0.5s ease-in-out;
           opacity: ${loading ? '0' : '1'}; /* Transição suave de opacidade */
-          margin-top: -90px; /* Manter a margem negativa para o posicionamento absoluto */
         }
 
         .single-banner {
           text-align: center;
           display: ${isSwiperInitialized ? 'none' : 'block'};
-          margin-top: -90px;
         }
 
         .swiper-container.loading {

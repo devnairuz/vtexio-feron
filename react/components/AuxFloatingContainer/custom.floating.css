@@ -4,3 +4,10 @@
 .notHomeRoute :global(.vtex-sticky-layout-0-x-container--sticky-header) {
   background: #212121;
 }
+@media (min-width: 1100px) {
+  .homeRoute {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+  }
+}
