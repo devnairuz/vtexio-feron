@@ -253,4 +253,48 @@ function ImageComponent({ imageItems }) {
   )
 }
 
+ImageComponent.schema = {
+  title: 'Tecfag Banner Carrossel',
+  type: 'object',
+  properties: {
+    imageItems: {
+      type: 'array',
+      title: 'Image Items',
+      description: 'Add images and links to the banner carousel.',
+      items: {
+        type: 'object',
+        properties: {
+          imageDesktop: {
+            type: 'string',
+            format: 'uri',
+            title: 'Desktop Imagem URL',
+            widget: {
+              'ui:widget': 'image-uploader',
+            },
+          },
+          linkDesktop: {
+            type: 'string',
+            format: 'uri',
+            title: 'Desktop Imagem Link',
+          },
+          imageMobile: {
+            type: 'string',
+            format: 'uri',
+            title: 'Mobile Imagem URL',
+            widget: {
+              'ui:widget': 'image-uploader',
+            },
+          },
+          linkMobile: {
+            type: 'string',
+            format: 'uri',
+            title: 'Mobile Imagem Link',
+          },
+        },
+        required: ['imageDesktop'],
+      },
+    },
+  },
+}
+
 export default ImageComponent
