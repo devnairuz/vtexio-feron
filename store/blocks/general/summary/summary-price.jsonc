@@ -35,8 +35,8 @@
       "blockClass": ["list-selling-price-summary"]
     },
     "children": [
-      //"product-list-price#summary",
-      "product-selling-price#summary",
+      "product-list-price#summary",
+      //"product-selling-price#summary",
       "product-price-savings#summary"
     ]
   },
