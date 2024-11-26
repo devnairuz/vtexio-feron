@@ -32,7 +32,7 @@ tbody.totalizers-list .Shipping {
 }
 
 .vtex-cartman.onda-v1 .bg-blue {
-  background: #ed1a3b;
+  background: #EA5A1C;
 }
 .btn-link,
 .vtex-pickup-points-modal-3-x-modalDetailsBackLnk.btn-link {
@@ -41,8 +41,8 @@ tbody.totalizers-list .Shipping {
 .container-order-form .vtex-omnishipping-1-x-deliveryChannelsToggle,
 .container-order-form .vtex-pickup-points-modal-3-x-primary,
 .container-order-form .vtex-pickup-points-modal-3-x-primary:hover {
-  background: #ed1a3b;
-  border: solid 1px #ed1a3b;
+  background: #EA5A1C;
+  border: solid 1px #EA5A1C;
 }
 .container-order-form .vtex-omnishipping-1-x-buttonEditAddress:hover,
 .container-order-form .vtex-omnishipping-1-x-buttonCreateAddress:hover,
@@ -370,7 +370,7 @@ p.coupon-data {
   width: 89px;
   height: 36px;
   color: #ffffff;
-  background: #ed1a3b;
+  background: #EA5A1C;
   border-radius: 7px;
   border: 0;
   margin: 0;
@@ -549,7 +549,7 @@ p.coupon-data {
 }
 #cart-to-orderform {
   display: block;
-  background: #ed1a3b;
+  background: #EA5A1C;
   border-radius: 0;
   border: 0;
   padding: 10px;
@@ -703,7 +703,7 @@ p.payment-card-due-date {
 #btn-client-pre-email,
 .btn-go-to-payment-wrapper .btn-go-to-payment {
   border-radius: 7px;
-  background: #ed1a3b;
+  background: #EA5A1C;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 700;
@@ -907,7 +907,7 @@ p.notification {
   margin: 0;
   border: 0;
   border-radius: 7px;
-  background: #ed1a3b;
+  background: #EA5A1C;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
@@ -1048,15 +1048,15 @@ p.notification {
 }
 
 .onda-v1 .shadow-4.srp-toggle__current {
-  border-color: #ed1a3b;
+  border-color: #EA5A1C;
 }
 #shipping-preview-container label.srp-toggle__delivery,
 #shipping-preview-container label.srp-toggle__pickup {
-  color: #ed1a3b;
-  border-color: #ed1a3b;
+  color: #EA5A1C;
+  border-color: #EA5A1C;
 }
 .srp-pickup-info .srp-address-title {
-  color: #ed1a3b;
+  color: #EA5A1C;
 }
 
 @media (max-width: 1199px) {

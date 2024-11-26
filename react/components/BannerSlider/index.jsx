@@ -126,7 +126,7 @@ function ImageComponent({ imageItems }) {
         }
 
         .swiper-pagination-bullet-active {
-          background: #ed1a3b;
+          background: #EA5A1C;
         }
 
         .swiper-wrapper {

@@ -21,7 +21,7 @@
   margin-bottom: 15px !important;
 }
 :global(.vtex-pageHeader-link__container) :global(.vtex-button) {
-  color: #ed1a3b;
+  color: #EA5A1C;
   text-decoration: underline;
   margin: 0;
 }
@@ -105,7 +105,7 @@
 .boxContainerFooter :global(.vtex-button__label) {
   padding: 0 !important;
   text-transform: initial;
-  color: #ed1a3b;
+  color: #EA5A1C;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -140,7 +140,7 @@
 
 .addressList__header :global(.vtex-pageHeader__children) :global(.vtex-button),
 .addressCreate :global(.vtex-button) {
-  background: #ed1a3b;
+  background: #EA5A1C;
   border: 0;
   padding: 12px 16px;
   border-radius: 7px;
@@ -178,7 +178,7 @@
 :global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button) {
   text-transform: initial;
   text-decoration: underline;
-  color: #ed1a3b;
+  color: #EA5A1C;
 }
 :global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button):hover {
   background: none;

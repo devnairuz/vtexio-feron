@@ -15,6 +15,7 @@
 /* HEADER */
 .flexRow--header-container {
   padding: 23.5px 0;
+  background-color: #101010;
 }
 .flexRowContent--header-container {
   align-items: center;
@@ -65,9 +66,12 @@
 
 /* MENU */
 .flexRow--menu-container {
-  background: #e9e9e9;
-  box-shadow: 3px 3px 6px #00000014;
+  background: #101010;
   padding: 10px 0;
+}
+
+.flexRowContent--menu-container .stretchChildrenWidth {
+  border-top: 1px solid #fff;
 }
 
 /* LOGO */
@@ -277,7 +281,7 @@
   bottom: 0;
   width: 36px;
   height: 0;
-  background: #ed1a3b;
+  background: #EA5A1C;
   transition: all 0.3s ease-in-out;
 }
 .flexCol--social-content:hover .flexColChild--social-content:last-child::after {
@@ -520,7 +524,7 @@
 }
 .flexRowContent--actions-pdp-container :global(.vtex-button) {
   border-radius: 8px;
-  background: #ed1a3b;
+  background: #EA5A1C;
   border: 0;
   font-size: 16px;
   font-weight: 700;

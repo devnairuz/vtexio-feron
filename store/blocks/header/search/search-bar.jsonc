@@ -1,7 +1,7 @@
 {
   "search-bar": {
     "props": {
-      "placeholder": "Buscar"
+      "placeholder": "Busque por produtos, marca, código..."
     }
   }
 }

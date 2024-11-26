@@ -16,6 +16,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#header-desktop"]
+    "children": [
+      "flex-layout.row#header-desktop",
+      "flex-layout.row#menu-desktop"
+    ]
   }
 }

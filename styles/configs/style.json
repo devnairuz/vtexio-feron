@@ -58,9 +58,9 @@
   },
   "semanticColors": {
     "background": {
-      "base": "#ffffff",
+      "base": "#F3F3F3",
       "base--inverted": "#1a1a1a",
-      "action-primary": "#ed1a3b",
+      "action-primary": "#EA5A1C",
       "action-secondary": "#eef3f7",
       "emphasis": "#f71963",
       "disabled": "#f2f4f5",

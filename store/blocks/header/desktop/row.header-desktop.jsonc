@@ -7,8 +7,8 @@
       "blockClass": ["header-container", "custom-container"]
     },
     "children": [
-      "flex-layout.col#menu-desktop",
       "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-desktop",
       "flex-layout.col#utils-desktop"
     ]
   },
@@ -18,17 +18,6 @@
       "blockClass": "logo-desktop-container"
     },
     "children": ["logo"] // Arquivo logo.jsonc
-  },
-
-  "flex-layout.col#utils-desktop": {
-    "props": {
-      "blockClass": "utils-desktop-container"
-    },
-    "children": [
-      "flex-layout.row#search-desktop",
-      "flex-layout.row#login-desktop",
-      "flex-layout.row#minicart-desktop"
-    ]
   },
 
   "flex-layout.row#search-desktop": {
@@ -42,6 +31,16 @@
       "blockClass": "search-desktop-container"
     },
     "children": ["search-bar"] // Arquivo search/search-bar.jsonc
+  },
+
+  "flex-layout.col#utils-desktop": {
+    "props": {
+      "blockClass": "utils-desktop-container"
+    },
+    "children": [
+      "flex-layout.row#login-desktop",
+      "flex-layout.row#minicart-desktop"
+    ]
   },
 
   "flex-layout.row#login-desktop": {
