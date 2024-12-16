@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#search-banner-mobi": {
+      "title": "Banner Categoria Mobile",
+      "props": {
+        "blockClass": ["custom-container", "search-banner-container"],
+        "fullWidth": true,
+        "preventHorizontalStretch": true
+      },
+      "children": [
+        "flex-layout.col#search-banner"
+      ]
+    }
+  }

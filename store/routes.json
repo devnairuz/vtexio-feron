@@ -3,10 +3,6 @@
     "path": "/sobre-nos"
   },
 
-  "store.custom#faq": {
-    "path": "/faq"
-  },
-
   "store.custom#trocas-e-devolucoes": {
     "path": "/trocas-e-devolucoes"
   },

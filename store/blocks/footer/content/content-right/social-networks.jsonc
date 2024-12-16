@@ -6,10 +6,9 @@
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.col#social-insta",
       "flex-layout.col#social-face",
-      "flex-layout.col#social-in",
-      "flex-layout.col#social-yt"
+      "flex-layout.col#social-insta",
+      "flex-layout.col#social-wp"
     ]
   },
 
@@ -17,22 +16,22 @@
     "props": {
       "blockClass": "social-content"
     },
-    "children": ["link#social-insta", "icon#insta"]
+    "children": ["link#social-insta", "image#icon-insta"]
   },
   "link#social-insta": {
     "props": {
       "blockClass": "social-link",
       "label": "Instagram Tecfag",
-      "href": "https://www.instagram.com/tecfagmaquinas/",
+      "href": "#",
       "target": "_blank"
     }
   },
-  "icon#insta": {
+  "image#icon-insta": {
     "props": {
-      "id": "bnd-instagram",
-      "size": 20,
-      "viewBox": "0 0 19 20",
-      "activeClassName": "vtex-store-icons-0-x-socialIcon"
+      "src": "assets/icons/icon-insta.svg",
+      "maxHeight": 33,
+      "alt": "Icon Instagram",
+      "title": "Icon Instagram"
     }
   },
 
@@ -40,68 +39,45 @@
     "props": {
       "blockClass": "social-content"
     },
-    "children": ["link#social-face", "icon#face"]
+    "children": ["link#social-face", "image#icon-face"]
   },
   "link#social-face": {
     "props": {
       "blockClass": "social-link",
       "label": "Facebook Tecfag",
-      "href": "https://www.facebook.com/tecfagmaquinas/",
+      "href": "#",
       "target": "_blank"
     }
   },
-  "icon#face": {
+  "image#icon-face": {
     "props": {
-      "id": "bnd-face",
-      "size": 20,
-      "viewBox": "0 0 10 18",
-      "activeClassName": "vtex-store-icons-0-x-socialIcon"
+      "src": "assets/icons/icon-face.svg",
+      "maxHeight": 33,
+      "alt": "Icon Facebook",
+      "title": "Icon Facebook"
     }
   },
 
-  "flex-layout.col#social-in": {
+  "flex-layout.col#social-wp": {
     "props": {
       "blockClass": "social-content"
     },
-    "children": ["link#social-in", "icon#in"]
+    "children": ["link#social-wp", "image#icon-wpp"]
   },
-  "link#social-in": {
+  "link#social-wp": {
     "props": {
       "blockClass": "social-link",
-      "label": "Linkedin Tecfag",
-      "href": "https://www.linkedin.com/company/tecfag-group/",
+      "label": "Whats Feron",
+      "href": "#",
       "target": "_blank"
     }
   },
-  "icon#in": {
+  "image#icon-wpp": {
     "props": {
-      "id": "bnd-in",
-      "size": 20,
-      "viewBox": "0 0 18 20",
-      "activeClassName": "vtex-store-icons-0-x-socialIcon"
-    }
-  },
-
-  "flex-layout.col#social-yt": {
-    "props": {
-      "blockClass": "social-content"
-    },
-    "children": ["link#social-yt", "icon#yt"]
-  },
-  "link#social-yt": {
-    "props": {
-      "blockClass": "social-link",
-      "label": "YouTube Tecfag",
-      "href": "https://www.youtube.com/@tecfag",
-      "target": "_blank"
-    }
-  },
-  "icon#yt": {
-    "props": {
-      "id": "bnd-yt",
-      "size": 20,
-      "viewBox": "0 0 22 14",
-      "activeClassName": "vtex-store-icons-0-x-socialIcon"
+      "src": "assets/icons/icon-whats.svg",
+      "maxHeight": 33,
+      "alt": "Icon Whats",
+      "title": "Icon Whtas"
     }
   }
 }

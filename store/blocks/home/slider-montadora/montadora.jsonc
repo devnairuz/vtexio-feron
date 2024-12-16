@@ -1,0 +1,32 @@
+{
+    "flex-layout.row#slider-montadoras": {
+      "title": "Carrossel de Montadoras",
+      "props": {
+        "blockClass": ["categories-slider-container", "custom-container"],
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "flex-layout.col#slider-montadoras-title",
+        "flex-layout.col#slider-montadoras"
+      ]
+    },
+    "flex-layout.col#slider-montadoras-title": {
+      "children": ["rich-text#slider-montadoras"]
+    },
+    "rich-text#slider-montadoras": {
+      "title": "Título",
+      "props": {
+        "blockClass": ["best-sellers-title", "shelf-title", "marcas-title"],
+        "text": "#### Navegue por montadoras"
+      }
+    },
+    "flex-layout.col#slider-montadoras": {
+      "props": {
+        "blockClass": ["categories"],
+        "width": "100%"
+      },
+      "children": ["slider-layout#montadoras"]
+    }
+  }
+  

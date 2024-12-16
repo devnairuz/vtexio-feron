@@ -1,0 +1,34 @@
+{
+    "flex-layout.row#mid-mosaic": {
+      "title": "Banner Meio",
+      "props": {
+        "blockClass": ["mid-mosaic-container", "custom-container","mosaico-meio"]
+      },
+      "children": ["flex-layout.col#mid-mosaic"]
+    },
+  
+    "flex-layout.col#mid-mosaic": {
+      "props": {
+        "blockClass": "upper-mosaic-content"
+      },
+      "children": ["image#mid-mosaic-first", "image#mid-mosaic-first-mobile"]
+    },
+  
+    "image#mid-mosaic-first": {
+      "title": "Imagem Desktop",
+      "props": {
+        "blockClass": "image__upper-mosaic",
+        "src": "assets/mid-mosaic/qualidade-excelencia.png",
+        "alt": "Qualidade e Excelência"
+      }
+    },
+    "image#mid-mosaic-first-mobile": {
+      "title": "Imagem Mobile",
+      "props": {
+        "blockClass": ["image__upper-mosaic", "image__upper-mosaic-mobile"],
+        "src": "assets/mid-mosaic/qualidade-excelencia.png",
+        "alt": "Qualidade e Excelência"
+      }
+    }
+  }
+  

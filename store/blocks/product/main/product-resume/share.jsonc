@@ -20,9 +20,9 @@
       },
       "social": {
         "WhatsApp": true,
-        "Facebook": false,
-        "Twitter": false,
-        "Pinterest": false
+        "Facebook": true,
+        "Twitter": true,
+        "Pinterest": true
       }
     }
   }

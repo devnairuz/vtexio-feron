@@ -33,7 +33,7 @@
   "rich-text#highlights-title": {
     "title": "Título",
     "props": {
-      "text": "#### Produtos em destaque",
+      "text": "#### Imperdíveis",
       "blockClass": ["highlights-title", "shelf-title"]
     }
   },
@@ -52,7 +52,7 @@
   },
   "list-context.product-list#shelf-highlights": {
     "props": {
-      "collection": "151",
+      "category": "4",
       "listName": "Destaques",
       "installmentCriteria": "MAX_WITH_INTEREST"
     },

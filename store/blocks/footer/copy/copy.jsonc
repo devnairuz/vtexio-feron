@@ -2,7 +2,7 @@
   "flex-layout.row#copy": {
     "title": "Copyrights",
     "props": {
-      "blockClass": ["footer-copy-container", "custom-container"]
+      "blockClass": ["footer-copy-container", "custom-container", "custom-copy"]
     },
     "children": ["flex-layout.col#copy-brand"]
   },
@@ -15,7 +15,7 @@
   },
   "rich-text#copy-brand": {
     "props": {
-      "text": "TECFAG COMÉRCIO E IMPORTAÇÃO DE MÁQUINAS LTDA - CNPJ: 14.050.364/0001-90, Rua Leo Greatti Neto 1-130 - Distrito Industrial III, Bauru - SP, 17064-857",
+      "text": "© Todos os direitos reservados. 2024. AUGUSTINHO MARTELAO COMERCIO DE FERRAMENTAS LTDA | Rua Jerônimo Gonçalves Meira, 326. Itu/SP. Cep: 13309-190 - CNPJ: 27.676.534/0001-99.",
       "blockClass": ["copy-brand", "copy-text"]
     }
   }

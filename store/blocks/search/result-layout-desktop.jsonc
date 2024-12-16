@@ -3,7 +3,6 @@
     "title": "Layout Desktop",
     "children": [
       "flex-layout.row#search-bread",
-      "flex-layout.row#search-toolbar",
       "flex-layout.row#result-grid"
     ],
     "props": {

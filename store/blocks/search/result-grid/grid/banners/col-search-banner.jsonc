@@ -1,0 +1,29 @@
+{
+    "flex-layout.col#search-banner": {
+      "props": {
+        "blockClass": ["category-banner"]
+      },
+      "children": [
+        "image#category-banner-desk",
+        "image#category-banner-mobi"
+      ]
+    },
+    "image#category-banner-desk": {
+      "title": "Banner Desktop",
+      "props": {
+        "src": "assets/categories/Banner-SEO.png",
+        "alt": "Imperdível, até 30% de desconto",
+        "maxHeight": "102",
+        "blockClass": ["category-banner", "category-banner-desk"]
+      }
+    },
+    "image#category-banner-mobi": {
+      "title": "Banner Mobile",
+      "props": {
+        "src": "assets/categories/Banner-SEO.png",
+        "alt": "Imperdível, até 30% de desconto",
+        "maxHeight": "102",
+        "blockClass": ["category-banner", "category-banner-mobi"]
+      }
+    }
+  }

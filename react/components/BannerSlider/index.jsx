@@ -254,7 +254,7 @@ function ImageComponent({ imageItems }) {
 }
 
 ImageComponent.schema = {
-  title: 'Tecfag Banner Carrossel',
+  title: 'Feron Banner Carrossel',
   type: 'object',
   properties: {
     imageItems: {

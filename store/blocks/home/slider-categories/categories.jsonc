@@ -17,7 +17,6 @@
   "rich-text#slider-categories": {
     "title": "Título",
     "props": {
-      "text": "#### Busque por categoria",
       "blockClass": ["categories-slider-title", "shelf-title"]
     }
   },

@@ -265,91 +265,91 @@
     "measure": [30, 34, 20],
     "styles": {
       "heading-1": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "700",
         "fontSize": "3rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-2": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "700",
         "fontSize": "2.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-3": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "700",
         "fontSize": "1.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-4": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1.5rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-5": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-6": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "body": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "small": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "normal",
         "fontSize": "0.875rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "mini": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "normal",
         "fontSize": "0.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "action": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "500",
         "fontSize": "1rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "action--small": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "500",
         "fontSize": "0.875rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "action--large": {
-        "fontFamily": "Manrope, sans-serif",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "500",
         "fontSize": "1.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "code": {
-        "fontFamily": "Manrope, Consolas, monaco, monospace",
+        "fontFamily": "Titillium Web, Consolas, monaco, monospace",
         "fontWeight": "normal",
         "fontSize": "1rem",
         "textTransform": "initial",

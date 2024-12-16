@@ -11,13 +11,13 @@
   },
   "image#info-icon": {
     "props": {
-      "src": "assets/icons/message.svg"
+      "src": "assets/icons/call_quality.svg"
     }
   },
   "rich-text#store-info-text": {
     "props": {
       "blockClass": ["store-info-text", "utils-text"],
-      "text": "Central de \n**Atendimento**"
+      "text": "Ajuda"
     }
   },
   "overlay-layout#store-info": {
@@ -25,13 +25,108 @@
       "placement": "bottom"
     },
     "children": [
-      "rich-text#store-info-popup"
+      "flex-layout.row#sac-wpptopo",
+      "flex-layout.row#sac-teltopo",
+      "flex-layout.row#sac-emailtopo",
+      "flex-layout.row#sac-horatopo",
+      "flex-layout.row#sac-btncontatotopo"
     ]
   },
-  "rich-text#store-info-popup": {
+
+  "flex-layout.row#sac-horatopo": {
     "props": {
-      "blockClass": "store-info-popup-text",
-      "text": "Telefone: [0800 474 3333](tel:08004743333)\n Telefone: [0800 474 9000](tel:08004749000)\n E-mail: [dresponde@docol.com.br](mailto:dresponde@docol.com.br)\nHorário de Atendimento:\n De Segunda à Sexta-feira:\n das 7h às 17h."
+      "blockClass": ["sac-group-container", "sac-group-topo"]
+    },
+    "children": ["flex-layout.col#sac-horatopo"]
+  },
+
+  "flex-layout.col#sac-horatopo": {
+    "props": {
+      "blockClass": ["sac-group-container", "sac-group-topo"]
+    },
+    "children": ["rich-text#sac-horatopo"]
+  },
+  
+  "rich-text#sac-horatopo": {
+    "props": {
+      "blockClass": ["sac-group-link", "sac-group-email"],
+      "text": "<a class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-hora vtex-rich-text-0-x-link--sac-group-topo'>Seg à Sex das 9h às 17h </a>"
+    }
+  },
+
+  "flex-layout.row#sac-emailtopo": {
+    "props": {
+      "blockClass": ["sac-topoheader", "sac-group-topo"]
+    },
+    "children": ["flex-layout.col#sac-emailtopo"]
+  },
+  "flex-layout.col#sac-emailtopo": {
+    "props": {
+      "blockClass": "sac-group-content"
+    },
+    "children": ["rich-text#sac-emailtopo"]
+  },
+  
+  "rich-text#sac-emailtopo": {
+    "props": {
+      "blockClass": ["sac-group-link", "sac-group-email"],
+      "text": "<a href='mailto:sac@lojadasferramentasonline.com.br' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-email vtex-rich-text-0-x-link--sac-group-topo'>sac@lojadasferramentasonline.com.br</a>"
+    }
+  },
+
+  "flex-layout.row#sac-wpptopo": {
+    "props": {
+      "blockClass": ["sac-group-container", "sac-group-topo"]
+    },
+    "children": ["flex-layout.col#sac-wpptopo"]
+  },
+  "flex-layout.col#sac-wpptopo": {
+    "props": {
+      "blockClass": ["sac-group-container", "sac-group-topo"]
+    },
+    "children": ["rich-text#sac-wpp-firsttopo"]
+  },
+  
+  "rich-text#sac-wpp-firsttopo": {
+    "props": {
+      "blockClass": ["sac-group-link"],
+      "text": "<a href='https://wa.me/5511963227188' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-wpp vtex-rich-text-0-x-link--sac-group-topo'>(11) 96322-7188</a>"
+    }
+  },
+  "flex-layout.row#sac-teltopo": {
+    "props": {
+      "blockClass": ["sac-group-container", "sac-group-topo"]
+    },
+    "children": ["flex-layout.col#sac-teltopo"]
+  },
+  "flex-layout.col#sac-teltopo": {
+    "props": {
+      "blockClass": ["sac-group-container", "sac-group-topo"]
+    },
+    "children": ["rich-text#sac-teltopo"]
+  },
+  "rich-text#sac-teltopo": {
+    "props": {
+      "blockClass": ["sac-group-link","sac-group-tel"],
+      "text": "<a href='tel:1140242070' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-tel vtex-rich-text-0-x-link--sac-group-topo'>(11) 4024-2070</a>"
+    }
+  },
+  "flex-layout.row#sac-btncontatotopo": {
+    "props": {
+      "blockClass": ["sac-group-container", "sac-group-topo"]
+    },
+    "children": ["flex-layout.col#sac-btntopo"]
+  },
+  "flex-layout.col#sac-btntopo": {
+    "props": {
+      "blockClass": "sac-group-content"
+    },
+    "children": ["rich-text#sac-btntopo"]
+  },
+  "rich-text#sac-btntopo": {
+    "props": {
+      "blockClass": ["sac-group-link", "sac-group-btn", "sac-group-btn-topo"],
+      "text": "<a href='https://wa.me/5511963227188' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-btn vtex-rich-text-0-x-link--sac-group-topo'>Fale Conosco</a>"
     }
   }
 }

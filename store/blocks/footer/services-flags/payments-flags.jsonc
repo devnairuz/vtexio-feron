@@ -27,8 +27,7 @@
       "image#diners",
       "image#elo",
       "image#pix",
-      "image#boleto",
-      "image#pagaleve"
+      "image#boleto"
     ]
   },
 
@@ -85,15 +84,6 @@
       "src": "assets/flags/payment/boleto.svg",
       "alt": "Boleto",
       "title": "Boleto"
-    }
-  },
-
-  "image#pagaleve": {
-    "props": {
-      "src": "assets/flags/payment/pagaleve.svg",
-      "alt": "Pagaleve",
-      "title": "Pagaleve",
-      "maxHeight": 17
     }
   }
 }

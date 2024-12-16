@@ -1,10 +1,24 @@
 {
+  "flex-layout.row#nome-produto": {
+    "props": {
+      "blockClass": ["name-product"]
+    },
+    "children": ["flex-layout.col#name-pdp"]
+  },
+
   "flex-layout.row#name-wish": {
     "props": {
       "blockClass": "name-wish-container",
       "colSizing": "auto"
     },
-    "children": ["flex-layout.col#name-pdp", "flex-layout.col#wish-pdp"]
+    "children": ["flex-layout.row#sku", "flex-layout.row#controle-share"]
+  },
+
+  "flex-layout.row#controle-share": {
+    "props": {
+      "blockClass": "controle-share"
+    },
+    "children": ["flex-layout.col#wish-pdp","overlay-trigger#store-share"]
   },
 
   "flex-layout.col#name-pdp": {
@@ -18,7 +32,7 @@
     "props": {
       "blockClass": "wish-pdp-content"
     },
-    "children": ["add-to-list-btn#pdp", "share"]
+    "children": ["add-to-list-btn#pdp"]
   },
   "add-to-list-btn#pdp": {
     "props": {

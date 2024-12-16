@@ -31,68 +31,45 @@
     "children": ["rich-text#best-sellers-title"]
   },
   "rich-text#best-sellers-title": {
+    "title": "Título",
     "props": {
-      "text": "#### Máquinas para rotular",
-      "blockClass": ["best-sellers-title", "shelf-title", "banner-shelf"]
+      "text": "#### Ofertas",
+      "blockClass": ["best-sellers-title", "shelf-title"]
     }
   },
 
   "flex-layout.row#best-sellers-products-container": {
     "props": {
-      "blockClass": ["best-sellers-products-container", "banner-shelf"],
-      "colSizing": "auto"
+      "blockClass": ["best-sellers-products-container"]
     },
-    "children": [
-      "flex-layout.col#rotuladoras-banner-shelf",
-      "flex-layout.col#best-sellers-products-container"
-    ]
-  },
-  "flex-layout.col#rotuladoras-banner-shelf": {
-    "props": {
-      "width": "26%",
-      "blockClass": ["banner-shelf"]
-    },
-    "children": ["image#shelf-rotuladoras", "image#shelf-rotuladoras-mobile"]
-  },
-  "image#shelf-rotuladoras": {
-    "props": {
-      "src": "assets/shelf/banner-rotuladoras.webp",
-      "alt": "Rotuladoras. Clique para ver tudo!",
-      "title": "Rotuladoras",
-      "link": {
-        "url": "/rotuladoras"
-      }
-    }
-  },
-  "image#shelf-rotuladoras-mobile": {
-    "props": {
-      "src": "assets/shelf/banner-rotuladoras-mobile.webp",
-      "alt": "Rotuladoras. Clique para ver tudo!",
-      "title": "Rotuladoras",
-      "link": {
-        "url": "/rotuladoras"
-      },
-      "blockClass": ["shelf-img-mobile"]
-    }
+    "children": ["flex-layout.col#best-sellers-products-container"]
   },
   "flex-layout.col#best-sellers-products-container": {
     "props": {
-      "width": "74%",
-      "blockClass": [
-        "best-sellers-products-content",
-        "shelf-carousel",
-        "shelf-triple"
-      ]
+      "blockClass": ["best-sellers-products-content", "shelf-carousel"]
     },
     "children": ["list-context.product-list#shelf-best-sellers"]
   },
   "list-context.product-list#shelf-best-sellers": {
     "props": {
-      "listName": "Mais vendidos",
-      "installmentCriteria": "MAX_WITH_INTEREST",
-      "category": "115"
+      "category": "4",
+      "listName": "Destaques",
+      "installmentCriteria": "MAX_WITH_INTEREST"
     },
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#products-triple"]
+    "children": ["slider-layout#best-sellers-products"]
+  },
+  "slider-layout#best-sellers-products": {
+    "props": {
+      "blockClass": ["shelf-carousel", "best-sellers-products"],
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always"
+    }
   }
 }

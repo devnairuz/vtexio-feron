@@ -14,7 +14,7 @@
   "rich-text#category-menu-title": {
     "props": {
       "blockClass": "footer-title",
-      "text": "#### Produtos"
+      "text": "#### Navegue por categoria"
     }
   },
 

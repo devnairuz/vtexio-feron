@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#search-banner-desk": {
+      "title": "Banner Categoria Desktop",
+      "props": {
+        "blockClass": "search-banner-container",
+        "fullWidth": true,
+        "preventHorizontalStretch": true
+      },
+      "children": [
+        "flex-layout.col#search-banner"
+      ]
+    }
+  }

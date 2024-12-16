@@ -1,0 +1,32 @@
+{
+    "flex-layout.row#slider-marcas": {
+      "title": "Carrossel de Marcas",
+      "props": {
+        "blockClass": ["categories-slider-container", "custom-container"],
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "flex-layout.col#slider-marcas-title",
+        "flex-layout.col#slider-marcas"
+      ]
+    },
+    "flex-layout.col#slider-marcas-title": {
+      "children": ["rich-text#slider-marcas"]
+    },
+    "rich-text#slider-marcas": {
+      "title": "Título",
+      "props": {
+        "blockClass": ["best-sellers-title", "shelf-title", "marcas-title"],
+        "text": "#### Navegue por marcas"
+      }
+    },
+    "flex-layout.col#slider-marcas": {
+      "props": {
+        "blockClass": ["categories"],
+        "width": "100%"
+      },
+      "children": ["slider-layout#marcas"]
+    }
+  }
+  

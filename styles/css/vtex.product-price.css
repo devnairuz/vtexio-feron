@@ -30,7 +30,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16.39px;
-  color: #696969;
+  color: #101010;
   display: block;
 }
 .listPriceValue--list-price-summary {
@@ -39,7 +39,7 @@
 }
 .spotPrice,
 .spotPriceValue {
-  color: #EA5A1C;
+  color: #263572;
 }
 .spotPrice--summary {
   font-size: 12px;
@@ -56,13 +56,17 @@
 
 /* PÁGINA DO PRODUTO */
 .spotPriceValue--pdp {
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 32px;
+  line-height: 49px;
+  font-weight: 800;
 }
 
 .installments--installments-pdp {
   font-size: 14px;
-  color: #696969;
+  color: #101010;
+}
+.installmentsTotalValue--installments-pdp {
+  font-weight: 700;
 }
 .sellingPriceValue--selling-price-pdp {
   display: none;

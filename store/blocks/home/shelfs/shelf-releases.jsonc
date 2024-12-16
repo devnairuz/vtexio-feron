@@ -32,7 +32,7 @@
   },
   "rich-text#releases-title": {
     "props": {
-      "text": "#### Máquinas para envasar",
+      "text": "#### Novidades",
       "blockClass": ["releases-title", "shelf-title", "banner-shelf"]
     }
   },
@@ -56,9 +56,9 @@
   },
   "image#shelf-envasadoras": {
     "props": {
-      "src": "assets/shelf/banner-envasadoras.webp",
-      "alt": "Envasadoras. Clique para ver tudo!",
-      "title": "Envasadoras",
+      "src": "assets/shelf/banner_macaco.png",
+      "alt": "Macaco, Confira!",
+      "title": "Macaco",
       "link": {
         "url": "/envasadoras"
       }
@@ -66,9 +66,9 @@
   },
   "image#shelf-envasadoras-mobile": {
     "props": {
-      "src": "assets/shelf/banner-envasadoras-mobile.webp",
-      "alt": "Envasadoras. Clique para ver tudo!",
-      "title": "Envasadoras",
+      "src": "assets/shelf/banner_macaco.png",
+      "alt": "Macaco, Confira!",
+      "title": "Macaco",
       "link": {
         "url": "/envasadoras"
       },
@@ -90,7 +90,7 @@
     "props": {
       "listName": "Lançamentos",
       "installmentCriteria": "MAX_WITH_INTEREST",
-      "category": "95"
+      "category": "4"
     },
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#products-triple"]

@@ -15,7 +15,27 @@
       "blockClass": "companies-content",
       "preventVerticalStretch": true
     },
-    "children": ["image#nairuz", "image#vtex", "image#lets-encrypt"]
+    "children": ["image#site-seguro","image#lets-encrypt", "image#google-sf","image#nairuz", "image#vtex"]
+  },
+
+  "image#site-seguro": {
+    "props": {
+      "src": "assets/logos/site-seguro.svg",
+      "alt": "Site Seguro",
+      "title": "Site Seguro"
+    }
+  },
+
+  "image#google-sf": {
+    "props": {
+      "src": "assets/logos/google-sf.svg",
+      "alt": "Google Safe Browsing",
+      "title": "Google Safe Browsing",
+      "link": {
+        "newTab": "true",
+        "url": "https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Feron.com.br%2F"
+      }
+    }
   },
 
   "image#nairuz": {

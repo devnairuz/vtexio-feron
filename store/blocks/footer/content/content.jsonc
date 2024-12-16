@@ -6,20 +6,34 @@
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.col#content-left",
+      "flex-layout.row#primeiralinha",
       "flex-layout.col#content-right"
     ]
   },
 
+  "flex-layout.row#primeiralinha": {
+    "title": "Primeira Linha",
+    "props": {
+      "blockClass": ["primeira-linha"]
+    },
+    "children": [
+      "flex-layout.col#content-left",
+      "flex-layout.col#social"
+    ]
+  },
   "flex-layout.col#content-left": {
     "props": {
       "blockClass": "content-left-content",
       "preventVerticalStretch": true
     },
     "children": [
-      "image#footer-logo",
-      "rich-text#brand-resume",
-      "flex-layout.row#tecfast-footer"
+      "image#footer-logo"
+    ]
+  },
+
+  "flex-layout.col#social": {
+    "children": [
+      "flex-layout.row#social-networks"
     ]
   },
 

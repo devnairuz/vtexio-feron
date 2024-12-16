@@ -38,6 +38,7 @@
       "blockClass": "utils-desktop-container"
     },
     "children": [
+      "overlay-trigger#store-info",
       "flex-layout.row#login-desktop",
       "flex-layout.row#minicart-desktop"
     ]

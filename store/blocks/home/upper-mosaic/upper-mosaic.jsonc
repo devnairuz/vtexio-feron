@@ -2,9 +2,11 @@
   "flex-layout.row#upper-mosaic": {
     "title": "Banner Superior",
     "props": {
-      "blockClass": ["upper-mosaic-container", "custom-container"]
+      "blockClass": ["upper-mosaic-container", "custom-container","mosaico-topo"],
+      "fullWidth": true,
+      "colSizing": "auto"
     },
-    "children": ["flex-layout.col#upper-mosaic"]
+    "children": ["flex-layout.col#upper-mosaic", "flex-layout.col#upper-mosaic2"]
   },
 
   "flex-layout.col#upper-mosaic": {
@@ -18,16 +20,39 @@
     "title": "Imagem Desktop",
     "props": {
       "blockClass": "image__upper-mosaic",
-      "src": "assets/upper-mosaic/banner-tecfast.webp",
-      "alt": "Tecfast. Entrega em até 48h para sul, sudeste e centro-oeste."
+      "src": "assets/upper-mosaic/Banner-Mid-Ofertas1.png",
+      "alt": "Nova seleção de ofertas"
     }
   },
   "image#upper-mosaic-first-mobile": {
     "title": "Imagem Mobile",
     "props": {
       "blockClass": ["image__upper-mosaic", "image__upper-mosaic-mobile"],
-      "src": "assets/upper-mosaic/banner-tecfast-mobile.webp",
-      "alt": "Tecfast. Entrega em até 48h para sul, sudeste e centro-oeste."
+      "src": "assets/upper-mosaic/Banner-Mid-Ofertas1.png",
+      "alt": "Nova seleção de ofertas"
+    }
+  },
+
+  "flex-layout.col#upper-mosaic2": {
+    "props": {
+      "blockClass": "upper-mosaic-content"
+    },
+    "children": ["image#upper-mosaic-second", "image#upper-mosaic-second-mobile"]
+  },
+  "image#upper-mosaic-second": {
+    "title": "Imagem Desktop",
+    "props": {
+      "blockClass": "image__upper-mosaic",
+      "src": "assets/upper-mosaic/Banner-Mid-Ofertas2.png",
+      "alt": "Nova seleção de ofertas"
+    }
+  },
+  "image#upper-mosaic-second-mobile": {
+    "title": "Imagem Mobile",
+    "props": {
+      "blockClass": ["image__upper-mosaic", "image__upper-mosaic-mobile"],
+      "src": "assets/upper-mosaic/Banner-Mid-Ofertas2.png",
+      "alt": "Nova seleção de ofertas"
     }
   }
 }

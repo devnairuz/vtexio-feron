@@ -1,0 +1,63 @@
+{
+    "overlay-trigger#store-share": {
+        "children": [
+            "flex-layout.row#share-popup",
+            "overlay-layout#store-share"
+        ],
+        "props": {
+            "blockClass": "trigger-store-share"
+        }
+    },
+    "flex-layout.row#share-popup": {
+    "props": {
+      "blockClass": ["share-popup"]
+    },
+    "children": ["flex-layout.col#compartilhar"]
+  },
+  "flex-layout.col#compartilhar": {
+    "props": {
+      "blockClass": ["compartilhar-prod"]
+    },
+    "children": ["rich-text#texto-compa"]
+  },
+  "rich-text#texto-compa": {
+    "props": {
+      "blockClass": ["texto-compa"],
+      "text": "Compartilhar"
+    }
+  },
+  "overlay-layout#store-share": {
+    "props": {
+      "placement": "bottom",
+      "blockClass": "share-box"
+    },
+    "children": ["flex-layout.row#share"]
+  },
+  "flex-layout.row#share": {
+    "props": {
+      "blockClass": "share-container"
+    },
+    "children": ["flex-layout.col#share"]
+  },
+
+  "flex-layout.col#share": {
+    "props": {
+      "blockClass": "share-content"
+    },
+    "children": ["share"]
+  },
+
+  "share": {
+    "props": {
+      "options": {
+        "size": 17
+      },
+      "social": {
+        "WhatsApp": true,
+        "Facebook": false,
+        "Twitter": false,
+        "Pinterest": false
+      }
+    }
+  }
+}

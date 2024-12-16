@@ -16,12 +16,32 @@
     },
     "children": [
       "menu-item#sobre",
-      "menu-item#faq",
       "menu-item#trocas",
       "menu-item#assistencia",
       "menu-item#privacidade",
-      "menu-item#termos"
+      "menu-item#termos",
+      "flex-layout.row#btn-catalogo"
     ]
+  },
+
+  "flex-layout.row#btn-catalogo": {
+    "props": {
+      "blockClass": "sac-group-container"
+    },
+    "children": ["flex-layout.col#sac-catalogo"]
+  },
+  "flex-layout.col#sac-catalogo": {
+    "props": {
+      "blockClass": "sac-group-content"
+    },
+    "children": ["rich-text#sac-catalogo"]
+  },
+  
+  "rich-text#sac-catalogo": {
+    "props": {
+      "blockClass": ["sac-group-link", "sac-group-btn"],
+      "text": "<a href='#' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-catalogo'>Baixe nosso catálogo</a>"
+    }
   },
 
   "menu-item#sobre": {
@@ -37,23 +57,6 @@
         "noFollow": false,
         "tagTitle": "Sobre nós",
         "text": "Sobre nós"
-      }
-    }
-  },
-
-  "menu-item#faq": {
-    "props": {
-      "id": "menu-item-faq",
-      "blockClass": "menu-item-faq",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/faq",
-        "noFollow": false,
-        "tagTitle": "FAQ - Perguntas Frequentes",
-        "text": "FAQ - Perguntas Frequentes"
       }
     }
   },

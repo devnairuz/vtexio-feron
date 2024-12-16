@@ -32,7 +32,7 @@
   },
   "rich-text#promotions-title": {
     "props": {
-      "text": "#### Máquinas para selar",
+      "text": "#### Destaques",
       "blockClass": ["promotions-title", "shelf-title", "banner-shelf"]
     }
   },
@@ -56,9 +56,9 @@
   },
   "image#shelf-seladoras": {
     "props": {
-      "src": "assets/shelf/banner-seladoras.webp",
-      "alt": "Seladoras. Clique para ver tudo!",
-      "title": "Seladoras",
+      "src": "assets/shelf/banner_scanner.png",
+      "alt": "Scanner Automotivo",
+      "title": "Scanner",
       "link": {
         "url": "/seladoras"
       }
@@ -66,9 +66,9 @@
   },
   "image#shelf-seladoras-mobile": {
     "props": {
-      "src": "assets/shelf/banner-seladoras-mobile.webp",
-      "alt": "Seladoras. Clique para ver tudo!",
-      "title": "Seladoras",
+      "src": "assets/shelf/banner_scanner.png",
+      "alt": "Scanner Automotivo",
+      "title": "Scanner",
       "link": {
         "url": "/seladoras"
       },
@@ -90,7 +90,7 @@
     "props": {
       "listName": "Promoções",
       "installmentCriteria": "MAX_WITH_INTEREST",
-      "category": "77"
+      "category": "4"
     },
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#products-triple"]

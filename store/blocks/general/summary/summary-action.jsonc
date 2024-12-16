@@ -11,15 +11,8 @@
       "blockClass": ["summary-action-content"]
     },
     "children": [
-      "product-summary-quantity",
       "add-to-cart-button#buy-button-shelf"
     ]
-  },
-  "product-summary-quantity": {
-    "props": {
-      "showLabel": false,
-      "blockClass": "summary-quantity-shelf"
-    }
   },
   "add-to-cart-button#buy-button-shelf": {
     "props": {

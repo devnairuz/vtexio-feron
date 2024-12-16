@@ -1,13 +1,12 @@
 /* CARD PRODUTO */
 .buttonText--buy-button-shelf {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: initial;
-  font-weight: 400;
-  background: #000000;
-  box-shadow: 0px 3px 6px #00000029;
+  font-weight: 700;
   border-radius: 0;
   border: 0;
+  color: #101010;
 }
 
 @media (max-width: 991px) {

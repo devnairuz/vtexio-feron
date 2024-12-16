@@ -3,64 +3,112 @@
     "props": {
       "blockClass": ["categories"],
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 6,
         "tablet": 4,
         "phone": 2
-      },
-      "autoplay": {
-        "timeout": "3000",
-        "stopOnHover": true
-      },
-      "infinite": true,
-      "showPaginationDots": "never",
-      "navigationStep": 1
+      }
     },
     "children": [
-      "image#cate-envasadoras",
-      "image#cate-seladoras",
-      "image#cate-dosadoras",
-      "image#cate-datadores",
-      "image#cate-rosqueadeiras",
-      "image#cate-rotuladoras",
-      "image#cate-aplicadores-de-fita",
-      "image#cate-arqueadoras",
-      "image#cate-esteiras",
-      "image#cate-moinhos",
-      "image#cate-paletizadoras",
-      "image#cate-stretch",
-      "image#cate-tuneis-de-encolhimento",
-      "image#cate-insumos"
+      "info-card#cat1",
+      "info-card#cat2",
+      "info-card#cat3",
+      "info-card#cat4",
+      "info-card#cat5",
+      "info-card#cat6"
     ]
   },
 
-  "image#cate-envasadoras": {
+  "info-card#cat1": {
     "props": {
-      "src": "assets/categories/cate-envasadoras.webp",
-      "maxHeight": 200,
-      "alt": "Envasadoras",
-      "title": "Envasadoras",
-      "link": {
-        "url": "/envasadoras"
-      }
+      "id": "info-card-cat",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/categories/cat1.svg",
+      "callToActionText": "Sincronismo\nde motores",
+      "blockClass": ["info-card-marca", "info-card-cat"],
+      "callToActionMode": "Link",
+      "textMode": "rich-text",
+      "imageActionUrl": "/dosadoras",
+      "callToActionUrl": "/dosadoras"
     }
   },
-  "image#cate-seladoras": {
+  "info-card#cat2": {
     "props": {
-      "src": "assets/categories/cate-seladoras.webp",
-      "maxHeight": 200,
-      "alt": "Seladoras",
-      "title": "Seladoras",
-      "link": {
-        "url": "/seladoras"
-      }
+      "id": "info-card-cat",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/categories/cat2.svg",
+      "callToActionText": "Macacos\nHidráulicos",
+      "blockClass": ["info-card-marca", "info-card-cat"],
+      "callToActionMode": "Link",
+      "textMode": "rich-text",
+      "imageActionUrl": "/dosadoras",
+      "callToActionUrl": "/dosadoras"
     }
   },
+  "info-card#cat3": {
+    "props": {
+      "id": "info-card-cat",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/categories/cat3.svg",
+      "callToActionText": "Ferramentas\nElétricas",
+      "blockClass": ["info-card-marca", "info-card-cat"],
+      "callToActionMode": "Link",
+      "textMode": "rich-text",
+      "imageActionUrl": "/dosadoras",
+      "callToActionUrl": "/dosadoras"
+    }
+  },
+  "info-card#cat4": {
+    "props": {
+      "id": "info-card-cat",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/categories/cat4.svg",
+      "callToActionText": "Ferramentas\nPneumáticas",
+      "blockClass": ["info-card-marca", "info-card-cat"],
+      "callToActionMode": "Link",
+      "textMode": "rich-text",
+      "imageActionUrl": "/dosadoras",
+      "callToActionUrl": "/dosadoras"
+    }
+  },
+  "info-card#cat5": {
+    "props": {
+      "id": "info-card-cat",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/categories/cat5.svg",
+      "callToActionText": "Polimento e\nEstética Automotiva",
+      "blockClass": ["info-card-marca", "info-card-cat"],
+      "callToActionMode": "Link",
+      "textMode": "rich-text",
+      "imageActionUrl": "/dosadoras",
+      "callToActionUrl": "/dosadoras"
+    }
+  },
+  "info-card#cat6": {
+    "props": {
+      "id": "info-card-cat",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/categories/cat6.svg",
+      "callToActionText": "Borracharia",
+      "blockClass": ["info-card-marca", "info-card-cat"],
+      "callToActionMode": "Link",
+      "textMode": "rich-text",
+      "imageActionUrl": "/dosadoras",
+      "callToActionUrl": "/dosadoras"
+    }
+  },
+
   "image#cate-dosadoras": {
     "props": {
-      "src": "assets/categories/cate-dosadoras.webp",
-      "maxHeight": 200,
-      "alt": "Dosadoras",
-      "title": "Dosadoras",
+      "src": "assets/categories/cat1.png",
+      "maxHeight": 207,
+      "alt": "Sincronismo Motores",
+      "title": "Sincronismo Motores",
       "link": {
         "url": "/dosadoras"
       }
@@ -68,10 +116,10 @@
   },
   "image#cate-datadores": {
     "props": {
-      "src": "assets/categories/cate-datadores.webp",
-      "maxHeight": 200,
-      "alt": "Datadores",
-      "title": "Datadores",
+      "src": "assets/categories/cat2.png",
+      "maxHeight": 207,
+      "alt": "Macacos Hidráulicos",
+      "title": "Macacos Hidráulicos",
       "link": {
         "url": "/datadores"
       }
@@ -79,10 +127,10 @@
   },
   "image#cate-rosqueadeiras": {
     "props": {
-      "src": "assets/categories/cate-rosqueadeiras.webp",
-      "maxHeight": 200,
-      "alt": "Rosqueadeiras",
-      "title": "Rosqueadeiras",
+      "src": "assets/categories/cat3.png",
+      "maxHeight": 207,
+      "alt": "Ferramentas Elétricas",
+      "title": "Ferramentas Elétricas",
       "link": {
         "url": "/rosqueadeiras"
       }
@@ -90,10 +138,10 @@
   },
   "image#cate-rotuladoras": {
     "props": {
-      "src": "assets/categories/cate-rotuladoras.webp",
-      "maxHeight": 200,
-      "alt": "Rotuladoras",
-      "title": "Rotuladoras",
+      "src": "assets/categories/cat4.png",
+      "maxHeight": 207,
+      "alt": "Ferramentas Pneumáticas",
+      "title": "Ferramentas Pneumáticas",
       "link": {
         "url": "/rotuladoras"
       }
@@ -101,10 +149,10 @@
   },
   "image#cate-aplicadores-de-fita": {
     "props": {
-      "src": "assets/categories/cate-aplicadores-de-fita.webp",
-      "maxHeight": 200,
-      "alt": "Aplicadores de Fita",
-      "title": "Aplicadores de Fita",
+      "src": "assets/categories/cat5.png",
+      "maxHeight": 207,
+      "alt": "Polimento",
+      "title": "Polimento",
       "link": {
         "url": "/aplicadores-de-fita"
       }
@@ -112,78 +160,12 @@
   },
   "image#cate-arqueadoras": {
     "props": {
-      "src": "assets/categories/cate-arqueadoras.webp",
-      "maxHeight": 200,
-      "alt": "Arqueadoras",
-      "title": "Arqueadoras",
+      "src": "assets/categories/cat6.png",
+      "maxHeight": 207,
+      "alt": "Borracharia",
+      "title": "Borracharia",
       "link": {
         "url": "/arqueadoras"
-      }
-    }
-  },
-  "image#cate-esteiras": {
-    "props": {
-      "src": "assets/categories/cate-esteiras.webp",
-      "maxHeight": 200,
-      "alt": "Esteiras",
-      "title": "Esteiras",
-      "link": {
-        "url": "/esteiras"
-      }
-    }
-  },
-  "image#cate-moinhos": {
-    "props": {
-      "src": "assets/categories/cate-moinhos.webp",
-      "maxHeight": 200,
-      "alt": "Moinhos",
-      "title": "Moinhos",
-      "link": {
-        "url": "/moinhos"
-      }
-    }
-  },
-  "image#cate-paletizadoras": {
-    "props": {
-      "src": "assets/categories/cate-paletizadoras.webp",
-      "maxHeight": 200,
-      "alt": "Paletizadoras",
-      "title": "Paletizadoras",
-      "link": {
-        "url": "/paletizadoras"
-      }
-    }
-  },
-  "image#cate-stretch": {
-    "props": {
-      "src": "assets/categories/cate-stretch.webp",
-      "maxHeight": 200,
-      "alt": "Stretch",
-      "title": "Stretch",
-      "link": {
-        "url": "/stretch"
-      }
-    }
-  },
-  "image#cate-tuneis-de-encolhimento": {
-    "props": {
-      "src": "assets/categories/cate-tuneis-de-encolhimento.webp",
-      "maxHeight": 200,
-      "alt": "Tuneis de Encolhimento",
-      "title": "Tuneis de Encolhimento",
-      "link": {
-        "url": "/tuneis-de-encolhimento"
-      }
-    }
-  },
-  "image#cate-insumos": {
-    "props": {
-      "src": "assets/categories/cate-insumos.webp",
-      "maxHeight": 200,
-      "alt": "Insumos",
-      "title": "Insumos",
-      "link": {
-        "url": "/pecas-e-insumos"
       }
     }
   }

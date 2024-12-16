@@ -23,8 +23,7 @@
       "maxHeight": 212,
       "hoverImage": {
         "criteria": "label",
-        "index": 1,
-        "label": "Segunda"
+        "index": 1
       }
     }
   }

@@ -3,7 +3,6 @@
     "title": "Cabeçalho Desktop",
     "children": [
       "aux-floating-container#desktop",
-      "modal-trigger#helper",
       "back-to-top-button"
     ]
   },

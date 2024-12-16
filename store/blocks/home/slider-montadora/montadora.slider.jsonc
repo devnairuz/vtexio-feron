@@ -1,0 +1,88 @@
+{
+    "slider-layout#montadoras": {
+      "props": {
+        "blockClass": ["categories"],
+        "itemsPerPage": {
+          "desktop": 6,
+          "tablet": 4,
+          "phone": 2
+        }
+      },
+      "children": [
+        "image#montadora-fiat",
+        "image#montadora-ford",
+        "image#montadora-renault",
+        "image#montadora-jeep",
+        "image#montadora-nissan",
+        "image#montadora-honda"
+      ]
+    },
+  
+    "image#montadora-fiat": {
+      "props": {
+        "src": "assets/montadoras/montadora-fiat.svg",
+        "maxHeight": 142,
+        "alt": "Montadora Fiat",
+        "title": "Montadora Fiat",
+        "link": {
+          "url": "/dosadoras"
+        }
+      }
+    },
+    "image#montadora-ford": {
+      "props": {
+        "src": "assets/montadoras/montadora-ford.svg",
+        "maxHeight": 144,
+        "alt": "Montadora Ford",
+        "title": "Montadora Ford",
+        "link": {
+          "url": "/datadores"
+        }
+      }
+    },
+    "image#montadora-renault": {
+      "props": {
+        "src": "assets/montadoras/montadora-renault.svg",
+        "maxHeight": 144,
+        "alt": "Montadora Renault",
+        "title": "Montadora Renault",
+        "link": {
+          "url": "/rosqueadeiras"
+        }
+      }
+    },
+    "image#montadora-jeep": {
+      "props": {
+        "src": "assets/montadoras/montadora-jeep.svg",
+        "maxHeight": 144,
+        "alt": "Montadora Jeep",
+        "title": "Montadora Jeep",
+        "link": {
+          "url": "/rotuladoras"
+        }
+      }
+    },
+    "image#montadora-nissan": {
+      "props": {
+        "src": "assets/montadoras/montadora-nissan.svg",
+        "maxHeight": 144,
+        "alt": "Montadora Nissan",
+        "title": "Montadora Nissan",
+        "link": {
+          "url": "/aplicadores-de-fita"
+        }
+      }
+    },
+    "image#montadora-honda": {
+      "props": {
+        "src": "assets/montadoras/montadora-honda.svg",
+        "maxHeight": 144,
+        "alt": "Montadora Honda",
+        "title": "Montadora Honda",
+        "link": {
+          "url": "/arqueadoras"
+        }
+      }
+    }
+  }
+  

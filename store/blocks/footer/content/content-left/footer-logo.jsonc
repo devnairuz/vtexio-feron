@@ -3,8 +3,9 @@
     "title": "Logo",
     "props": {
       "blockClass": "footer-logo",
-      "src": "assets/logos/logo-feron.svg",
-      "alt": "Tecfag",
+      "src": "assets/logos/logo-footer.svg",
+      "alt": "Feron",
+      "maxWidth": 385,
       "link": {
         "url": "/"
       }

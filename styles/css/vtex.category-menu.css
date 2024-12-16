@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  display: none;
 }
 .itemContainer--department:first-child::before {
   content: url(assets/icons/menu.svg);

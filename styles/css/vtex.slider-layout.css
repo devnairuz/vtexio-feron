@@ -38,10 +38,12 @@
 .sliderLeftArrow::before {
   content: url(assets/icons/arrow_back_ios.svg);
   line-height: 0;
+  filter: brightness(0) saturate(100%) invert(100%);
 }
 .sliderRightArrow::before {
   content: url(assets/icons/arrow_next_ios.svg);
   line-height: 0;
+  filter: brightness(0) saturate(100%) invert(100%);
 }
 .sliderRightArrow {
   right: -10px;
@@ -49,12 +51,12 @@
 .sliderArrows {
   margin: 0;
   padding: 0;
-  width: 48px;
-  height: 48px;
-  background: #ffffff !important;
+  width: 30px;
+  height: 30px;
+  background:#263572 !important;
   box-shadow: 0px 4px 6px 0px #00000026;
-  border-radius: 50px;
-  top: 45%;
+  border-radius: 0px;
+  top: 45%; 
   transform: translate(0, -45%);
   transition: all 0.3s ease-in-out;
 }
@@ -88,14 +90,7 @@
 }
 .slideChildrenContainer--categories:hover
   :global(.vtex-store-components-3-x-imageElementLink)::before {
-  box-shadow: inset 0 0 0 2px #a71b28;
-}
-.slideChildrenContainer--categories {
-  background: linear-gradient(
-    180deg,
-    rgba(244, 244, 244, 0.5) 11%,
-    rgba(168, 168, 168, 0.5) 424.75%
-  );
+  box-shadow: inset 0 0 0 2px rgb(16, 16, 16);
 }
 .slide--categories :global(.vtex-store-components-3-x-imageElement) {
   max-width: 200px;
@@ -110,6 +105,10 @@
 .sliderTrackContainer--shelf-carousel {
   padding: 4px 0 30px;
 }
+.paginationDotsContainer--shelf-carousel {
+  display: none;
+}
+
 
 /* SLIDER FAVORITOS DENTROS DE MINHA CONTA */
 .sliderLayoutContainer--wishlist {
@@ -137,10 +136,10 @@
     height: 30px;
   }
   .sliderLeftArrow::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M6.27441 12.5416L0.246826 6.49992L6.27441 0.458252L7.34431 1.53065L2.38662 6.49992L7.34431 11.4692L6.27441 12.5416Z' fill='%23474747'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M6.27441 12.5416L0.246826 6.49992L6.27441 0.458252L7.34431 1.53065L2.38662 6.49992L7.34431 11.4692L6.27441 12.5416Z' fill='%23ffffff'/%3E%3C/svg%3E");
   }
   .sliderRightArrow::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M1.73243 0.458417L7.76001 6.50008L1.73243 12.5417L0.66253 11.4694L5.62022 6.50008L0.662529 1.53081L1.73243 0.458417Z' fill='%23474747'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M1.73243 0.458417L7.76001 6.50008L1.73243 12.5417L0.66253 11.4694L5.62022 6.50008L0.662529 1.53081L1.73243 0.458417Z' fill='%23ffffff'/%3E%3C/svg%3E");
   }
   .sliderLeftArrow {
     left: 7.5px;

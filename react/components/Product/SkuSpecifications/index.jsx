@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { useProduct } from 'vtex.product-context'
 
-import { Bolt, Box, Equilizer, Power, Screen, Weight } from '../../Icons'
+import { Bolt, Box, Equilizer, Power, Screen } from '../../Icons'
 
 import styles from './sku.specifications.css'
 
@@ -13,29 +13,25 @@ const SkuSpecifications = () => {
 
   const specificationsToShow = [
     {
-      name: 'Alimentação',
-      Icon: Power,
-    },
-    {
-      name: 'Potência',
+      name: 'Energia',
       Icon: Bolt,
     },
     {
-      name: 'Produtividade',
+      name: 'Voltagem',
+      Icon: Power,
+    },
+    {
+      name: 'Bateria',
       Icon: Equilizer,
     },
     {
-      name: 'Tipo de Produto',
+      name: 'Marca',
       Icon: Box,
     },
     {
-      name: 'Tamanho',
+      name: 'Força',
       Icon: Screen,
-    },
-    {
-      name: 'Peso',
-      Icon: Weight,
-    },
+    }
   ]
 
   return (

@@ -7,9 +7,10 @@
     },
     "children": [
       "flex-layout.row#sac-title",
-      "flex-layout.row#sac-email",
       "flex-layout.row#sac-wpp",
-      "flex-layout.row#social-networks"
+      "flex-layout.row#sac-tel",
+      "flex-layout.row#sac-email",
+      "flex-layout.row#sac-btncontato"
     ]
   },
 
@@ -28,7 +29,7 @@
   "rich-text#sac-title": {
     "props": {
       "blockClass": "footer-title",
-      "text": "#### Contato"
+      "text": "#### Fale Conosco"
     }
   },
 
@@ -42,18 +43,13 @@
     "props": {
       "blockClass": "sac-group-content"
     },
-    "children": ["rich-text#sac-email-title", "rich-text#sac-email"]
+    "children": ["rich-text#sac-email"]
   },
-  "rich-text#sac-email-title": {
-    "props": {
-      "blockClass": ["sac-group-title", "sac-email"],
-      "text": "E-mail"
-    }
-  },
+  
   "rich-text#sac-email": {
     "props": {
-      "blockClass": ["sac-group-link"],
-      "text": "<a href='mailto:contato@tecfag.com.br' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link'>contato@tecfag.com.br</a>"
+      "blockClass": ["sac-group-link", "sac-group-email"],
+      "text": "<a href='mailto:sac@lojadasferramentasonline.com.br' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-email'>sac@lojadasferramentasonline.com.br</a>"
     }
   },
 
@@ -67,18 +63,51 @@
     "props": {
       "blockClass": "sac-group-content"
     },
-    "children": ["rich-text#sac-wpp-title", "rich-text#sac-wpp-first"]
+    "children": ["rich-text#sac-wpp-first"]
   },
-  "rich-text#sac-wpp-title": {
-    "props": {
-      "blockClass": ["sac-group-title", "sac-wpp"],
-      "text": "Precisa de ajuda?"
-    }
-  },
+  
   "rich-text#sac-wpp-first": {
     "props": {
       "blockClass": ["sac-group-link"],
-      "text": "<a href='https://wa.me/5514991054116' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link'>Entrar em contato</a>"
+      "text": "<a href='https://wa.me/5511963227188' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-wpp'>(11) 96322-7188</a>"
+    }
+  },
+  "flex-layout.row#sac-tel": {
+    "props": {
+      "blockClass": "sac-group-container"
+    },
+    "children": ["flex-layout.col#sac-tel"]
+  },
+  "flex-layout.col#sac-tel": {
+    "props": {
+      "blockClass": "sac-group-content"
+    },
+    "children": ["rich-text#sac-tel"]
+  },
+  
+  "rich-text#sac-tel": {
+    "props": {
+      "blockClass": ["sac-group-link","sac-group-tel"],
+      "text": "<a href='tel:1140242070' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-tel'>(11) 4024-2070</a>"
+    }
+  },
+  "flex-layout.row#sac-btncontato": {
+    "props": {
+      "blockClass": "sac-group-container"
+    },
+    "children": ["flex-layout.col#sac-btn"]
+  },
+  "flex-layout.col#sac-btn": {
+    "props": {
+      "blockClass": "sac-group-content"
+    },
+    "children": ["rich-text#sac-btn"]
+  },
+  
+  "rich-text#sac-btn": {
+    "props": {
+      "blockClass": ["sac-group-link", "sac-group-btn"],
+      "text": "<a href='https://wa.me/5511963227188' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-btn'>Envie uma mensagem</a>"
     }
   }
 }

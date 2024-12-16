@@ -1,55 +1,47 @@
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url('assets/fonts/Manrope-ExtraLight.ttf');
+  src: url('assets/fonts/TitilliumWeb-ExtraLight.ttf');
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('assets/fonts/Manrope-Light.ttf');
+  src: url('assets/fonts/TitilliumWeb-Light.ttf');
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('assets/fonts/Manrope-Regular.ttf');
+  src: url('assets/fonts/TitilliumWeb-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('assets/fonts/Manrope-Medium.ttf');
-}
-
-@font-face {
-  font-family: 'Manrope';
+  font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('assets/fonts/Manrope-SemiBold.ttf');
+  src: url('assets/fonts/TitilliumWeb-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('assets/fonts/Manrope-Bold.ttf');
+  src: url('assets/fonts/TitilliumWeb-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('assets/fonts/Manrope-ExtraBold.ttf');
+  src: url('assets/fonts/TitilliumWeb-Black.ttf');
 }
