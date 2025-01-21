@@ -60,17 +60,17 @@
       "alt": "Scanner Automotivo",
       "title": "Scanner",
       "link": {
-        "url": "/seladoras"
+        "url": "/scanner-automotivo/p"
       }
     }
   },
   "image#shelf-seladoras-mobile": {
     "props": {
-      "src": "assets/shelf/banner_scanner.png",
+      "src": "assets/shelf/mob-shelf1.png",
       "alt": "Scanner Automotivo",
       "title": "Scanner",
       "link": {
-        "url": "/seladoras"
+        "url": "/scanner-automotivo/p"
       },
       "blockClass": ["shelf-img-mobile"]
     }

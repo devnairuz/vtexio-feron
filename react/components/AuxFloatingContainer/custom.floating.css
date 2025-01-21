@@ -1,11 +1,9 @@
 .homeRoute {
 }
 
-.notHomeRoute :global(.vtex-sticky-layout-0-x-container--sticky-header) {
-  background: #212121;
-}
 @media (min-width: 1100px) {
   .homeRoute {
     margin-bottom: 30px;
+    
   }
 }

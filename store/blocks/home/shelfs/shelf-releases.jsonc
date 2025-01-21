@@ -60,17 +60,17 @@
       "alt": "Macaco, Confira!",
       "title": "Macaco",
       "link": {
-        "url": "/envasadoras"
+        "url": "/macaco-hidraulico/p"
       }
     }
   },
   "image#shelf-envasadoras-mobile": {
     "props": {
-      "src": "assets/shelf/banner_macaco.png",
+      "src": "assets/shelf/mob-shelf2.png",
       "alt": "Macaco, Confira!",
       "title": "Macaco",
       "link": {
-        "url": "/envasadoras"
+        "url": "/macaco-hidraulico/p"
       },
       "blockClass": ["shelf-img-mobile"]
     }

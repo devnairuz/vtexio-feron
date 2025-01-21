@@ -1,13 +1,8 @@
 .container--sticky-header {
   transition: all 0.3s ease-in-out;
 }
-.wrapper--sticky-header--stuck .container--sticky-header {
-  background: #212121;
-}
 
-@media screen and (min-width: 1100px) {
-  .container--sticky-header  {
+.container--sticky-header  {
     background: url(assets/icons/fundo-header.png) no-repeat;
     background-size: cover;
-  }
 }

@@ -4,6 +4,6 @@
       "orientation": "vertical",
       "blockClass": "cms-sidebar"
     },
-    "children": ["menu-item#trocas", "menu-item#assistencia"]
+    "children": ["menu-item#trocas"]
   }
 }

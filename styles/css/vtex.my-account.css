@@ -151,7 +151,7 @@
   :global(.vtex-pageHeader__children)
   :global(.vtex-button):hover,
 .addressCreate :global(.vtex-button):hover {
-  background: #de0d2e;
+  background: #EA5A1C;
 }
 .addressList__header
   :global(.vtex-pageHeader__children)

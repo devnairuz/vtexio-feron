@@ -3,6 +3,7 @@
     "title": "Layout Mobile",
     "children": [
       "flex-layout.row#search-bread",
+      "flex-layout.row#search-banner-desk",
       "flex-layout.row#search-title",
       "flex-layout.row#search-toolbar-mobile",
       "flex-layout.row#search-products",

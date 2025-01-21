@@ -34,9 +34,12 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--cms-privacidade)
   .styledLinkContent--menu-item-privacidade,
 :global(.vtex-flex-layout-0-x-flexRowContent--cms-termos)
-  .styledLinkContent--menu-item-termos {
+  .styledLinkContent--menu-item-termos, 
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-vendas) .styledLinkContent--menu-item-vendas,
+:global(.vtex-flex-layout-0-x-flexRowContent--cms-pagamento) .styledLinkContent--menu-item-pagamento {
   font-weight: 700;
-  border-color: #212121;
+  border-color: #263572;
+  color: #263572;
 }
 
 @media screen and (max-width: 575px) {

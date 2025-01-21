@@ -2,7 +2,7 @@
     "flex-layout.row#slider-montadoras": {
       "title": "Carrossel de Montadoras",
       "props": {
-        "blockClass": ["categories-slider-container", "custom-container"],
+        "blockClass": ["categories-slider-container", "custom-container", "montadora"],
         "preventHorizontalStretch": true,
         "preventVerticalStretch": true
       },
@@ -17,7 +17,7 @@
     "rich-text#slider-montadoras": {
       "title": "Título",
       "props": {
-        "blockClass": ["best-sellers-title", "shelf-title", "marcas-title"],
+        "blockClass": ["best-sellers-title", "shelf-title", "marcas-title", "montadora-title"],
         "text": "#### Navegue por montadoras"
       }
     },

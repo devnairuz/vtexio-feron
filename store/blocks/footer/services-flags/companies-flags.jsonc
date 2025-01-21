@@ -8,34 +8,14 @@
       "blockClass": "companies-content-container",
       "colSizing": "auto"
     },
-    "children": ["flex-layout.col#companies-content"]
+    "children": ["flex-layout.col#companies-content", "flex-layout.col#companies-content2"]
   },
   "flex-layout.col#companies-content": {
     "props": {
       "blockClass": "companies-content",
       "preventVerticalStretch": true
     },
-    "children": ["image#site-seguro","image#lets-encrypt", "image#google-sf","image#nairuz", "image#vtex"]
-  },
-
-  "image#site-seguro": {
-    "props": {
-      "src": "assets/logos/site-seguro.svg",
-      "alt": "Site Seguro",
-      "title": "Site Seguro"
-    }
-  },
-
-  "image#google-sf": {
-    "props": {
-      "src": "assets/logos/google-sf.svg",
-      "alt": "Google Safe Browsing",
-      "title": "Google Safe Browsing",
-      "link": {
-        "newTab": "true",
-        "url": "https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Feron.com.br%2F"
-      }
-    }
+    "children": ["rich-text#textocompanies", "image#nairuz"]
   },
 
   "image#nairuz": {
@@ -43,11 +23,31 @@
       "src": "assets/logos/nairuz.svg",
       "alt": "Nairuz",
       "title": "Nairuz",
+      "textAlignment": "center",
+      "width": 51,
+      "height": 20,
       "link": {
         "newTab": "true",
         "url": "https://nairuz.com.br"
       }
     }
+  },
+
+  "rich-text#textocompanies": {
+    "props": {
+      "text": "Desenvolvimento",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "blockClass": ["textocompa"]
+    }
+  },
+
+  "flex-layout.col#companies-content2": {
+    "props": {
+      "blockClass": "companies-content",
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#textocompanies2", "image#vtex"]
   },
 
   "image#vtex": {
@@ -62,11 +62,12 @@
     }
   },
 
-  "image#lets-encrypt": {
+  "rich-text#textocompanies2": {
     "props": {
-      "src": "assets/logos/lets-encrypt.svg",
-      "alt": "Let's Encrypt",
-      "title": "Let's Encrypt"
+      "text": "Plataforma",
+      "textAlignment": "initial",
+      "textPosition": "initial",
+      "blockClass": ["textocompa"]
     }
   }
 }

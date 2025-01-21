@@ -9,7 +9,7 @@
   
     "flex-layout.col#mid-mosaic": {
       "props": {
-        "blockClass": "upper-mosaic-content"
+        "blockClass": "mosaic-content"
       },
       "children": ["image#mid-mosaic-first", "image#mid-mosaic-first-mobile"]
     },
@@ -17,7 +17,7 @@
     "image#mid-mosaic-first": {
       "title": "Imagem Desktop",
       "props": {
-        "blockClass": "image__upper-mosaic",
+        "blockClass": "image__upper-mosaicmid",
         "src": "assets/mid-mosaic/qualidade-excelencia.png",
         "alt": "Qualidade e Excelência"
       }
@@ -26,7 +26,7 @@
       "title": "Imagem Mobile",
       "props": {
         "blockClass": ["image__upper-mosaic", "image__upper-mosaic-mobile"],
-        "src": "assets/mid-mosaic/qualidade-excelencia.png",
+        "src": "assets/mid-mosaic/banner-full-mobi.png",
         "alt": "Qualidade e Excelência"
       }
     }

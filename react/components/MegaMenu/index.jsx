@@ -38,7 +38,7 @@ const MegaMenu = ({
   data: { categories = [] },
   intl,
   CustomComponent,
-  CmsMenu,
+  children,
 }) => {
   const runtime = useRuntime()
   const [sideBarVisible, setSidebarVisible] = useState(false)
@@ -67,7 +67,7 @@ const MegaMenu = ({
           onClose={handleSidebarToggle}
           showSubcategories={showSubcategories}
           CustomComponent={CustomComponent}
-          CmsMenu={CmsMenu}
+          children={children}
         />
         <div className="flex pointer" onClick={handleSidebarToggle}>
           <IconMenu size={24} />
@@ -88,6 +88,20 @@ const MegaMenu = ({
         <ul
           className={`${styles.departmentList} pa0 list ma0 flex flex-wrap flex-row t-action`}
         >
+          {visibleDepartments.map(category => (
+            <Fragment key={category.id}>
+              <CategoryItem
+                menuPosition={menuPosition}
+                category={category}
+                subcategoryLevels={
+                  DEFAULT_SUBCATEGORIES_LEVELS + showSubcategories
+                }
+                isCategorySelected={department === category.slug}
+                sortSubcategories={sortSubcategories}
+              />
+            </Fragment>
+          ))}
+
           {showAllDepartments && (
             <CategoryItem
               noRedirect
@@ -104,20 +118,6 @@ const MegaMenu = ({
               }}
             />
           )}
-
-          {visibleDepartments.map(category => (
-            <Fragment key={category.id}>
-              <CategoryItem
-                menuPosition={menuPosition}
-                category={category}
-                subcategoryLevels={
-                  DEFAULT_SUBCATEGORIES_LEVELS + showSubcategories
-                }
-                isCategorySelected={department === category.slug}
-                sortSubcategories={sortSubcategories}
-              />
-            </Fragment>
-          ))}
         </ul>
       </Container>
     </nav>

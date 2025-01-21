@@ -2,7 +2,7 @@
     "flex-layout.row#slider-marcas": {
       "title": "Carrossel de Marcas",
       "props": {
-        "blockClass": ["categories-slider-container", "custom-container"],
+        "blockClass": ["categories-slider-container", "custom-container", "marcas"],
         "preventHorizontalStretch": true,
         "preventVerticalStretch": true
       },

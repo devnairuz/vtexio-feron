@@ -1,22 +1,26 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react'
+import React, { useEffect, useRef, useState, useCallback } from 'react';
+
+// Definindo constantes para os caminhos dos arquivos CSS e JS
+const SWIPER_CSS_PATH = 'https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.css';
+const SWIPER_JS_PATH = 'https://cdn.jsdelivr.net/npm/swiper@8.0.6/swiper-bundle.min.js';
 
 function ImageComponent({ imageItems }) {
-  const swiperContainerRef = useRef(null)
-  const [swiperInstance, setSwiperInstance] = useState(null)
-  const [imagesLoaded, setImagesLoaded] = useState(false) // Estado para controlar o carregamento das imagens
-  const [isSwiperInitialized, setIsSwiperInitialized] = useState(false) // Verifica se o Swiper foi inicializado
-  const [loading, setLoading] = useState(true) // Estado para controlar o carregamento do swiper
+  const swiperContainerRef = useRef(null);
+  const [swiperInstance, setSwiperInstance] = useState(null);
+  const [imagesLoaded, setImagesLoaded] = useState(false); // Estado para controlar o carregamento das imagens
+  const [isSwiperInitialized, setIsSwiperInitialized] = useState(false); // Verifica se o Swiper foi inicializado
+  const [loading, setLoading] = useState(true); // Estado para controlar o carregamento do swiper
 
   // Função para verificar se todas as imagens foram carregadas
   const handleImageLoad = () => {
-    const images = document.querySelectorAll('.swiper-slide img')
-    const loadedImages = Array.from(images).filter(img => img.complete)
+    const images = document.querySelectorAll('.swiper-slide img');
+    const loadedImages = Array.from(images).filter(img => img.complete);
 
     // Verifica se todas as imagens foram carregadas
     if (loadedImages.length === images.length) {
-      setImagesLoaded(true) // Todas as imagens foram carregadas
+      setImagesLoaded(true); // Todas as imagens foram carregadas
     }
-  }
+  };
 
   // Memoriza a função `initializeSwiper` para evitar sua recriação a cada renderização
   const initializeSwiper = useCallback(() => {
@@ -42,64 +46,63 @@ function ImageComponent({ imageItems }) {
           enabled: true, // Habilita a navegação por teclado
           onlyInViewport: true, // A navegação por teclado só funcionará quando o swiper estiver visível
         },
-      })
+      });
 
-      setSwiperInstance(swiper) // Armazena a instância do Swiper
-      setIsSwiperInitialized(true) // Marca o Swiper como inicializado
-      setLoading(false) // Finaliza o carregamento
+      setSwiperInstance(swiper); // Armazena a instância do Swiper
+      setIsSwiperInitialized(true); // Marca o Swiper como inicializado
+      setLoading(false); // Finaliza o carregamento
     }
-  }, [swiperContainerRef, swiperInstance])
+  }, [swiperContainerRef, swiperInstance]);
 
   useEffect(() => {
     // Verifica se estamos no ambiente do navegador antes de usar `window` e `document`
-    if (typeof window === 'undefined') return
+    if (typeof window === 'undefined') return;
 
     if (!window.Swiper) {
-      const script = document.createElement('script')
+      const script = document.createElement('script');
 
-      script.src = 'https://unpkg.com/swiper/swiper-bundle.min.js'
-      script.async = true
+      // Utilizando a constante para o caminho do JS
+      script.src = SWIPER_JS_PATH;  // Caminho correto para o script JS
+      script.async = true;
       script.onload = () => {
-        initializeSwiper()
-      }
+        initializeSwiper();
+      };
 
-      document.body.appendChild(script)
+      document.body.appendChild(script);
     } else {
-      initializeSwiper()
+      initializeSwiper();
     }
 
     // Adiciona o link para o CSS do Swiper
-    const link = document.createElement('link')
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = SWIPER_CSS_PATH; // Caminho correto para o CSS
 
-    link.rel = 'stylesheet'
-    link.href = 'https://unpkg.com/swiper/swiper-bundle.min.css'
-    document.head.appendChild(link)
+    document.head.appendChild(link);
 
     // Cleanup: remove o link e o script quando o componente for desmontado
     return () => {
       document.head.removeChild(
-        document.querySelector(
-          'link[href="https://unpkg.com/swiper/swiper-bundle.min.css"]'
-        )
-      )
-      const scripts = document.querySelectorAll(
-        'script[src="https://unpkg.com/swiper/swiper-bundle.min.js"]'
-      )
-
-      scripts.forEach(script => script.remove())
-    }
-  }, [initializeSwiper])
+        document.querySelector(`link[href="${SWIPER_CSS_PATH}"]`)
+      );
+      const scripts = document.querySelectorAll(`script[src="${SWIPER_JS_PATH}"]`);
+      scripts.forEach((script) => script.remove());
+    };
+  }, [initializeSwiper]);
 
   // Inicializa o Swiper somente após as imagens terem sido carregadas
   useEffect(() => {
     if (imagesLoaded) {
-      initializeSwiper() // Inicializa o Swiper quando todas as imagens estiverem carregadas
+      initializeSwiper(); // Inicializa o Swiper quando todas as imagens estiverem carregadas
     }
-  }, [imagesLoaded, initializeSwiper])
+  }, [imagesLoaded, initializeSwiper]);
 
   return (
     <div>
       <style>{`
+        .vtex-render__container-id-main-slidernew {
+          overflow: hidden;
+        }
         .swiper-button-next, .swiper-button-prev {
           background-color: rgba(0, 0, 0, 0.5);
           color: white;
@@ -108,7 +111,7 @@ function ImageComponent({ imageItems }) {
 
         .swiper-container .swiper-pagination {
           position: absolute;
-          bottom: 25px;
+          bottom: 2px;
           left: 0;
           width: 100%;
           text-align: center;
@@ -116,17 +119,18 @@ function ImageComponent({ imageItems }) {
 
         .swiper-pagination-bullet {
           transition: all 0.3s ease-in-out;
-          background: #d9d9d9;
-          width: 32px !important;
+          background: #101010;
+          width: 6px !important;
           height: 5px !important;
-          margin: 0 8px !important;
           border-radius: 5px;
           padding: 0;
           opacity: 1;
+          position: relative;
         }
 
         .swiper-pagination-bullet-active {
           background: #EA5A1C;
+          width: 66px !important;
         }
 
         .swiper-wrapper {
@@ -136,8 +140,7 @@ function ImageComponent({ imageItems }) {
         .swiper-container {
           position: relative;
           width: 100%;
-          height: auto;
-          overflow: hidden;
+          height: 400px;
           display: ${isSwiperInitialized ? 'block' : 'none'};
           transition: opacity 0.5s ease-in-out;
           opacity: ${loading ? '0' : '1'}; /* Transição suave de opacidade */
@@ -169,15 +172,29 @@ function ImageComponent({ imageItems }) {
           100% { transform: rotate(360deg); }
         }
 
-        @media (max-width: 1025px) {
-          .swiper-container, .single-banner {
-            margin-top: -68px; /* Ajusta a margem negativa para dispositivos menores */
+        @media (min-width:1100px) {
+         .render-route-store-home {
+            overflow-x: hidden;
           }
         }
 
         @media (max-width: 768px) {
           .desktop {
             display: none;
+          }
+          .swiper-container {
+            margin-top: 20px; /* Ajusta a margem para dispositivos menores */
+            height: 100%;
+          }
+          .swiper-slide a img {
+            width: 90%;
+            margin: auto;
+          }
+          .vtex-render__container-id-main-slidernew {
+            padding-bottom: 13px;
+          }  
+          .swiper-container .swiper-pagination {
+            bottom: -11px;
           }
         }
 
@@ -204,7 +221,7 @@ function ImageComponent({ imageItems }) {
             <img
               src={imageItems[0].imageDesktop || imageItems[0].imageMobile}
               alt={`Banner ${0}`}
-              loading="lazy"
+              loading="eager"
             />
           </a>
         </div>
@@ -250,7 +267,7 @@ function ImageComponent({ imageItems }) {
         <div className="swiper-pagination" />
       </div>
     </div>
-  )
+  );
 }
 
 ImageComponent.schema = {
@@ -295,6 +312,6 @@ ImageComponent.schema = {
       },
     },
   },
-}
+};
 
-export default ImageComponent
+export default ImageComponent;

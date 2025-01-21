@@ -1,10 +1,10 @@
 {
   "product-summary.shelf": {
     "children": [
-      "flex-layout.row#summary-tags",
       "flex-layout.row#summary-wish-image",
+      "flex-layout.row#summary-tags",
       "flex-layout.row#summary-name",
-      "aux-price-container#summary",
+      "flex-layout.row#summary-price",
       "condition-layout.product#summary",
       "flex-layout.row#summary-action"
     ]

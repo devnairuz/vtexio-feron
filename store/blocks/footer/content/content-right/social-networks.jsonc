@@ -21,8 +21,8 @@
   "link#social-insta": {
     "props": {
       "blockClass": "social-link",
-      "label": "Instagram Tecfag",
-      "href": "#",
+      "label": "Instagram Feron",
+      "href": "https://www.instagram.com/ferramentas.online/",
       "target": "_blank"
     }
   },
@@ -44,8 +44,8 @@
   "link#social-face": {
     "props": {
       "blockClass": "social-link",
-      "label": "Facebook Tecfag",
-      "href": "#",
+      "label": "Facebook Feron",
+      "href": "https://www.facebook.com/alojadasferramentasonline",
       "target": "_blank"
     }
   },
@@ -68,7 +68,7 @@
     "props": {
       "blockClass": "social-link",
       "label": "Whats Feron",
-      "href": "#",
+      "href": "https://api.whatsapp.com/send?phone=5511963227188",
       "target": "_blank"
     }
   },

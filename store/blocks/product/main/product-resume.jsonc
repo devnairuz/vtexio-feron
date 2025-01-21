@@ -8,18 +8,11 @@
       "flex-layout.row#pdp-tags",
       "flex-layout.row#name-wish",
       "flex-layout.row#nome-produto",
-      "aux-price-container"
+      "flex-layout.col#row-actions"
       //"flex-layout.row#share"
     ]
   },
-  "aux-price-container": {
-    "props": {
-      "Forminvalido": "availability-notify"
-    },
-    "children": [
-      "flex-layout.col#row-actions"
-    ]
-  },
+
   "flex-layout.col#row-actions": {
     "children": [
       "flex-layout.row#prices-pdp",

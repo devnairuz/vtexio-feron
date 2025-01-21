@@ -1,12 +1,22 @@
 {
     "slider-layout#marcas": {
       "props": {
-        "blockClass": ["categories"],
         "itemsPerPage": {
           "desktop": 6,
           "tablet": 4,
-          "phone": 2
-        }
+          "phone": 3
+        },
+        "centerMode": {
+          "desktop": "disabled",
+          "mobile": "disabled",
+          "tablet": "disabled",
+          "phone": "disabled"
+        },
+        "navigationStep": 1,
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "blockClass": ["categories"]
       },
       "children": [
         "info-card#marca1",

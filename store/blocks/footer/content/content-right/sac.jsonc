@@ -49,7 +49,7 @@
   "rich-text#sac-email": {
     "props": {
       "blockClass": ["sac-group-link", "sac-group-email"],
-      "text": "<a href='mailto:sac@lojadasferramentasonline.com.br' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-email'>sac@lojadasferramentasonline.com.br</a>"
+      "text": "<a href='mailto:sac@grupoferon.com.br' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-email'>sac@grupoferon.com.br</a>"
     }
   },
 

@@ -1,5 +1,5 @@
 .container {
-  padding: 40px 0 24px;
+  padding: 24px 0 24px;
   display: flex;
   align-items: center;
 }
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 1025px) {
   .container {
-    padding: 29px 0 32px;
+    padding: 20px 0 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

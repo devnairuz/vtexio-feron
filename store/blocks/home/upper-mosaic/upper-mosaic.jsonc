@@ -13,7 +13,7 @@
     "props": {
       "blockClass": "upper-mosaic-content"
     },
-    "children": ["image#upper-mosaic-first", "image#upper-mosaic-first-mobile"]
+    "children": ["image#upper-mosaic-first"]
   },
 
   "image#upper-mosaic-first": {
@@ -21,38 +21,28 @@
     "props": {
       "blockClass": "image__upper-mosaic",
       "src": "assets/upper-mosaic/Banner-Mid-Ofertas1.png",
-      "alt": "Nova seleção de ofertas"
-    }
-  },
-  "image#upper-mosaic-first-mobile": {
-    "title": "Imagem Mobile",
-    "props": {
-      "blockClass": ["image__upper-mosaic", "image__upper-mosaic-mobile"],
-      "src": "assets/upper-mosaic/Banner-Mid-Ofertas1.png",
-      "alt": "Nova seleção de ofertas"
+      "alt": "Nova seleção de ofertas",
+      "link": {
+        "url": "/ofertas"
+      }
     }
   },
 
   "flex-layout.col#upper-mosaic2": {
     "props": {
-      "blockClass": "upper-mosaic-content"
+      "blockClass": ["upper-mosaic-content", "upper-mosaic-sec"]
     },
-    "children": ["image#upper-mosaic-second", "image#upper-mosaic-second-mobile"]
+    "children": ["image#upper-mosaic-second"]
   },
   "image#upper-mosaic-second": {
     "title": "Imagem Desktop",
     "props": {
       "blockClass": "image__upper-mosaic",
       "src": "assets/upper-mosaic/Banner-Mid-Ofertas2.png",
-      "alt": "Nova seleção de ofertas"
-    }
-  },
-  "image#upper-mosaic-second-mobile": {
-    "title": "Imagem Mobile",
-    "props": {
-      "blockClass": ["image__upper-mosaic", "image__upper-mosaic-mobile"],
-      "src": "assets/upper-mosaic/Banner-Mid-Ofertas2.png",
-      "alt": "Nova seleção de ofertas"
+      "alt": "Nova seleção de ofertas",
+      "link": {
+        "url": "/mini-chave-impacto/p"
+      }
     }
   }
 }

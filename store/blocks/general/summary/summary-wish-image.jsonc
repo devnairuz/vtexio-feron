@@ -21,10 +21,7 @@
       "showBadge": false,
       "aspectRatio": "1:1",
       "maxHeight": 212,
-      "hoverImage": {
-        "criteria": "label",
-        "index": 1
-      }
+      "hoverImage": {"criteria": "index", "index": 2}
     }
   }
 }

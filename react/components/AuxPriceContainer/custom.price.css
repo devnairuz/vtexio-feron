@@ -34,9 +34,12 @@
 :global(.vtex-product-summary-2-x-container) .btnorcamento {
   display: none;
 }
-:global(.vtex-product-summary-2-x-container) .controlesconde {
+:global(.vtex-product-summary-2-x-container) .controlesconde, .flexRowContent--container-preco {
   font-size: 14px;
   margin-bottom: 8px;
+  height: 80px;
+  overflow: hidden;
+  align-items: center;
 }
 
 .controlesconde .textoconsultor {

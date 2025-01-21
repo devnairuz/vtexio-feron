@@ -18,10 +18,10 @@
   margin-top: 16px;
 }
 .content--cms-menu :global(.vtex-menu-2-x-styledLinkContent) {
-  color: #474747;
+  color: #101010;
 }
 .content--cms-menu :global(.vtex-menu-2-x-styledLinkContent):hover {
-  border-color: #212121;
+  border-color: #263572;
 }
 
 .trigger:not(.trigger--cms-menu) {

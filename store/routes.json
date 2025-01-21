@@ -7,12 +7,16 @@
     "path": "/trocas-e-devolucoes"
   },
 
-  "store.custom#assistencia-tecnica": {
-    "path": "/assistencia-tecnica"
+  "store.custom#politica-vendas": {
+    "path": "/politica-vendas"
   },
 
   "store.custom#politica-privacidade": {
     "path": "/politica-de-privacidade"
+  },
+
+  "store.custom#formas-pagamento": {
+    "path": "/formas-pagamento"
   },
 
   "store.custom#termos-de-uso": {

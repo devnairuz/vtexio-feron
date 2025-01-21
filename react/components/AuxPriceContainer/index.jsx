@@ -25,7 +25,7 @@ const AuxPriceContainer = ({ children }) => {
         <>
           <span className={classes.textoconsultor}>Fale com um dos nossos consultores</span>
           <a
-            href="https://api.whatsapp.com/send?phone=5514991054116"
+            href="https://api.whatsapp.com/send?phone=5511963227188"
             target="_blank"
             className={classes.btnorcamento}
             rel="noopener noreferrer" // Importante para segurança
@@ -35,7 +35,7 @@ const AuxPriceContainer = ({ children }) => {
           <FormSolicitacao 
             nome={product?.productName} 
             link={productLink} // Passa apenas o path do produto
-            domain="www.tecfag.com.br" 
+            domain="www.feron.com.br" 
           />
         </>
       ) : (

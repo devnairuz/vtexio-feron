@@ -15,7 +15,7 @@ const SideBar = ({
   showSubcategories,
   departments = [],
   CustomComponent,
-  CmsMenu,
+  children,
 }) => {
   useEffect(() => {
     if (visible) {
@@ -61,7 +61,7 @@ const SideBar = ({
                 viewBox="0 0 15 14"
               >
                 <path
-                  stroke="#FFFFFF"
+                  stroke="#000"
                   strokeLinecap="round"
                   strokeWidth="2.5"
                   d="M1.783 12.732l11.06-11.088M12.863 12.732L1.803 1.644"
@@ -86,7 +86,7 @@ const SideBar = ({
             ))}
           </ul>
 
-          {CmsMenu && <CmsMenu />}
+          {children && children}
         </aside>
       </Animation>
     </Fragment>

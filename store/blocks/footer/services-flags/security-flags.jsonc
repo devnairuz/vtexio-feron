@@ -1,0 +1,30 @@
+{
+    "flex-layout.col#security-flags": {
+      "title": "Bandeiras",
+      "props": {
+        "blockClass": "security-flags-content",
+        "preventVerticalStretch": true
+      },
+      "children": ["image#lets-encrypt","image#google-sf"]
+    },
+  
+    "image#google-sf": {
+      "props": {
+        "src": "assets/logos/google-sf.svg",
+        "alt": "Google Safe Browsing",
+        "title": "Google Safe Browsing",
+        "link": {
+          "newTab": "true",
+          "url": "https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fferon.com.br%2F"
+        }
+      }
+    },
+  
+    "image#lets-encrypt": {
+      "props": {
+        "src": "assets/logos/lets-encrypt.svg",
+        "alt": "Let's Encrypt",
+        "title": "Let's Encrypt"
+      }
+    }
+  }

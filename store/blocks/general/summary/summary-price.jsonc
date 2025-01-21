@@ -1,15 +1,7 @@
 {
-  "aux-price-container#summary": {
-    "props": {
-      "blockClass": "container-preco"
-    },
-    "children": [
-      "flex-layout.row#summary-price"
-    ]
-  },
   "flex-layout.row#summary-price": {
     "props": {
-      "blockClass": ["summary-price-container"]
+      "blockClass": ["summary-price-container", "container-preco"]
     },
     "children": ["flex-layout.col#summary-price"]
   },
@@ -71,7 +63,7 @@
   "product-spot-price#summary": {
     "props": {
       "blockClass": ["summary"],
-      "message": "{spotPriceValue} no pix"
+      "message": "{spotPriceValue} à vista no PIX ou boleto"
     }
   },
 
@@ -90,7 +82,7 @@
   "product-installments#summary": {
     "props": {
       "blockClass": "installments-summary",
-      "message": "ou {installmentsNumber}x de {hasInterest, select, true {{installmentValue} com juros} false {{installmentValue} sem juros}}"
+      "message": "ou {installmentsTotalValue} em até {installmentsNumber}x de {hasInterest, select, true {{installmentValue} com juros} false {{installmentValue} }}"
     }
   }
 }

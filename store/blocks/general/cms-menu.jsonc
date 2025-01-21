@@ -17,9 +17,9 @@
     "children": [
       "menu-item#sobre",
       "menu-item#trocas",
-      "menu-item#assistencia",
+      "menu-item#politica-vendas",
       "menu-item#privacidade",
-      "menu-item#termos",
+      "menu-item#formas-pagamento",
       "flex-layout.row#btn-catalogo"
     ]
   },
@@ -72,25 +72,25 @@
         "type": "internal",
         "href": "/trocas-e-devolucoes",
         "noFollow": false,
-        "tagTitle": "Trocas e Devoluções",
-        "text": "Trocas e Devoluções"
+        "tagTitle": "Política de Trocas e Devoluções",
+        "text": "Política de Trocas e Devoluções"
       }
     }
   },
 
-  "menu-item#assistencia": {
+  "menu-item#politica-vendas": {
     "props": {
-      "id": "menu-item-assistencia",
-      "blockClass": "menu-item-assistencia",
+      "id": "menu-item-vendas",
+      "blockClass": "menu-item-vendas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/assistencia-tecnica",
+        "href": "/politica-vendas",
         "noFollow": false,
-        "tagTitle": "Assistência Técnica",
-        "text": "Assistência Técnica"
+        "tagTitle": "Politica de Vendas",
+        "text": "Política de Vendas"
       }
     }
   },
@@ -112,19 +112,19 @@
     }
   },
 
-  "menu-item#termos": {
+  "menu-item#formas-pagamento": {
     "props": {
-      "id": "menu-item-termos",
-      "blockClass": "menu-item-termos",
+      "id": "menu-item-pagamento",
+      "blockClass": "menu-item-pagamento",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/termos-de-uso",
+        "href": "/formas-pagamento",
         "noFollow": false,
-        "tagTitle": "Termos de Uso",
-        "text": "Termos de Uso"
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
       }
     }
   }

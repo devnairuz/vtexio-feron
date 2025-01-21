@@ -19,7 +19,7 @@
       "showNavigationArrows": false,
       "showPaginationDots": false,
       "displayThumbnailsArrows": true,
-      "maxHeight": 421,
+      "maxHeight": 489,
       "thumbnailMaxHeight": 72,
       "zoomMode": "in-place-hover",
       "blockClass": ["pdp"]
@@ -31,11 +31,11 @@
   },
   "product-images#mobile": {
     "props": {
-      "aspectRatio": "1:1",
+      "aspectRatio": "3:4",
       "thumbnailAspectRatio": "1:1",
-      "showNavigationArrows": true,
+      "showNavigationArrows": false,
       "showPaginationDots": false,
-      "maxHeight": 326,
+      "maxHeight": 361,
       "thumbnailMaxHeight": 80,
       "zoomMode": "in-place-hover",
       "thumbnailsOrientation": "horizontal",

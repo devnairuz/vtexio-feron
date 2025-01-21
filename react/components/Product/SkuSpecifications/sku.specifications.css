@@ -42,9 +42,17 @@
 
 @media screen and (max-width: 991px) {
   .specificationsContainer {
-    margin-top: 24px;
-    padding-top: 40px;
-    border-top: 1px solid #d9d9d9;
+    margin-top: 0px;
+    padding-top: 27px;
+    border-top: inherit;
     justify-content: initial;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .specificationItem {
+    padding: 8px 2px;
+  }
+  .specificationsContainer::-webkit-scrollbar {
+    height: 0px;
   }
 }

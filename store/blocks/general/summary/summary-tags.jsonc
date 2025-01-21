@@ -7,7 +7,7 @@
     },
     "children": [
       "product-availability#message-summary",
-      "vtex.product-highlights@2.x:product-highlights#free-shipping-summary", // testar
+      "vtex.product-highlights@2.x:product-highlights", // testar
       "vtex.product-highlights@2.x:product-highlights#collections-summary"
     ]
   },
@@ -20,18 +20,18 @@
     }
   },
 
-  "vtex.product-highlights@2.x:product-highlights#free-shipping-summary": {
+  "vtex.product-highlights@2.x:product-highlights": {
     "props": {
       "blockClass": ["summary"],
-      "type": "collection",
+      "type": "teaser",
       "filter": {
         "type": "show",
         "highlightNames": ["Frete Grátis"]
       }
     },
-    "children": ["product-highlight-text#free-shipping-summary"]
+    "children": ["product-highlight-text"]
   },
-  "product-highlight-text#free-shipping-summary": {
+  "product-highlight-text": {
     "props": {
       "message": "{highlightName}",
       "blockClass": ["summary", "free-shipping"]
@@ -44,7 +44,7 @@
       "type": "collection",
       "filter": {
         "type": "show",
-        "highlightNames": ["Mais Vendidos", "Lançamentos"]
+        "highlightNames": ["Mais Vendidos", "Lançamento"]
       }
     },
     "children": ["product-highlight-text#collections-summary"]

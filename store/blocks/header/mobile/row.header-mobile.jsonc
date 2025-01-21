@@ -1,5 +1,6 @@
 {
   "flex-layout.row#header-mobile": {
+    "title": "Cabeçalho Mobile",
     "children": [
       "flex-layout.col#drawer-mobile",
       "flex-layout.col#logo-mobile",
@@ -17,31 +18,7 @@
     "props": {
       "blockClass": ["drawer-mobile-content"]
     },
-    "children": ["menu#drawer", "modal-trigger#search-mobile"]
-  },
-  "modal-trigger#search-mobile": {
-    "props": {
-      "blockClass": "search"
-    },
-    "children": ["icon#search-mobile", "modal-layout#search-mobile"]
-  },
-  "icon#search-mobile": {
-    "props": {
-      "id": "hpa-search",
-      "size": 18,
-      "activeClassName": "vtex-store-icons-0-x-modalIconSearch"
-    }
-  },
-  "modal-layout#search-mobile": {
-    "props": {
-      "blockClass": "search"
-    },
-    "children": ["modal-header#search-mobile", "search-bar"]
-  },
-  "modal-header#search-mobile": {
-    "props": {
-      "blockClass": ["search"]
-    }
+    "children": ["menu#drawer"]
   },
 
   "menu#drawer": {
@@ -53,9 +30,9 @@
   "mega-menu#mobile": {
     "props": {
       "mobileMode": true,
-      "CustomComponent": "login#mobile",
-      "CmsMenu": "vtex.menu@2.x:menu#cms-sidebar"
-    }
+      "CustomComponent": "login#mobile"
+    },
+    "children": ["overlay-trigger#store-info","flex-layout.row#social-networks-mobi"]
   },
   "login#mobile": {
     "props": {

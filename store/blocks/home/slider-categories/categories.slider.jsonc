@@ -1,24 +1,26 @@
 {
   "slider-layout#categories": {
     "props": {
-      "blockClass": ["categories"],
       "itemsPerPage": {
         "desktop": 6,
         "tablet": 4,
-        "phone": 2
-      }
+        "phone": 3
+      },
+      "centerMode": {
+          "desktop": "disabled",
+          "mobile": "disabled",
+          "tablet": "disabled",
+          "phone": "disabled"
+        },
+        "navigationStep": 1,
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "blockClass": ["categories"]
+      },
+      "children": ["info-card#cat1","info-card#cat2","info-card#cat3","info-card#cat4","info-card#cat5","info-card#cat6"]
     },
-    "children": [
-      "info-card#cat1",
-      "info-card#cat2",
-      "info-card#cat3",
-      "info-card#cat4",
-      "info-card#cat5",
-      "info-card#cat6"
-    ]
-  },
-
-  "info-card#cat1": {
+    "info-card#cat1": {
     "props": {
       "id": "info-card-cat",
       "isFullModeStyle": false,
@@ -28,8 +30,8 @@
       "blockClass": ["info-card-marca", "info-card-cat"],
       "callToActionMode": "Link",
       "textMode": "rich-text",
-      "imageActionUrl": "/dosadoras",
-      "callToActionUrl": "/dosadoras"
+      "imageActionUrl": "/sincronismo-de-motores",
+      "callToActionUrl": "/sincronismo-de-motores"
     }
   },
   "info-card#cat2": {
@@ -42,8 +44,8 @@
       "blockClass": ["info-card-marca", "info-card-cat"],
       "callToActionMode": "Link",
       "textMode": "rich-text",
-      "imageActionUrl": "/dosadoras",
-      "callToActionUrl": "/dosadoras"
+      "imageActionUrl": "/macacos-hidraulicos",
+      "callToActionUrl": "/macacos-hidraulicos"
     }
   },
   "info-card#cat3": {
@@ -56,8 +58,8 @@
       "blockClass": ["info-card-marca", "info-card-cat"],
       "callToActionMode": "Link",
       "textMode": "rich-text",
-      "imageActionUrl": "/dosadoras",
-      "callToActionUrl": "/dosadoras"
+      "imageActionUrl": "/ferramentas-eletricas",
+      "callToActionUrl": "/ferramentas-eletricas"
     }
   },
   "info-card#cat4": {
@@ -70,8 +72,8 @@
       "blockClass": ["info-card-marca", "info-card-cat"],
       "callToActionMode": "Link",
       "textMode": "rich-text",
-      "imageActionUrl": "/dosadoras",
-      "callToActionUrl": "/dosadoras"
+      "imageActionUrl": "/ferramentas-pneumaticas",
+      "callToActionUrl": "/ferramentas-pneumaticas"
     }
   },
   "info-card#cat5": {
@@ -84,8 +86,8 @@
       "blockClass": ["info-card-marca", "info-card-cat"],
       "callToActionMode": "Link",
       "textMode": "rich-text",
-      "imageActionUrl": "/dosadoras",
-      "callToActionUrl": "/dosadoras"
+      "imageActionUrl": "/polimento-e-estetica-automotiva",
+      "callToActionUrl": "/polimento-e-estetica-automotiva"
     }
   },
   "info-card#cat6": {
@@ -98,8 +100,8 @@
       "blockClass": ["info-card-marca", "info-card-cat"],
       "callToActionMode": "Link",
       "textMode": "rich-text",
-      "imageActionUrl": "/dosadoras",
-      "callToActionUrl": "/dosadoras"
+      "imageActionUrl": "/borracharia",
+      "callToActionUrl": "/borracharia"
     }
   },
 
@@ -157,16 +159,6 @@
         "url": "/aplicadores-de-fita"
       }
     }
-  },
-  "image#cate-arqueadoras": {
-    "props": {
-      "src": "assets/categories/cat6.png",
-      "maxHeight": 207,
-      "alt": "Borracharia",
-      "title": "Borracharia",
-      "link": {
-        "url": "/arqueadoras"
-      }
-    }
   }
+  
 }

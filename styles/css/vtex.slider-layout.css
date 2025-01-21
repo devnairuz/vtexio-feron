@@ -23,12 +23,10 @@
 .paginationDot--shelf-carousel {
   height: 3px !important;
 }
-
 .slide--shelf-carousel,
 .slide--partners {
   margin: 0 15px;
 }
-
 .caretIcon {
   display: none;
 }
@@ -127,13 +125,26 @@
   }
 }
 
+/*@media (min-width: 1100px) {
+  .sliderTrackContainer--shelf-banner {
+    overflow: visible;
+  }
+  .slide--firstVisible.slide--shelf-banner--hidden, .slide--lastVisible.slide--shelf-carousel--hidden.slide--shelf-banner--hidden {
+    opacity: 1;
+  }
+  .slide--shelf-banner--hidden, .slide--firstVisible.slide--shelf-carousel--hidden.slide--shelf-banner--hidden,
+  .slide--shelf-banner--lastVisible.slide--shelf-banner--hidden{
+    opacity: 0;
+  }
+}*/
+
 @media screen and (max-width: 1025px) {
   .sliderLayoutContainer--main-slider {
     margin-top: -68px;
   }
   .sliderArrows {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
   }
   .sliderLeftArrow::before {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M6.27441 12.5416L0.246826 6.49992L6.27441 0.458252L7.34431 1.53065L2.38662 6.49992L7.34431 11.4692L6.27441 12.5416Z' fill='%23ffffff'/%3E%3C/svg%3E");
@@ -155,14 +166,12 @@
   .slide--categories {
     margin: 0px 7.5px;
   }
-
   .sliderLeftArrow {
     left: 0;
   }
   .sliderRightArrow {
     right: 0;
   }
-
   .sliderLayoutContainer--wishlist {
     margin: 0;
   }

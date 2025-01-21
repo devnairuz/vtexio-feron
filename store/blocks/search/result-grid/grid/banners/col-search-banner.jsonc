@@ -13,16 +13,16 @@
       "props": {
         "src": "assets/categories/Banner-SEO.png",
         "alt": "Imperdível, até 30% de desconto",
-        "maxHeight": "102",
+        "maxHeight": "102px",
         "blockClass": ["category-banner", "category-banner-desk"]
       }
     },
     "image#category-banner-mobi": {
       "title": "Banner Mobile",
       "props": {
-        "src": "assets/categories/Banner-SEO.png",
+        "src": "assets/categories/Banner-SEO-mobile.png",
         "alt": "Imperdível, até 30% de desconto",
-        "maxHeight": "102",
+        "maxHeight": "145px",
         "blockClass": ["category-banner", "category-banner-mobi"]
       }
     }
