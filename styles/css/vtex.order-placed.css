@@ -91,24 +91,19 @@
   padding: 0 !important;
   color: #263572;
 }
-.section--confirmation :global(.vtex-button):hover,
-.orderOptionsWrapper :global(.vtex-button):hover {
-  color: #fff;
-  background: #263572;
-}
-.orderOptionsWrapper :global(.vtex-button__label):hover,
-.section--confirmation :global(.vtex-button__label):hover {
-  color: #fff;
-}
 .updateOrderButton,
 .myOrdersButton {
   margin-right: 24px;
 }
-.cancelOrderButton :global(.vtex-button) {
+.cancelOrderButton :global(.vtex-button__label) {
   box-shadow: none;
   padding: 8px 0;
   color: #263572;
   font-weight: 400;
+  border: 0;
+}
+.orderOptionsWrapper .cancelOrderButton :global(.vtex-button) {
+  box-shadow: inherit;
 }
 .cancelOrderButton :global(.vtex-button):hover {
   background: #263572;
@@ -243,6 +238,16 @@
   font-weight: 700;
   line-height: 30px;
 }
+/*.section--confirmation :global(.vtex-button):hover,
+.orderOptionsWrapper :global(.vtex-button):hover, 
+.section--confirmation :global(.vtex-button__label):hover {
+  color: #fff;
+  background: #263572;
+}
+.orderOptionsWrapper:hover :global(.vtex-button__label), .orderOptionsWrapper:hover :global(.vtex-button) {
+  color: #fff;
+  background: #263572;
+}*/
 
 @media screen and (max-width: 991px) {
   .orderPlacedWrapper {

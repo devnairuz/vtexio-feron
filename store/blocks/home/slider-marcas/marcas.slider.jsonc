@@ -37,8 +37,8 @@
         "blockClass": "info-card-marca",
         "callToActionMode": "Link",
         "textMode": "rich-text",
-        "imageActionUrl": "/dosadoras",
-        "callToActionUrl": "/dosadoras"
+        "imageActionUrl": "/macacos-hidraulicos",
+        "callToActionUrl": "/macacos-hidraulicos"
       }
     },
     "info-card#marca2": {
@@ -51,8 +51,8 @@
         "blockClass": "info-card-marca",
         "callToActionMode": "Link",
         "textMode": "rich-text",
-        "imageActionUrl": "/dosadoras",
-        "callToActionUrl": "/dosadoras"
+        "imageActionUrl": "/macacos-hidraulicos",
+        "callToActionUrl": "/macacos-hidraulicos"
       }
     },
     "info-card#marca3": {
@@ -65,8 +65,8 @@
         "blockClass": "info-card-marca",
         "callToActionMode": "Link",
         "textMode": "rich-text",
-        "imageActionUrl": "/dosadoras",
-        "callToActionUrl": "/dosadoras"
+        "imageActionUrl": "/macacos-hidraulicos",
+        "callToActionUrl": "/macacos-hidraulicos"
       }
     },
     "info-card#marca4": {
@@ -79,8 +79,8 @@
         "blockClass": "info-card-marca",
         "callToActionMode": "Link",
         "textMode": "rich-text",
-        "imageActionUrl": "/dosadoras",
-        "callToActionUrl": "/dosadoras"
+        "imageActionUrl": "/macacos-hidraulicos",
+        "callToActionUrl": "/macacos-hidraulicos"
       }
     },
     "info-card#marca5": {
@@ -93,8 +93,8 @@
         "blockClass": "info-card-marca",
         "callToActionMode": "Link",
         "textMode": "rich-text",
-        "imageActionUrl": "/dosadoras",
-        "callToActionUrl": "/dosadoras"
+        "imageActionUrl": "/macacos-hidraulicos",
+        "callToActionUrl": "/macacos-hidraulicos"
       }
     },
     "info-card#marca6": {
@@ -107,8 +107,8 @@
         "blockClass": "info-card-marca",
         "callToActionMode": "Link",
         "textMode": "rich-text",
-        "imageActionUrl": "/dosadoras",
-        "callToActionUrl": "/dosadoras"
+        "imageActionUrl": "/macacos-hidraulicos",
+        "callToActionUrl": "/macacos-hidraulicos"
       }
     },
     "image#marca1": {

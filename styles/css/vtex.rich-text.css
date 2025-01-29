@@ -90,8 +90,19 @@
   color: #101010;
 }
 .link--cms-link:hover,
-.link--sac-group-link {
+.link--sac-group-link,
+.link--sac-group-link:hover {
   border-color: #fff;
+}
+
+.link--sac-group-link:hover{
+  border-bottom: 1px solid #fff;
+  padding: 0 0 2px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .paragraph--sac-group-title {
@@ -148,7 +159,7 @@
 .link--sac-group-topo.link--sac-group-hora::before {
   filter: inherit;
 }
-.link--sac-group-btn.link--sac-group-topo::before {
+.link--sac-group-btn.link--sac-group-topo::before, .heading--related-title {
   display: none;
 }
 .link--sac-group-topo {
@@ -447,17 +458,34 @@
     font-size: 12px;
     line-height: 16px;
   }
-  .heading--shelf-title::after {
-    width: 57%;
-    top: 22px;
+  .heading--shelf-title {
+    position: relative;
+    z-index: 0;
   }
+  .heading--shelf-title::after, .headingLevel4--marcas-title.headingLevel4--montadora-title::after,
   .headingLevel4--marcas-title::after {
-    width: 40%;
+    width: 100%;
+    top: 22px;
+    left: 0;
+    right: 0;
+    z-index: -2;
   }
-  .headingLevel4--montadora-title::after {
-    width: 30%;
-    left: 272px;
+  .heading--shelf-title::before {
+    content: '';
+    background: #f3f3f3;
+    height: 30px;
+    width: 170px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
   }
+  .headingLevel4--marcas-title::before {
+    width: 260px;
+  }
+  .headingLevel4--marcas-title.headingLevel4--montadora-title::before {
+    width: 300px;
+  }
+  
 }
 
 @media (max-width: 991px) {
@@ -496,7 +524,7 @@
     justify-content: center;
   }
   .heading--footer-title {
-    margin: 0 0 10px;
+    margin: 0 0 20px;
   }
 
   .container--cms-link,
@@ -526,27 +554,6 @@
   }
   .paragraph--home-about-description {
     max-width: 366px;
-  }
-  .headingLevel4--marcas-title.headingLevel4--montadora-title::after, .headingLevel4--marcas-title::after {
-    width: 21%;
-    left: 268px;
-  }
-
-  .headingLevel4--marcas-title::after {
-    width: 35%;
-    left: 223px;
-  }
-}
-
-@media (max-width: 376px) {
-  .heading--shelf-title::after {
-    width: 50%;
-    top: 22px;
-  }
-
-  .headingLevel4--marcas-title::after {
-    width: 35%;
-    left: 223px;
   }
 }
 

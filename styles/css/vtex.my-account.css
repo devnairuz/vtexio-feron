@@ -105,7 +105,7 @@
 .boxContainerFooter :global(.vtex-button__label) {
   padding: 0 !important;
   text-transform: initial;
-  color: #EA5A1C;
+  color: #263572;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -214,6 +214,9 @@
   :global(.vtex-my-authentication-1-x-loginSessions_box),
   :global(.vtex-my-authentication-1-x-box_container) {
     width: 100%;
+  }
+  :global(.vtex-pageHeader-link__container) :global(.vtex-button) {
+    color: #000;
   }
 }
 

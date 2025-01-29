@@ -90,7 +90,7 @@
     "props": {
       "listName": "Lançamentos",
       "installmentCriteria": "MAX_WITH_INTEREST",
-      "category": "4"
+      "category": "3"
     },
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#products-triple"]

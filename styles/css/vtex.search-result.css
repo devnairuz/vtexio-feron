@@ -162,10 +162,10 @@
   content: '';
   position: absolute;
   z-index: 1;
-  bottom: -7px;
+  bottom: -6px;
   height: 1px;
   width: 100%;
-  background: #fff;
+  background: #f3f3f3;
 }
 .filterPopupArrowIcon {
   padding: 0;

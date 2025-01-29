@@ -65,9 +65,9 @@ const CategoryItem = ({
     >
       {noRedirect ? (
         <strong className={categoryClasses}>
-          <HamburguerIcon />
           <span style={{ display: 'none' }}>{name}</span>
-          <span>Equipamentos</span>
+          <span>Categorias</span>
+          <HamburguerIcon />
         </strong>
       ) : (
         <Link

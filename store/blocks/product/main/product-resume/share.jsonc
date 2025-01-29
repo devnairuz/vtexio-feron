@@ -1,29 +1,9 @@
 {
-  "flex-layout.row#share": {
-    "props": {
-      "blockClass": "share-container"
-    },
-    "children": ["flex-layout.col#share"]
-  },
 
   "flex-layout.col#share": {
     "props": {
       "blockClass": "share-content"
     },
     "children": ["share"]
-  },
-
-  "share": {
-    "props": {
-      "options": {
-        "size": 17
-      },
-      "social": {
-        "WhatsApp": true,
-        "Facebook": true,
-        "Twitter": true,
-        "Pinterest": true
-      }
-    }
   }
 }

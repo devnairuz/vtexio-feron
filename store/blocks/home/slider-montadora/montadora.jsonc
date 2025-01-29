@@ -18,7 +18,7 @@
       "title": "Título",
       "props": {
         "blockClass": ["best-sellers-title", "shelf-title", "marcas-title", "montadora-title"],
-        "text": "#### Navegue por montadoras"
+        "text": "#### Navegue por Montadoras"
       }
     },
     "flex-layout.col#slider-montadoras": {

@@ -54,6 +54,7 @@
 .inputContainer {
   padding: 0;
   width: 22px;
+  border: 0;
 }
 
 .productPriceCurrency {

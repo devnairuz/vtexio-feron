@@ -412,6 +412,9 @@
   .shippingContainer {
     max-width: 100%;
   }
+  .productNameContainer {
+    margin-bottom: 2rem;
+  }
   .infoCardContainer--info-card-marca {
     display: flex;
   }

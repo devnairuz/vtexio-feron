@@ -10,7 +10,7 @@ import categoryMenuPosition, {
   getMenuPositionValues,
 } from '../../utils/categoryMenuPosition'
 import sortSubcategoriesItems from '../../utils/sortSubcategoriesItems'
-import { Minus, Plus } from '../Icons'
+import { LinkArrow, Minus, Plus } from '../Icons'
 
 const getLinkParams = (parentSlug, item) => {
   const params = {
@@ -110,21 +110,6 @@ const ItemContainer = ({
               <li key={category.id} className={`${styles.submenuItem} dib`}>
                 <ul className={columnItemClasses}>
                   <li className={`${styles.firstLevelLinkContainer} list pa0`}>
-                    {shouldRenderSecondLevel(category) ? (
-                      <button
-                        className={styles.toggleSubMenu}
-                        onClick={() => handleItemClick(category.id)}
-                      >
-                        {open.isOpen && open.categoryId == category.id ? (
-                          <Minus />
-                        ) : (
-                          <Plus />
-                        )}
-                      </button>
-                    ) : (
-                      <span className={styles.toggleFake}></span>
-                    )}
-
                     <Link
                       onClick={onCloseMenu}
                       page={
@@ -136,12 +121,13 @@ const ItemContainer = ({
                       params={getLinkParams(parentSlug, category)}
                     >
                       {category.name}
-                    </Link>
-                  </li>
 
-                  {open.isOpen &&
-                    open.categoryId == category.id &&
-                    shouldRenderSecondLevel(category) && (
+                      {shouldRenderSecondLevel(category) && (
+                        <LinkArrow />
+                      )}
+                    </Link>
+
+                    {shouldRenderSecondLevel(category) && (
                       <ul className={styles.secondLevelListContainer}>
                         {category.children
                           .sort((a, b) => {
@@ -185,6 +171,7 @@ const ItemContainer = ({
                           })}
                       </ul>
                     )}
+                  </li>
                 </ul>
               </li>
             ))}

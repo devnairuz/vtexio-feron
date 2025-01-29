@@ -53,10 +53,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sobre-nos",
+        "href": "/quem-somos",
         "noFollow": false,
-        "tagTitle": "Sobre nós",
-        "text": "Sobre nós"
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
       }
     }
   },

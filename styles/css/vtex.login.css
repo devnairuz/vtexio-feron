@@ -232,6 +232,9 @@
 }
 
 @media (min-width: 1100px) {
+  .container :global(.vtex-button) {
+    color: #f4f4f426;
+  }
   .container :global(.vtex-button):hover {
     border: 1px solid #f4f4f426;
     border-radius: 0;

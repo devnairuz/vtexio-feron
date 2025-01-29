@@ -52,7 +52,7 @@
   },
   "list-context.product-list#shelf-highlights": {
     "props": {
-      "category": "4",
+      "category": "3",
       "listName": "Destaques",
       "installmentCriteria": "MAX_WITH_INTEREST"
     },

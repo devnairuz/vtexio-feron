@@ -22,7 +22,7 @@
   },
   "rich-text#sobre-title": {
     "props": {
-      "text": "# Sobre nós",
+      "text": "# Quem Somos",
       "blockClass": ["cms", "title"]
     }
   },

@@ -4,7 +4,7 @@
       "horizontalAlign": "between",
       "fullWidth": true,
       "colSizing": "auto",
-      "blockClass": ["header-container", "custom-container"]
+      "blockClass": ["header-container", "custom-container", "header-desktoptopo"]
     },
     "children": [
       "flex-layout.col#logo-desktop",

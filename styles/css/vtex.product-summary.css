@@ -2,6 +2,7 @@
   text-align: left;
   background: #fff;
   transition: all 0.3s ease-in-out;
+  border-radius: 5px;
 }
 .container:hover {
   box-shadow: 0px 4px 10px 0px #00000040;
@@ -51,6 +52,9 @@
   .container {
     border-radius: 0;
   }
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-banner) .imageNormal {
+    height: 127px !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -63,7 +67,7 @@
   }
 
   .element {
-    padding: 24px 9.5px 15px;
+    padding: 15px 9.5px 15px;
     min-height: 342px;
   }
   .nameContainer--summary-name {

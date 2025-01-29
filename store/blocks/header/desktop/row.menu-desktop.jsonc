@@ -6,14 +6,14 @@
     }
   },
   "flex-layout.col#menu-desktop": {
-    "children": ["category-menu#header-category-menu"]
+    "children": ["mega-menu#header-category-menu"]
   },
 
-  "category-menu#header-category-menu": {
+  "mega-menu#header-category-menu": {
     "props": {
       "showSubcategories": true,
       "menuDisposition": "left",
-      "showAllDepartments": false
+      "showAllDepartments": true
     }
   }
 }
