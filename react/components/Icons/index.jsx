@@ -203,6 +203,23 @@ export const Screen = () => {
   )
 }
 
+export const LinkArrow = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="8"
+      height="8"
+      fill="none"
+      viewBox="0 0 8 8"
+    >
+      <path
+        fill="#202020"
+        d="m.656 6.156 5.011-2.092-5.01-2.351V.387l6.678 3.322v.813L.656 7.476z"
+      ></path>
+    </svg>
+  )
+}
+
 export const Pix = () => {
   return (
     <svg

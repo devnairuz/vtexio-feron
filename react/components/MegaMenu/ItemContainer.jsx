@@ -10,7 +10,7 @@ import categoryMenuPosition, {
   getMenuPositionValues,
 } from '../../utils/categoryMenuPosition'
 import sortSubcategoriesItems from '../../utils/sortSubcategoriesItems'
-import { Minus, Plus } from '../Icons'
+import { LinkArrow, Minus, Plus } from '../Icons'
 
 const getLinkParams = (parentSlug, item) => {
   const params = {

@@ -1,4 +1,4 @@
-.itemContainer:not(.allCategories):nth-child(7) .departmentLink {
+.itemContainer:not(.allCategories):nth-child(8) .departmentLink {
   color: #ea5a1c;
   font-weight: 700;
 }
@@ -166,6 +166,10 @@
   padding-right: 0;
 }
 
+.itemContainer--department:nth-child(+6) {
+  display: none;
+}
+
 .allCategories strong span {
   color: #EA5A1C;
 }
@@ -271,5 +275,11 @@
 @media (max-width: 1025px) {
   .sidebarContent {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  input, select, textarea {
+    font-size: 16px;
   }
 }

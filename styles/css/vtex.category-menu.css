@@ -64,6 +64,10 @@
   margin-left: 36px;
 }
 
+.itemContainer--department:nth-child(n+8) {
+  display: none
+}
+
 .sidebarScrim {
   background: #212121;
 }
