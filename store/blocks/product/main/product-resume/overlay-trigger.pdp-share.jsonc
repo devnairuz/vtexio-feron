@@ -47,8 +47,8 @@
       },
       "social": {
         "WhatsApp": true,
-        "Facebook": false,
-        "Twitter": false,
+        "Facebook": true,
+        "Twitter":  true,
         "Pinterest": false
       }
     }

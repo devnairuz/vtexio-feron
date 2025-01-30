@@ -52,7 +52,6 @@
 
 /* ITEM TODAS CATEGORIAS */
 .itemContainer--department:first-child {
-  padding: 8.5px 10px;
   display: flex;
   align-items: center;
   gap: 10px;

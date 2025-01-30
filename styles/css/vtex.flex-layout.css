@@ -129,7 +129,6 @@
   top: 0;
   left: 7px;
   width: 76px;
-  height: 25px;
 }
 .flexRowContent--summary-tags {
   display: flex;
@@ -318,14 +317,7 @@
   width: 100%;
   overflow: hidden;
 }
-.flexColChild--footer-category-menu-content
-  :global(.vtex-category-menu-2-x-itemContainer--department):first-child {
-  padding: 0;
-  display: initial;
-  box-shadow: none;
-  border-radius: 0;
-  display: none;
-}
+
 .flexColChild--footer-category-menu-content
   :global(.vtex-category-menu-2-x-itemContainer--department)::before,
 .flexColChild--footer-category-menu-content
@@ -688,6 +680,9 @@
     padding: 0 30px;
     z-index: 1;
   }
+  .flexRowContent--controle-share {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -855,6 +850,10 @@
 @media (max-width: 991px) {
   .flexRowContent--product-tags-pdp {
     display: flex;
+  }
+
+  .flexRow--upper-mosaic-container {
+    margin-top: 35px;
   }
 
   .flexRow--actions-pdp-container {

@@ -58,7 +58,7 @@
   },
   "semanticColors": {
     "background": {
-      "base": "#F3F3F3",
+      "base": "#ececec",
       "base--inverted": "#1a1a1a",
       "action-primary": "#EA5A1C",
       "action-secondary": "#eef3f7",
@@ -349,7 +349,7 @@
         "letterSpacing": "0"
       },
       "code": {
-        "fontFamily": "Titillium Web, Consolas, monaco, monospace",
+        "fontFamily": "Titillium Web, sans-serif",
         "fontWeight": "normal",
         "fontSize": "1rem",
         "textTransform": "initial",

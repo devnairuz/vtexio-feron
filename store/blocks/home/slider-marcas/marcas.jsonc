@@ -18,7 +18,7 @@
       "title": "Título",
       "props": {
         "blockClass": ["best-sellers-title", "shelf-title", "marcas-title"],
-        "text": "#### Navegue por marcas"
+        "text": "#### Navegue por Marcas"
       }
     },
     "flex-layout.col#slider-marcas": {

@@ -132,6 +132,12 @@
   }
 /*fim nova alteração tabs*/
 
+@media (min-width: 1000px) {
+  .productInfoTabs{
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 991px) {
   .productInfoTabs {
     border: 0;

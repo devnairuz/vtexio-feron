@@ -91,6 +91,7 @@
 }
 .firstLevelLink:hover {
   text-decoration: none;
+  background: #ebebeb;
 }
 .firstLevelLink svg {
   min-width: 8px;
@@ -161,6 +162,8 @@
   gap: 8px;
   font-weight: 700;
   padding: 9px 16px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .allCategories strong span {

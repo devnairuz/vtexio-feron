@@ -1,6 +1,9 @@
 {
   "flex-layout.col#cms-menu": {
-    "children": ["rich-text#cms-menu-title", "vtex.menu@2.x:menu#cms"]
+    "children": ["rich-text#cms-menu-title", "vtex.menu@2.x:menu#cms"],
+    "props": {
+      "preventVerticalStretch": true
+    }
   },
 
   "rich-text#cms-menu-title": {
