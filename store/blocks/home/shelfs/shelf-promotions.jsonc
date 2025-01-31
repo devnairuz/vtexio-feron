@@ -1,6 +1,6 @@
 {
   "flex-layout.row#shelf-promotions": {
-    "title": "Vitrine Seladoras",
+    "title": "Vitrine Destaques",
     "props": {
       "blockClass": [
         "shelf-container",

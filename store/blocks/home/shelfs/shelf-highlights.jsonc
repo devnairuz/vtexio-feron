@@ -1,6 +1,6 @@
 {
   "flex-layout.row#shelf-highlights": {
-    "title": "Vitrine destaques",
+    "title": "Vitrine Imperdíveis",
     "props": {
       "blockClass": [
         "shelf-container",

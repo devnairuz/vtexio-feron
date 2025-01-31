@@ -1,6 +1,6 @@
 {
   "flex-layout.row#shelf-releases": {
-    "title": "Vitrine Envasadoras",
+    "title": "Vitrine Novidades",
     "props": {
       "blockClass": [
         "shelf-container",

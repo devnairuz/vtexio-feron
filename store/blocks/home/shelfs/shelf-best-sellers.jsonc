@@ -1,6 +1,6 @@
 {
   "flex-layout.row#shelf-best-sellers": {
-    "title": "Vitrine Máquinas para rotular",
+    "title": "Vitrine Ofertas",
     "props": {
       "blockClass": [
         "shelf-container",
