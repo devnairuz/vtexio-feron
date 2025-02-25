@@ -157,7 +157,7 @@
 .link--sac-group-topo.link--sac-group-hora::before {
   filter: inherit;
 }
-.link--sac-group-btn.link--sac-group-topo::before, .heading--related-title {
+.link--sac-group-btn.link--sac-group-topo::before, .heading--related-title, .paragraph--unavailable {
   display: none;
 }
 .link--sac-group-topo {

@@ -129,6 +129,7 @@
   top: 0;
   left: 7px;
   width: 76px;
+  height: 20px;
 }
 .flexRowContent--summary-tags {
   display: flex;

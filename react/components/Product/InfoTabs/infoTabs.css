@@ -136,6 +136,9 @@
   .productInfoTabs{
     justify-content: space-between;
   }
+  .tabContent {
+    width: 780px;
+  }
 }
 
 @media (max-width: 991px) {
