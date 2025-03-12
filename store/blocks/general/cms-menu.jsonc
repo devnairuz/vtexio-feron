@@ -43,7 +43,7 @@
   "rich-text#sac-catalogo": {
     "props": {
       "blockClass": ["sac-group-link", "sac-group-btn"],
-      "text": "<a href='#' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-catalogo'>Baixe nosso catálogo</a>"
+      "text": "<a href='https://drive.google.com/file/d/1BFrJ5w9ON73-FgM7TeGEkUiL6MlkTIU7/view' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-catalogo'>Baixe nosso catálogo</a>"
     }
   },
 
