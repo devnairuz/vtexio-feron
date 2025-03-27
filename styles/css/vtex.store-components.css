@@ -346,6 +346,10 @@
   .imageElement--image__upper-mosaic-mobile {
     display: none;
   }
+  .imageElement--category-banner-desk {
+    width: 824px;
+    object-fit: cover;
+  }
 }
 
 

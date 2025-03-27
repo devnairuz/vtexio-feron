@@ -203,7 +203,7 @@
 }
 
 .buttonShowMore :global(.vtex-button) {
-  background: #fff;
+  background: transparent;
   color: #212121;
   padding: 7px 24px;
   border: 1px solid #263572;

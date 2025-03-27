@@ -176,6 +176,11 @@ function ImageComponent({ imageItems }) {
          .render-route-store-home {
             overflow-x: hidden;
           }
+          .desktop img {
+            width: 1110px;
+            height: 382px;
+            border-radius: 12px;
+          }
         }
 
         @media (max-width: 768px) {
@@ -195,6 +200,11 @@ function ImageComponent({ imageItems }) {
           }  
           .swiper-container .swiper-pagination {
             bottom: -11px;
+          }
+          .mobile img {
+            width: 388px;
+            height: 466px;
+            border-radius: 12px;
           }
         }
 
