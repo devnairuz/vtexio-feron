@@ -63,7 +63,7 @@
   "product-spot-price#summary": {
     "props": {
       "blockClass": ["summary"],
-      "message": "{spotPriceValue} à vista no PIX ou boleto"
+      "message": "{spotPriceValue} 10 % à vista no PIX ou boleto"
     }
   },
 

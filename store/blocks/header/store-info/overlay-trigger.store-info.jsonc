@@ -26,7 +26,6 @@
     },
     "children": [
       "flex-layout.row#sac-wpptopo",
-      "flex-layout.row#sac-teltopo",
       "flex-layout.row#sac-emailtopo",
       "flex-layout.row#sac-horatopo",
       "flex-layout.row#sac-btncontatotopo"
@@ -91,24 +90,6 @@
     "props": {
       "blockClass": ["sac-group-link"],
       "text": "<a href='https://wa.me/5511963227188' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-wpp vtex-rich-text-0-x-link--sac-group-topo'>(11) 96322-7188</a>"
-    }
-  },
-  "flex-layout.row#sac-teltopo": {
-    "props": {
-      "blockClass": ["sac-group-container", "sac-group-topo"]
-    },
-    "children": ["flex-layout.col#sac-teltopo"]
-  },
-  "flex-layout.col#sac-teltopo": {
-    "props": {
-      "blockClass": ["sac-group-container", "sac-group-topo"]
-    },
-    "children": ["rich-text#sac-teltopo"]
-  },
-  "rich-text#sac-teltopo": {
-    "props": {
-      "blockClass": ["sac-group-link","sac-group-tel"],
-      "text": "<a href='tel:1140242070' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-tel vtex-rich-text-0-x-link--sac-group-topo'>(11) 4024-2070</a>"
     }
   },
   "flex-layout.row#sac-btncontatotopo": {

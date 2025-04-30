@@ -49,7 +49,7 @@
   "product-spot-price#pdp": {
     "props": {
       "blockClass": ["pdp"],
-      "message": "{spotPriceValue} à vista no Pix ou Boleto"
+      "message": "{spotPriceValue} 10 % à vista no Pix ou Boleto"
     }
   },
 

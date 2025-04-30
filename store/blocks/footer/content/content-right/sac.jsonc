@@ -8,7 +8,6 @@
     "children": [
       "flex-layout.row#sac-title",
       "flex-layout.row#sac-wpp",
-      "flex-layout.row#sac-tel",
       "flex-layout.row#sac-email",
       "flex-layout.row#sac-btncontato"
     ]
@@ -72,25 +71,7 @@
       "text": "<a href='https://wa.me/5511963227188' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-wpp'>(11) 96322-7188</a>"
     }
   },
-  "flex-layout.row#sac-tel": {
-    "props": {
-      "blockClass": "sac-group-container"
-    },
-    "children": ["flex-layout.col#sac-tel"]
-  },
-  "flex-layout.col#sac-tel": {
-    "props": {
-      "blockClass": "sac-group-content"
-    },
-    "children": ["rich-text#sac-tel"]
-  },
   
-  "rich-text#sac-tel": {
-    "props": {
-      "blockClass": ["sac-group-link","sac-group-tel"],
-      "text": "<a href='tel:1140242070' target='_blank' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--sac-group-link vtex-rich-text-0-x-link--sac-group-tel'>(11) 4024-2070</a>"
-    }
-  },
   "flex-layout.row#sac-btncontato": {
     "props": {
       "blockClass": "sac-group-container"
