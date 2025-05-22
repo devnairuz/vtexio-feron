@@ -350,6 +350,9 @@
     width: 824px;
     object-fit: cover;
   }
+  .imageElement--image__upper-mosaic {
+    height: 235px;
+  }
 }
 
 
