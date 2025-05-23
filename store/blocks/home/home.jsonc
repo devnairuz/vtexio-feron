@@ -2,8 +2,8 @@
   "store.home": {
     "blocks": [
       "responsive-layout.desktop#slider-desktop",
-      //"__fold__",
       "responsive-layout.mobile#banner-mobile",
+      //"__fold__",
       "flex-layout.row#slider-categories",
       "flex-layout.row#shelf-promotions",
       "flex-layout.row#shelf-releases",
