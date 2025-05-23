@@ -1,7 +1,10 @@
 {
+
+  "responsive-layout.desktop#slider-desktop": {
+    "children": ["list-context.media-list#main-slidernew"]
+  },
   "list-context.media-list#main-slidernew": {
     "title": "Carrosel principal Desktop",
     "children": ["banner-slider"]
-    
   }
 }

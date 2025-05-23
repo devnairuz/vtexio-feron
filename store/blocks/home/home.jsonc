@@ -1,9 +1,10 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.media-list#main-slidernew",
-      "flex-layout.row#slider-categories",
+      "responsive-layout.desktop#slider-desktop",
       //"__fold__",
+      "responsive-layout.mobile#banner-mobile",
+      "flex-layout.row#slider-categories",
       "flex-layout.row#shelf-promotions",
       "flex-layout.row#shelf-releases",
       "flex-layout.row#slider-montadoras",

@@ -10,15 +10,17 @@
 }
 .paginationDot {
   transition: all 0.3s ease-in-out;
-  background: #d9d9d9;
-  width: 32px !important;
+  background: #101010;
+  width: 6px !important;
   height: 5px !important;
-  margin: 0 8px;
   border-radius: 5px;
   padding: 0;
+  opacity: 1;
+  position: relative;
 }
 .paginationDot--isActive {
   background: #EA5A1C;
+  width: 66px !important;
 }
 .paginationDot--shelf-carousel {
   height: 3px !important;
@@ -64,7 +66,7 @@
 
 /* SLIDER PRINCIPAL */
 .paginationDotsContainer--main-slider {
-  bottom: 25px;
+  bottom: -11px;
 }
 
 /* SLIDER CATEGORIAS */
@@ -141,11 +143,18 @@
 
 @media screen and (max-width: 1025px) {
   .sliderLayoutContainer--main-slider {
-    margin-top: -68px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .imageElement--main-slider {
+    height: 466px;
+    border-radius: 12px;
   }
   .sliderArrows {
     width: 22px;
     height: 22px;
+    display: none;
   }
   .sliderLeftArrow::before {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M6.27441 12.5416L0.246826 6.49992L6.27441 0.458252L7.34431 1.53065L2.38662 6.49992L7.34431 11.4692L6.27441 12.5416Z' fill='%23ffffff'/%3E%3C/svg%3E");
