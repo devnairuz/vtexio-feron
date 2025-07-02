@@ -31,5 +31,9 @@
   },
   "banner-slider": {
     "component": "BannerSlider"
-  }
+  },
+  "contador": {
+        "component": "Contador",
+        "composition": "children"
+    }
 }

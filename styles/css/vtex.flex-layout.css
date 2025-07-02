@@ -661,6 +661,62 @@
   margin: 0px 0;
 }
 
+/*Customização Contador PDP*/
+.flexRow--contador-secao {
+  margin-top: 32px;
+}
+.flexRowContent--contador-secao {
+  display: flex;
+  flex-direction: column;
+}
+.flexRowContent--linha-mes-contador {
+  background: #fff;
+  position: relative;
+  align-items: center;
+  text-align: end;
+  padding-right: 16px;
+  height: 70px;
+}
+.flexRowContent--linha-mes-contador::before {
+  content: '';
+  background: url(assets/icons/detalhe-contador.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flexRowContent--linhaeconomize {
+  background: #182660;
+  height: 53px;
+}
+.flexRowContent--contador-secao .stretchChildrenWidth {
+  width: 100% !important;
+}
+.flexCol--area-economize {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding-left: 16px;
+}
+.flexColChild--area-economize {
+  height: auto !important;
+}
+/*Fim customização Contador PDP*/
+
+/*contador vitrine*/
+.flexRowContent--summary-action-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.flexRowContent--summary-action-container .stretchChildrenWidth {
+  width: 100% !important;
+}
+/*fim contador vitrine*/
+
 /*inserção plataforma e desenvolvimento*/
 .flexRowContent--companies-content-container {
   gap: 20px;
@@ -846,6 +902,15 @@
     height: 100px;
     display: grid;
   }
+
+  /*contador mobile pdp*/
+  .flexRowContent--linha-mes-contador, .flexRowContent--linhaeconomize {
+    height: auto;
+  }
+  .flexRowContent--linha-mes-contador, .flexRowContent--linhaeconomize {
+    display: flex;
+  }
+  /*fim contador mobile pdp*/
 }
 
 @media (max-width: 991px) {

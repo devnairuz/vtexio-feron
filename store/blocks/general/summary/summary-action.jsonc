@@ -3,7 +3,14 @@
     "props": {
       "blockClass": ["summary-action-container"]
     },
-    "children": ["flex-layout.col#summary-action"]
+    "children": ["flex-layout.col#summary-action", "experimental__visibility-layout#contador-vitrine"]
+  },
+
+  "experimental__visibility-layout#contador-vitrine": {
+    "props": {
+      "blockClass": ["summary-contador"]
+    },
+    "children": ["contador"]
   },
 
   "flex-layout.col#summary-action": {

@@ -422,6 +422,21 @@
 }
 /*fim inclusão borda título*/
 
+/*customização contador*/
+.paragraph--titulo-ofeta {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+:global(.vtex-flex-layout-0-x-flexCol--arealinhacont1) .paragraph--titulo-ofeta {
+  color: #263572;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 16px;
+  text-transform: initial;
+}
+/*fim customização contador*/
+
 @media screen and (max-width: 1025px) {
   .heading--shelf-title {
     font-size: 24px;

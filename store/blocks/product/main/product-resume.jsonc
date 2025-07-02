@@ -8,6 +8,7 @@
       "flex-layout.row#pdp-tags",
       "flex-layout.row#name-wish",
       "flex-layout.row#nome-produto",
+      "experimental__visibility-layout#contador-feron",
       "flex-layout.col#row-actions"
     ]
   },

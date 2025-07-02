@@ -1,0 +1,96 @@
+{
+    "experimental__visibility-layout#contador-feron": {
+        "props": {
+            "blockClass": "contador-feron"
+        },
+        "children": ["flex-layout.row#contador-area"]
+    },
+    
+    "flex-layout.row#contador-area": {
+        "title": "Area Contador PDP Feron",
+        "props": {
+            "blockClass": ["contador-secao"]
+        },
+        "children": ["flex-layout.row#linhames", "flex-layout.row#linhaeconomize"]
+  },
+  "flex-layout.row#linhames": {
+    "props": {
+        "blockClass": ["linha-mes-contador"]
+    },
+    "children": ["flex-layout.col#linhacont1","flex-layout.col#linhacont2"]
+  },
+
+  "flex-layout.col#linhacont1": {
+    "props": {
+        "blockClass": "arealinhacont1"
+    },
+    "children": ["rich-text#mes-oferta" ]
+  },
+
+  "flex-layout.col#linhacont2": {
+    "props": {
+        "blockClass": "arealinhacont2"
+    },
+    "children": ["contador"]
+  },
+
+  "rich-text#mes-oferta": {
+    "props": {
+        "blockClass": "titulo-ofeta",
+        "text": "Mês de ofertas!"
+    }
+  },
+
+  "flex-layout.row#linhaeconomize": {
+    "props": {
+        "blockClass": "linhaeconomize"
+    },
+    "children": ["flex-layout.col#economize1", "flex-layout.col#economize2"]
+  },
+  "flex-layout.col#economize1": {
+    "props": {
+        "blockClass": "area-economize"
+    },
+    "children": ["image#engrenagem", "rich-text#economizar"]
+  },
+  "image#engrenagem": {
+    "title": "Banner Desktop",
+      "props": {
+        "src": "assets/icons/award_star.svg",
+        "alt": "Star area",
+        "maxHeight": "24px",
+        "blockClass": ["engrenagem-image"]
+      }
+    },
+
+    "rich-text#economizar": {
+        "props": {
+            "blockClass": "titulo-ofeta",
+            "text": "ECONOMIZE ATÉ **15%**"
+        }
+    },
+
+    "flex-layout.col#economize2": {
+        "props": {
+        "blockClass": "area-economize"
+    },
+    "children": ["image#engrenagem2", "rich-text#economizar2"]
+    },
+
+    "image#engrenagem2": {
+    "title": "Banner Desktop",
+      "props": {
+        "src": "assets/icons/widgets.svg",
+        "alt": "Widgets icon",
+        "maxHeight": "24px",
+        "blockClass": ["engrenagem-image"]
+      }
+    },
+
+    "rich-text#economizar2": {
+        "props": {
+            "blockClass": "titulo-ofeta",
+            "text": "Estoque limitado"
+        }
+    }
+}
