@@ -9,6 +9,10 @@
     "composition": "children"
   },
 
+  "prazo-extenso": {
+    "component": "PrazoEntregaExtenso"
+  },
+
   "product-model": {
     "component": "ProductModel"
   },

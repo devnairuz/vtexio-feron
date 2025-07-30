@@ -1,6 +1,7 @@
 {
   "store.product": {
     "children": [
+      "prazo-extenso",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#sku-specifications",
