@@ -16,6 +16,7 @@
       "blockClass": "sticky-header"
     },
     "children": [
+      "experimental__visibility-layout#top-bar",
       "flex-layout.row#header-desktop",
       "flex-layout.row#menu-desktop"
     ]

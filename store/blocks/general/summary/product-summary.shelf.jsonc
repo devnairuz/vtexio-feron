@@ -6,7 +6,8 @@
       "flex-layout.row#summary-name",
       "flex-layout.row#summary-price",
       "condition-layout.product#summary",
-      "flex-layout.row#summary-action"
+      "flex-layout.row#summary-action",
+      "experimental__visibility-layout#frete-gratis"
     ]
   },
   "condition-layout.product#summary": {

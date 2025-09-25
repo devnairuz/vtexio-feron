@@ -437,6 +437,27 @@
 }
 /*fim customização contador*/
 
+/*customização topline*/
+.container--text-topbar {
+  justify-content: center;
+}
+.paragraph--text-topbar, .paragraph--text-topbar__mobile {
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+  margin: 8px 0;
+}
+/*fim customização topline*/
+
+/*Customização frete gratis vitrine*/
+.paragraph--frete-gratis-vitrine {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 12px;
+}
+/*Fim customização frete gratis vitrine*/
+
 @media screen and (max-width: 1025px) {
   .heading--shelf-title {
     font-size: 24px;
@@ -512,6 +533,9 @@
 
   .paragraph--textocompa {
     margin: 0;
+  }
+  .paragraph--frete-gratis-vitrine {
+    font-size: 9px;
   }
 }
 

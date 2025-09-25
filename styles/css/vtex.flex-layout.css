@@ -123,6 +123,34 @@
   margin-top: 6px;
 }
 
+/*CUSTOMIZAÇÃO TOPLINE*/
+.flexRow--wrapper-topbar {
+  background: #EA5A1C;
+} 
+/*FIM CUSTOMIZAÇÃO TOPLINE*/
+
+/*CUSTOMIZAÇÃO FRETE GRATIS VITRINE*/
+.flexRow--wrapper-fretegratis {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background: #20982C;
+  padding: 4px 8px;
+}
+.flexCol--controle-fretevtitrine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.flexColChild--controle-fretevtitrine {
+  height: auto !important;
+}
+/*FIM CUSTOMIZAÇÃO FRETE GRATIS VITRINE*/
+
 /* CARD PRODUTO */
 .flexRow--summary-tags {
   position: relative;
@@ -982,6 +1010,9 @@
   .flexColChild--category-banner:last-child {
     display: block;
     text-align: center;
+  }
+  .flexRowContent--wrapper-fretegratis {
+    padding: 0 10px;
   }
 }
 

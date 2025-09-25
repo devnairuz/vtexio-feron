@@ -15,6 +15,6 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#header-mobile", "flex-layout.row#search-mobile"]
+    "children": ["experimental__visibility-layout#top-barmobile","flex-layout.row#header-mobile", "flex-layout.row#search-mobile"]
   }
 }

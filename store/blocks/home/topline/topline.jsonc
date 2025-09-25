@@ -1,0 +1,79 @@
+{
+    "experimental__visibility-layout#top-bar": {
+      "title": "Benefícios - Topo",
+      "children": ["flex-layout.row#top-bar"],
+      "props": {
+        "blockClass": "custom-container"
+      }
+    },
+  
+    "flex-layout.row#top-bar": {
+      "children": ["slider-layout#topbar-desk"],
+      "props": {
+        "blockClass": ["wrapper-topbar", "custom-container"]
+      }
+  
+    },
+  
+    "slider-layout#topbar-desk": {
+      "children": [
+        "experimental__visibility-layout#col-frete-bar",
+        "experimental__visibility-layout#col-parcelamento-bar"
+      ],
+      "props": {
+        "blockClass": "wrapper-topbar",
+        "autoplay": {
+          "timeout": 3000,
+          "stopOnHover": false
+        },
+  
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "arrowSize": 12,
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never"
+      }
+    },
+  
+    "experimental__visibility-layout#col-frete-bar": {
+      "children":["flex-layout.col#frete-bar"]
+    },
+  
+    "experimental__visibility-layout#col-parcelamento-bar": {
+      "children":["flex-layout.col#parcelamento-bar"]
+    },
+  
+  
+    "flex-layout.col#frete-bar": {
+      "children": [
+        "rich-text#text-frete-gratis"
+      ]
+    },
+    "flex-layout.col#parcelamento-bar": {
+      "children": [
+        "rich-text#text-parcelamento"
+      ]
+    },
+  
+  
+    "rich-text#text-frete-gratis": {
+      "title": "Texto 1",
+      "props": {
+        "blockClass": "text-topbar",
+        "text": "FRETE GRÁTIS *exceto para norte, nordeste e sul"
+      }
+    },
+  
+    "rich-text#text-parcelamento": {
+      "title": "Texto 2",
+      "props": {
+        "blockClass": "text-topbar",
+        "text": "FRETE GRÁTIS *exceto para norte, nordeste e sul"
+      }
+    }
+  
+  }

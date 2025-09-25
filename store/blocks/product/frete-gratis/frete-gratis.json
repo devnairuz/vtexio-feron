@@ -1,0 +1,39 @@
+{
+    "experimental__visibility-layout#frete-gratis": {
+      "title": "Frete Grátis Vitrine",
+      "children": ["flex-layout.row#frete-gratis"],
+      "props": {
+        "blockClass": "custom-container"
+      }
+    },
+
+    "flex-layout.row#frete-gratis": {
+      "children": ["flex-layout.col#frete-gratis"],
+      "props": {
+        "blockClass": ["wrapper-fretegratis", "custom-container"]
+      }
+  
+    },
+
+    "flex-layout.col#frete-gratis": {
+      "children": ["image#truck", "rich-text#frete-gratis"],
+      "props": {
+        "blockClass": ["controle-fretevtitrine"]
+      }
+    },
+    "image#truck": {
+        "props": {
+        "src": "assets/icons/truck-gratis.svg",
+        "maxHeight": 24,
+        "alt": "Icon Truck",
+        "title": "Icon Truck"
+        }
+    },
+    "rich-text#frete-gratis": {
+        "props": {
+            "text": "Frete grátis para todo brasil",
+            "blockClass": ["frete-gratis-vitrine"]
+        }
+    }
+    
+}
